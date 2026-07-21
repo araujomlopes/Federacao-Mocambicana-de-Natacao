@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <!-- Meta tags obrigatórias -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Rios — Estrutura leve e responsiva — HTML e CSS puro, boas práticas de escritórios de design." />
+  <title>Rios — Website Leve e Responsivo</title>
+
+  <link rel="stylesheet" href="assets/css/firefox-fixes.css">
+
+  <!-- Google Fonts – pré-conexão -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- nova fonte araujo test -->
+   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <!-- nova fonte -->
+
+  <!-- CSS global/base -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- CSS específico de página -->
+  
+
+  <!-- (Opcional) JS no head apenas se necessário; scripts principais no final do body) -->
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="assets/css/pages/index.css">
+
+
+</head>
+
+
+<body>
+  <!-- ========== HEADER ========== -->
+  <div id="header"></div>
+   <!-- ========== HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="uefa-carousel">
+  <div class="f1-grid">
+
+    <!-- HERO -->
+    <!-- HERO -->
+<article class="f1-hero">
+  <img
+    src="assets/images/diversos/pagina_inicial/projectocampofilia-1920.webp"
+    srcset="
+      assets/images/diversos/pagina_inicial/projectocampofilia-768.webp 768w,
+      assets/images/diversos/pagina_inicial/projectocampofilia-1280.webp 1280w,
+      assets/images/diversos/pagina_inicial/projectocampofilia-1920.webp 1920w
+    "
+    sizes="100vw"
+    alt="Mundialito de futsal do FILIA FC"
+    width="1920"
+    height="1080"
+    fetchpriority="high"
+    decoding="async"
+  >
+
+ <div class="f1-hero-content">
+  <span class="f1-tag">LIGA NACIONAL</span>
+  <h1>NATIONAL Futsal World Cup</h1>
+</div>
+</article>
+<!-- SIDEBAR -->
+<aside class="f1-sidebar">
+
+  <a href="regulamento.html" class="f1-card-link">
+    <div class="f1-card">
+      <img src="assets/images/diversos/istockphoto-1178808605-1024x1024.jpg" alt="">
+      <h3>Complete document with all competition rules</h3>
+    </div>
+  </a>
+
+  <a href="ajustehorario.html" class="f1-card-link">
+    <div class="f1-card">
+      <img src="assets/images/diversos/istockphoto-1169058171-1024x1024.jpg" alt="">
+      <h3>Official note from the organization regarding schedule adjustments</h3>
+    </div>
+  </a>
+
+  <a href="criterios.html" class="f1-card-link">
+    <div class="f1-card">
+      <img src="assets/images/diversos/istockphoto-1186117863-1024x1024.jpg" alt="">
+      <div>
+        <span class="f1-label label-unlocked">CRITERIA</span>
+        <h3>Understand how ranking works in case of a tie</h3>
+      </div>
+    </div>
+  </a>
+
+  <a href="disciplina.html" class="f1-card-link">
+    <div class="f1-card">
+      <img src="assets/images/diversos/istockphoto-1287265518-1024x1024.jpg" alt="">
+      <div>
+        <span class="f1-label label-academy">DISCIPLINE</span>
+        <h3>Information on foul accumulation, penalties, and cards</h3>
+      </div>
+    </div>
+  </a>
+
+  <a href="elegibilidade.html" class="f1-card-link">
+    <div class="f1-card">
+      <img src="assets/images/diversos/istockphoto-1406548506-1024x1024.jpg" alt="">
+      <h3>Who can play, registration deadlines, and eligibility</h3>
+    </div>
+  </a>
+</aside>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<section class="uefa-carousel">
+  <div class="matches-header">
+    <h2>Jogos</h2>
+  </div>
+
+  <div class="matches-wrapper">
+    <button class="matches-arrow left" aria-label="Previous">‹</button>
+
+    <div class="matches-track" id="matchesTrack">
+      <!-- Jogos serão carregados aqui automaticamente -->
+    </div>
+
+    <button class="matches-arrow right" aria-label="Next">›</button>
+  </div>
+</section>
+
+
+
+<script>
+const URL_JOGOS = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTMKb7nNRenJu0293ElDZ7UYSe0bq-GVqU51hPjnheB1E7gD14KXvzwdGdn2VRlQ3vW_ev3nfxXL_4t/pub?gid=0&single=true&output=csv";
+const URL_EQUIPAS = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTMKb7nNRenJu0293ElDZ7UYSe0bq-GVqU51hPjnheB1E7gD14KXvzwdGdn2VRlQ3vW_ev3nfxXL_4t/pub?gid=1253685309&single=true&output=csv";
+const PATH_LOGOS = "assets/images/team-logo/";
+
+// -------------------- CSV CORRETO (SEM QUEBRAR COLUNAS) --------------------
+
+function csvToArray(csvText) {
+  const rows = [];
+  const lines = csvText.split("\n");
+
+  const headers = lines[0].split(",").map(h => h.trim());
+
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i];
+    if (!line) continue;
+
+    const values = [];
+    let current = "";
+    let insideQuotes = false;
+
+    for (let char of line) {
+      if (char === '"') {
+        insideQuotes = !insideQuotes;
+      } 
+      else if (char === "," && !insideQuotes) {
+        values.push(current.trim());
+        current = "";
+      } 
+      else {
+        current += char;
+      }
+    }
+
+    values.push(current.trim());
+
+    const obj = {};
+    headers.forEach((h, index) => {
+      obj[h] = values[index] || "";
+    });
+
+    rows.push(obj);
+  }
+
+  return rows;
+}
+
+// -------------------- DATA --------------------
+
+function formatarData(dataStr, horaStr) {
+  if (!dataStr) return "";
+
+  const meses = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];
+  let dia, mes, ano;
+
+  if (dataStr.includes("-")) {
+    const partes = dataStr.split("-");
+    ano = parseInt(partes[0], 10);
+    mes = parseInt(partes[1], 10);
+    dia = parseInt(partes[2], 10);
+  } else if (dataStr.includes("/")) {
+    const partes = dataStr.split("/");
+    dia = parseInt(partes[0], 10);
+    mes = parseInt(partes[1], 10);
+    ano = partes[2].length === 2 ? parseInt("20" + partes[2], 10) : parseInt(partes[2], 10);
+  }
+
+  if (!dia || !mes || !ano) return dataStr;
+  const mesFormatado = meses[mes - 1];
+  if (!mesFormatado) return dataStr;
+
+  return horaStr ? (() => {
+  const [h, m] = horaStr.split(":");
+  const hh = h.padStart(2,"0");
+  const mm = m.padStart(2,"0");
+  return `${dia} ${mesFormatado}, ${hh}:${mm}`;
+})() : `${dia} ${mesFormatado}`;
+}
+
+function isHoje(dataStr) {
+  if (!dataStr) return false;
+  const hoje = new Date();
+  const [ano, mes, dia] = dataStr.split("-").map(Number);
+  return hoje.getFullYear() === ano && (hoje.getMonth()+1) === mes && hoje.getDate() === dia;
+}
+
+function isLive(dataStr, horaStr) {
+  if (!dataStr || !horaStr) return false;
+  const [ano, mes, dia] = dataStr.split("-").map(Number);
+  const [hora, min] = horaStr.split(":").map(Number);
+  const inicio = new Date(ano, mes-1, dia, hora, min);
+  const agora = new Date();
+  return agora >= inicio && agora <= new Date(inicio.getTime() + 2*60*60*1000);
+}
+
+// -------------------- CARREGAR JOGOS --------------------
+
+async function carregarJogos() {
+  const track = document.getElementById("matchesTrack");
+  if (!track) return;
+
+  try {
+    const [resJogos, resEquipes] = await Promise.all([fetch(URL_JOGOS), fetch(URL_EQUIPAS)]);
+    const [csvJogos, csvEquipes] = await Promise.all([resJogos.text(), resEquipes.text()]);
+
+    const jogos = csvToArray(csvJogos);
+    const equipes = csvToArray(csvEquipes);
+
+    const logos = {};
+    equipes.forEach(eq => {
+      if (eq.Team && eq.Logopng) logos[eq.Team.trim()] = eq.Logopng.trim();
+    });
+
+    jogos.sort((a,b)=>{
+      const d1 = new Date(a.Data + "T" + (a.Time || "00:00"));
+      const d2 = new Date(b.Data + "T" + (b.Time || "00:00"));
+      return d1 - d2;
+    });
+
+    track.innerHTML = "";
+
+    jogos.forEach(jogo => {
+      if (!jogo.HomeTeam || !jogo.AwayTeam) return;
+
+      const logoCasa = logos[jogo.HomeTeam.trim()] || "default.svg";
+      const logoFora = logos[jogo.AwayTeam.trim()] || "default.svg";
+
+      const card = document.createElement("article");
+      card.classList.add("match-card");
+
+      if(jogo.HomeGoals && jogo.AwayGoals){
+        card.innerHTML = `
+          <div class="match-status live">Fim do jogo</div>
+
+          <div class="match-teams">
+            <div class="team">
+              <img src="${PATH_LOGOS}${logoCasa}">
+              <span>${jogo.HomeTeam}</span>
+            </div>
+            <span class="score">${jogo.HomeGoals}</span>
+          </div>
+
+          <div class="match-teams">
+            <div class="team">
+              <img src="${PATH_LOGOS}${logoFora}">
+              <span>${jogo.AwayTeam}</span>
+            </div>
+            <span class="score">${jogo.AwayGoals}</span>
+          </div>
+        `;
+      } else {
+        card.classList.add("upcoming");
+
+        let status = formatarData(jogo.Data, jogo.Time);
+        if(isLive(jogo.Data, jogo.Time)) status = "LIVE";
+        else if(isHoje(jogo.Data)) status = "Hoje, " + (jogo.Time || "");
+
+        card.innerHTML = `
+          <div class="match-status">${status}</div>
+
+          <div class="match-teams">
+            <div class="team">
+              <img src="${PATH_LOGOS}${logoCasa}">
+              <span>${jogo.HomeTeam}</span>
+            </div>
+          </div>
+
+          <div class="match-teams">
+            <div class="team">
+              <img src="${PATH_LOGOS}${logoFora}">
+              <span>${jogo.AwayTeam}</span>
+            </div>
+          </div>
+        `;
+      }
+
+      track.appendChild(card);
+    });
+
+    iniciarSlider();
+
+  } catch(err) {
+    console.error("Erro ao carregar jogos:", err);
+  }
+}
+
+// -------------------- SLIDER SEM DELAY --------------------
+
+function iniciarSlider(){
+  const track = document.getElementById("matchesTrack");
+  const btnLeft = document.querySelector(".matches-arrow.left");
+  const btnRight = document.querySelector(".matches-arrow.right");
+
+  if(!track) return;
+
+  let isDragging = false;
+  let startX = 0;
+  let scrollStart = 0;
+
+  btnRight.addEventListener("click", ()=>{
+    track.scrollBy({ left: 320, behavior: "smooth" });
+  });
+
+  btnLeft.addEventListener("click", ()=>{
+    track.scrollBy({ left: -320, behavior: "smooth" });
+  });
+
+  track.addEventListener("pointerdown", (e)=>{
+    isDragging = true;
+    startX = e.clientX;
+    scrollStart = track.scrollLeft;
+    track.classList.add("dragging");
+    track.style.scrollBehavior = "auto";
+    e.preventDefault();
+  });
+
+  window.addEventListener("pointermove", (e)=>{
+    if(!isDragging) return;
+    const dx = e.clientX - startX;
+    track.scrollLeft = scrollStart - dx;
+  });
+
+  window.addEventListener("pointerup", ()=>{
+    if(!isDragging) return;
+    isDragging = false;
+    track.classList.remove("dragging");
+    track.style.scrollBehavior = "smooth";
+  });
+
+  track.addEventListener("wheel", (e)=>{
+    if(Math.abs(e.deltaX) > Math.abs(e.deltaY)){
+      e.preventDefault();
+      track.scrollLeft += e.deltaX;
+    }
+  }, { passive:false });
+}
+
+// -------------------- START --------------------
+window.addEventListener("DOMContentLoaded", carregarJogos);
+</script>
+
+
+
+<style>
+.matches-track{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  cursor:grab;
+  user-select:none;
+}
+
+.matches-track.dragging{
+  cursor:grabbing;
+}
+
+.matches-track::-webkit-scrollbar{
+  display:none;
+}
+
+
+.matches-track{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  cursor:grab;
+  user-select:none;
+  touch-action:pan-y;
+}
+
+.matches-track.dragging{
+  cursor:grabbing;
+}
+
+</style>
+
+
+
+
+
+
+
+
+<section class="motogp-calendar-sync">
+  <div class="motogp-calendar-sync__inner">
+    <h2 class="motogp-calendar-sync__title">
+      DISCIPLINA
+    </h2>
+
+    <p class="motogp-calendar-sync__subtitle">
+
+
+
+       A tabela reune todas as penalizacoes e o registo disciplinar de todos os 
+       participantes da competicao. Nela contem cartoes, suspensoes e demais sancoes
+       aplicadas conforme o regulamento. </p>
+
+    <a href="#" class="hero-btn">
+       TABELA DISCIPLINAR
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="uefa-carousel">
+
+  <div class="matches-header">
+    <h2>Posição na tabela</h2>
+  </div>
+<div class="standings-track" id="standings-track"></div>
+
+
+
+
+<script>
+// ================= CONFIG =================
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTMKb7nNRenJu0293ElDZ7UYSe0bq-GVqU51hPjnheB1E7gD14KXvzwdGdn2VRlQ3vW_ev3nfxXL_4t/pub?gid=0&single=true&output=csv";
+
+
+// ================= LOAD SHEET =================
+async function loadSheet() {
+  const response = await fetch(SHEET_URL);
+  const text = await response.text();
+
+  const rows = text.trim().split("\n").map(r => r.split(","));
+  const headers = rows.shift();
+
+  return rows.map(row => {
+    const obj = {};
+    headers.forEach((h, i) => {
+      obj[h.trim()] = row[i]?.trim() ?? "";
+    });
+    return obj;
+  });
+}
+
+
+// ================= CALCULATE =================
+function calculateStandings(matches) {
+
+  const teams = {};
+
+  matches.forEach(match => {
+    const home = match.HomeTeam?.trim();
+    const away = match.AwayTeam?.trim();
+
+    [home, away].forEach(t => {
+      if (t && !teams[t]) {
+        teams[t] = {
+          name: t,
+          played: 0,
+          wins: 0,
+          draws: 0,
+          losses: 0,
+          gf: 0,
+          ga: 0,
+          points: 0
+        };
+      }
+    });
+  });
+
+  matches.forEach(match => {
+
+    const home = match.HomeTeam?.trim();
+    const away = match.AwayTeam?.trim();
+
+    if (!home || !away) return;
+    if (match.HomeGoals === "" || match.AwayGoals === "") return;
+
+    const hg = Number(match.HomeGoals);
+    const ag = Number(match.AwayGoals);
+    if (isNaN(hg) || isNaN(ag)) return;
+
+    teams[home].played++;
+    teams[away].played++;
+
+    teams[home].gf += hg;
+    teams[home].ga += ag;
+    teams[away].gf += ag;
+    teams[away].ga += hg;
+
+    if (hg > ag) {
+      teams[home].wins++;
+      teams[home].points += 3;
+      teams[away].losses++;
+    } else if (hg < ag) {
+      teams[away].wins++;
+      teams[away].points += 3;
+      teams[home].losses++;
+    } else {
+      teams[home].draws++;
+      teams[away].draws++;
+      teams[home].points++;
+      teams[away].points++;
+    }
+  });
+
+  const teamList = Object.values(teams);
+
+  teamList.sort((a, b) => {
+
+    if (b.points !== a.points) return b.points - a.points;
+
+    const diffA = a.gf - a.ga;
+    const diffB = b.gf - b.ga;
+    if (diffB !== diffA) return diffB - diffA;
+
+    if (b.gf !== a.gf) return b.gf - a.gf;
+
+    return a.name.localeCompare(b.name);
+  });
+
+  return teamList;
+}
+
+
+// ================= FORMAT TEAM NAME TO LOGO =================
+function formatTeamToLogo(name) {
+  return name
+    .toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/\s+/g,"")
+    .replace(/[^a-z0-9]/g,"");
+}
+
+
+// ================= RENDER =================
+function renderStandings(teams) {
+
+  const track = document.querySelector("#standings-track");
+  track.innerHTML = "";
+
+  teams.forEach((team, index) => {
+
+    const logoName = formatTeamToLogo(team.name);
+    const logoPath = `assets/images/team-logo/logo_${logoName}.svg`;
+
+    const card = document.createElement("div");
+    card.className = "standing-card";
+
+    card.innerHTML = `
+      <span class="position">${index + 1}.</span>
+
+      <img src="${logoPath}"
+           onerror="this.src='assets/images/team-logo/default.svg'"
+           alt="${team.name}">
+
+      <span class="team">${team.name}</span>
+      <span class="points">${team.points} Pts</span>
+    `;
+
+    track.appendChild(card);
+  });
+}
+
+
+// ================= INIT =================
+async function init() {
+  const matches = await loadSheet();
+  const standings = calculateStandings(matches);
+  renderStandings(standings);
+}
+
+init();
+</script>
+
+
+
+
+
+
+    <!-- ========== MAIORES MARCADORES start ========== -->
+    
+
+ <section class="uefa-carousel">
+  <div class="matches-header">
+    <h2>Melhores marcadores</h2>
+  </div>
+
+  <div class="carousel-track"></div>
+  <a href="#" class="all-players-link">VER ESTATISTICAS →</a>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", ()=>{
+
+  const track = document.querySelector('.carousel-track');
+  let isDown=false, startX, scrollLeft;
+
+  track.addEventListener('mousedown', e=>{
+    isDown=true; 
+    startX=e.pageX-track.offsetLeft; 
+    scrollLeft=track.scrollLeft;
+    document.body.style.userSelect="none";
+  });
+
+  document.addEventListener('mouseup', ()=>{
+    isDown=false; 
+    document.body.style.userSelect="auto";
+  });
+
+  track.addEventListener('mousemove', e=>{
+    if(!isDown) return;
+    e.preventDefault();
+    const x=e.pageX-track.offsetLeft;
+    track.scrollLeft = scrollLeft - (x-startX);
+  });
+
+});
+
+const URLS={
+  ficha_jogo:"https://docs.google.com/spreadsheets/d/e/2PACX-1vTMKb7nNRenJu0293ElDZ7UYSe0bq-GVqU51hPjnheB1E7gD14KXvzwdGdn2VRlQ3vW_ev3nfxXL_4t/pub?gid=0&single=true&output=csv",
+  jogadores:"https://docs.google.com/spreadsheets/d/e/2PACX-1vTMKb7nNRenJu0293ElDZ7UYSe0bq-GVqU51hPjnheB1E7gD14KXvzwdGdn2VRlQ3vW_ev3nfxXL_4t/pub?gid=1795344515&single=true&output=csv"
+};
+
+function parseCSV(text){
+  const lines=text.trim().split(/\r?\n/);
+  const headers=lines.shift().split(",").map(h=>h.trim());
+  return lines.map(l=>{
+    const vals=l.split(",");
+    return headers.reduce((o,h,i)=>({...o,[h]:vals[i]?vals[i].trim():""}),{});
+  });
+}
+
+function cleanName(s){
+  return (s||"")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .replace(/\s+/g," ")
+    .trim();
+}
+
+// guarda último estado renderizado
+let ultimoRender = "";
+
+async function updateTopScorers(){
+  try{
+
+    const [fText,jText]=await Promise.all([
+      fetch(URLS.ficha_jogo).then(r=>r.text()),
+      fetch(URLS.jogadores).then(r=>r.text())
+    ]);
+
+    const fichas=parseCSV(fText);
+    const jogadores=parseCSV(jText);
+    const track=document.querySelector('.carousel-track');
+
+    const hasGoals = fichas.some(f => 
+      (f.ScorersHome && f.ScorersHome.trim()!=="") || 
+      (f.ScorersAway && f.ScorersAway.trim()!=="")
+    );
+
+    let htmlFinal = "";
+
+    if(!hasGoals){
+      htmlFinal = Array.from({length:10}).map(()=>`
+        <div class="player-shield placeholder">
+          <div class="shield">
+            <div class="player-name">
+              <span>Em breve</span>
+              <strong>Estatísticas</strong>
+            </div>
+            <div class="player-photo-wrap">
+              <img src="assets/images/silhouette/silhouette_topscore-x.svg">
+            </div>
+          </div>
+        </div>
+      `).join("");
+    }else{
+
+      const stats={};
+
+      jogadores.forEach(j=>{
+        const name = cleanName(j.Player);
+        if(!name) return;
+        stats[name] = {
+          gols:0,
+          apelido:j.Apelido||"",
+          image:j.foto_topscore_x || `${name.replace(/\s+/g,'_')}.webp`
+        };
+      });
+
+      fichas.forEach(f=>{
+        function processScorers(str){
+          if(!str) return [];
+          return str.split(",").map(e=>{
+            const [n,q] = e.split(":");
+            return {name:cleanName(n), goals:Number(q)||1};
+          });
+        }
+
+        [...processScorers(f.ScorersHome), ...processScorers(f.ScorersAway)]
+        .forEach(s=>{
+          if(stats[s.name]) stats[s.name].gols += s.goals;
+        });
+      });
+
+      const top10 = Object.entries(stats)
+        .map(([n,d])=>({name:n, ...d}))
+        .sort((a,b)=>b.gols-a.gols || a.name.localeCompare(b.name))
+        .slice(0,10);
+
+      htmlFinal = top10.map(p=>`
+        <div class="player-shield">
+          <div class="shield">
+            <div class="player-name">
+              <span>${p.name}</span>
+              <strong>${p.apelido || ""}</strong>
+            </div>
+            <div class="player-photo-wrap">
+              <img src="assets/images/perfil_jogador/foto_topscore_x/${p.image}"
+                   onerror="this.onerror=null;this.src='assets/images/silhouette/silhouette_topscore-x.svg';">
+            </div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    // só atualiza se mudou mesmo
+    if(htmlFinal !== ultimoRender){
+      track.innerHTML = htmlFinal;
+      ultimoRender = htmlFinal;
+    }
+
+  }catch(e){
+    console.error("Erro carregando marcadores:", e);
+  }
+}
+
+updateTopScorers();
+setInterval(updateTopScorers,15000);
+</script>
+
+
+
+<!-- ========== MAIORES MARCADORES end ========== -->
+
+
+
+
+
+
+
+
+
+
+
+      
+  
+
+
+
+
+  </main>
+
+    <!-- FOOTER (injetado via JS start) -->
+    <div id="footer"></div>
+    <!-- FOOTER (injetado via JS end) -->
+
+
+  <!-- ========== SCRIPTS ========== -->
+  
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages/header-nav.js"></script>
+  <script src="assets/js/pages/jogadoresdedestaque.js"></script>
+
+  
+
+
+
+</body>
+</html>

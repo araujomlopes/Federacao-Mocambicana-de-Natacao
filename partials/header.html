@@ -1,0 +1,348 @@
+<header class="main-header">
+  <div class="container site-header">
+    <!-- LOGO -->
+    <a href="#" class="brand">
+      <img
+        src="partials/logos_website/rios_headerlogo.svg"
+        alt="Federação Moçambicana de Natação"
+      />
+    </a>
+
+    <!-- NAVEGAÇÃO -->
+    <nav aria-label="Navegação Principal">
+      <ul class="nav-list" id="nav">
+        <!-- FEDERAÇÃO -->
+        <li class="has-submenu">
+          <a href="#">Federação</a>
+
+          <ul class="submenu">
+            <li><a href="#">Sobre a FMN</a></li>
+
+            <li><a href="#">História</a></li>
+
+            <li><a href="#">Direção</a></li>
+
+            <li><a href="#">Contactos</a></li>
+          </ul>
+        </li>
+
+        <!-- MODALIDADES -->
+        <li class="has-submenu">
+          <a href="#">Modalidades</a>
+
+          <ul class="submenu">
+            <li><a href="#">Natação Pura</a></li>
+
+            <li><a href="#">Águas Abertas</a></li>
+
+            <li><a href="#">Natação Artística</a></li>
+
+            <li><a href="#">Polo Aquático</a></li>
+
+            <li><a href="#">Saltos para a Água</a></li>
+
+            <li><a href="#">Saltos de Grandes Alturas</a></li>
+          </ul>
+        </li>
+
+        <!-- COMPETIÇÕES -->
+        <li class="has-submenu">
+          <a href="#">Competições</a>
+
+          <ul class="submenu">
+            <li><a href="#">Calendário</a></li>
+
+            <li><a href="#">Eventos</a></li>
+
+            <li><a href="#">Campeonatos Nacionais</a></li>
+
+            <li><a href="#">Competições Regionais</a></li>
+          </ul>
+        </li>
+
+        <!-- RESULTADOS -->
+        <li class="has-submenu">
+          <a href="#">Resultados</a>
+
+          <ul class="submenu">
+            <li><a href="#">Últimos Resultados</a></li>
+
+            <li><a href="#">Resultados por Competição</a></li>
+
+            <li><a href="#">Rankings Nacionais</a></li>
+
+            <li><a href="#">Recordes Nacionais</a></li>
+          </ul>
+        </li>
+
+        <!-- ATLETAS -->
+        <li class="has-submenu">
+          <a href="#">Atletas</a>
+
+          <ul class="submenu">
+            <li><a href="#">Pesquisar Atletas</a></li>
+
+            <li><a href="#">Seleção Nacional</a></li>
+
+            <li><a href="#">Ranking Nacional</a></li>
+
+            <li><a href="#">Atletas em Destaque</a></li>
+          </ul>
+        </li>
+
+        <!-- CLUBES -->
+        <li class="has-submenu">
+          <a href="#">Clubes</a>
+
+          <ul class="submenu">
+            <li><a href="#">Clubes Filiados</a></li>
+
+            <li><a href="#">Como Filiar-se</a></li>
+
+            <li><a href="#">Pesquisar Clubes</a></li>
+          </ul>
+        </li>
+
+        <!-- NOTÍCIAS -->
+        <li class="has-submenu">
+          <a href="#">Notícias</a>
+
+          <ul class="submenu">
+            <li><a href="#">Últimas Notícias</a></li>
+
+            <li><a href="#">Comunicados</a></li>
+
+            <li><a href="#">Galeria de Fotos</a></li>
+
+            <li><a href="#">Vídeos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- BOTÃO MOBILE -->
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir Menu">
+      <span class="nav-toggle-icon"></span>
+    </button>
+  </div>
+</header>
+
+<style>
+  /* =========================================================
+HEADER NAVIGATION
+========================================================= */
+
+  nav {
+    margin-left: auto;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list > li {
+    position: relative;
+  }
+
+  .nav-list > li > a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    height: 72px;
+
+    text-decoration: none;
+
+    color: var(--text);
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+  }
+
+  .nav-list > li > a:hover {
+    color: #0078d7;
+  }
+
+  .nav-list > li > a::after {
+    content: '';
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 3px;
+
+    background: #0078d7;
+
+    transition: 0.25s;
+  }
+
+  .nav-list > li:hover > a::after {
+    width: 100%;
+  }
+
+  /* ===================================
+SUBMENU
+=================================== */
+
+  .submenu {
+    position: absolute;
+
+    left: 0;
+    top: 100%;
+
+    min-width: 260px;
+
+    background: #fff;
+
+    border-radius: 14px;
+
+    padding: 12px 0;
+
+    list-style: none;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(12px);
+
+    transition: 0.28s;
+
+    z-index: 999;
+  }
+
+  .has-submenu:hover > .submenu {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+
+  .submenu li {
+    width: 100%;
+  }
+
+  .submenu a {
+    display: block;
+
+    padding: 12px 22px;
+
+    color: #222;
+
+    text-decoration: none;
+
+    transition: 0.18s;
+  }
+
+  .submenu a:hover {
+    background: #f5f7fb;
+
+    color: #0078d7;
+
+    padding-left: 28px;
+  }
+
+  /* ===================================
+MOBILE
+=================================== */
+
+  .nav-toggle {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .nav-toggle {
+      display: flex;
+    }
+
+    nav {
+      position: fixed;
+
+      top: 72px;
+
+      right: -100%;
+
+      width: 330px;
+
+      height: calc(100vh - 72px);
+
+      background: #fff;
+
+      transition: 0.35s;
+
+      overflow: auto;
+
+      box-shadow: -15px 0 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-list {
+      display: block;
+
+      padding: 15px 0;
+    }
+
+    nav.open {
+      right: 0;
+    }
+
+    .nav-list > li > a {
+      height: auto;
+
+      padding: 16px 25px;
+
+      justify-content: space-between;
+
+      border-bottom: 1px solid #ececec;
+    }
+
+    .submenu {
+      position: static;
+
+      opacity: 1;
+
+      visibility: visible;
+
+      transform: none;
+
+      display: none;
+
+      box-shadow: none;
+
+      border-radius: 0;
+
+      padding: 0;
+
+      min-width: 100%;
+
+      background: #fafafa;
+    }
+
+    .has-submenu.open > .submenu {
+      display: block;
+    }
+
+    .submenu a {
+      padding: 14px 45px;
+
+      font-size: 0.93rem;
+    }
+  }
+</style>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Rios — Lightweight and responsive structure — Pure HTML and CSS, best design office practices." />
+  <title>Rios — Lightweight and Responsive Website</title>
+
+  <!-- Google Fonts (UEFA-style) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+  rel="stylesheet"
+>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/pages/tabeladepontuacao.css">
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <div id="header"></div>
+   <!-- ========== HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+
+    <!-- SCORE TABLE -->
+    <div class="tabelapontos-container">
+      <h2 class="teams-title">Table</h2>
+
+      <!-- TRACK CONDITIONS -->
+<div class="motogp-track-bar">
+
+  <!-- Weather -->
+  <div class="track-item weather">
+    <span class="weather-icon">
+      <!-- Example: Sun -->
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="5" stroke="#111" stroke-width="1.6"/>
+        <line x1="12" y1="1" x2="12" y2="4" stroke="#111" stroke-width="1.6"/>
+        <line x1="12" y1="20" x2="12" y2="23" stroke="#111" stroke-width="1.6"/>
+        <line x1="1" y1="12" x2="4" y2="12" stroke="#111" stroke-width="1.6"/>
+        <line x1="20" y1="12" x2="23" y2="12" stroke="#111" stroke-width="1.6"/>
+        <line x1="4.2" y1="4.2" x2="6.5" y2="6.5" stroke="#111" stroke-width="1.6"/>
+        <line x1="17.5" y1="17.5" x2="19.8" y2="19.8" stroke="#111" stroke-width="1.6"/>
+        <line x1="17.5" y1="6.5" x2="19.8" y2="4.2" stroke="#111" stroke-width="1.6"/>
+        <line x1="4.2" y1="19.8" x2="6.5" y2="17.5" stroke="#111" stroke-width="1.6"/>
+      </svg>
+    </span>
+    <div class="weather-info">
+      <span class="label">Sun</span>
+      <span class="value">17°</span>
+    </div>
+  </div>
+
+  <span class="track-sep"></span>
+
+  <!-- Court -->
+  <div class="track-item">
+    <span class="label">Court</span>
+    <span class="value">Dry</span>
+  </div>
+
+  <span class="track-sep"></span>
+
+  <!-- Air Temperature -->
+  <div class="track-item">
+    <span class="label">Temperature</span>
+    <span class="value">17°</span>
+  </div>
+
+  <span class="track-sep"></span>
+
+  <!-- Humidity -->
+  <div class="track-item">
+    <span class="label">Humidity</span>
+    <span class="value">60%</span>
+  </div>
+
+</div>
+
+      <section class="uefa-table">
+
+        <!-- HEADER -->
+        <div class="header-box">
+          <div class="tabs">
+            <button class="tab active" data-view="simplified">Simplified</button>
+            <button class="tab" data-view="full">Full</button>
+          </div>
+        </div>
+
+        <!-- SIMPLIFIED TABLE -->
+        <table id="simplified" class="active">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Team</th>
+              <th>P</th>
+              <th>+/-</th>
+              <th>Pts</th>
+              <th class="text-right">Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- filled via JS -->
+          </tbody>
+        </table>
+
+        <!-- FULL TABLE -->
+        <div class="scroll-wrapper">
+          <table id="full">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Logo</th>
+                <th>Team</th>
+                <th>Games</th>
+                <th>Wins</th>
+                <th>Draws</th>
+                <th>Losses</th>
+                <th>Goals For</th>
+                <th>Goals Against</th>
+                <th>Goal Diff</th>
+                <th>Points</th>
+                <th class="text-right">Form</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- filled via JS -->
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </div>
+
+  </main>
+
+  <!-- FOOTER (injected via JS start) -->
+  <div id="footer"></div>
+  <!-- FOOTER (injected via JS end) -->
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/pages/tabeladepontuacao.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages/header-nav.js"></script>
+
+</body>
+</html>

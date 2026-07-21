@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Rios — Lightweight and responsive structure — Pure HTML and CSS, best practices for design studios." />
+  <title>Rios — Lightweight and Responsive Website</title>
+
+  <link rel="stylesheet" href="assets/css/firefox-fixes.css">
+
+  <!-- Google Fonts – preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Global/base CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/pages/jogadoresdoresinscritos.css">
+  <link rel="stylesheet" href="assets/css/pages/inscricao.css">
+
+  <!-- (Optional) JS in head only if necessary; main scripts at end of body -->
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  <div id="header"></div>
+  <!-- ========== HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+    <section class="containerinscricao">
+      <div class="join-card">
+        <h1 class="titulo-azul">Registration Form</h1>
+        <p class="subtitle">Commitment and responsibility agreement.</p>
+        <div class="required">*Required field</div>
+
+        <!-- FORM FIELDS -->
+        <div class="field floating">
+          <input id="nome" class="input" required placeholder=" " />
+          <label>First Name*</label>
+        </div>
+
+        <div class="field floating">
+          <input id="apelido" class="input" required placeholder=" " />
+          <label>Last Name*</label>
+        </div>
+
+        <div class="field floating">
+          <input id="endereco" class="input" required placeholder=" " />
+          <label>Address*</label>
+        </div>
+
+        <div class="field floating">
+          <input id="email" class="input" required placeholder=" " />
+          <label>Email*</label>
+        </div>
+
+        <div class="field floating">
+          <input id="bi" class="input" required placeholder=" " />
+          <label>ID Code*</label>
+        </div>
+
+        <div class="field floating">
+          <input id="telefone" class="input" required placeholder=" " />
+          <label>Phone*</label>
+        </div>
+
+        <div class="field floating">
+          <input id="altura" class="input" required placeholder=" " />
+          <label>Height*</label>
+        </div>
+
+        <div class="field floating">
+          <select id="pe" class="input" required>
+            <option value="" disabled selected></option>
+            <option>Right</option>
+            <option>Left</option>
+          </select>
+          <label>Preferred Foot*</label>
+        </div>
+
+        <div class="field floating">
+          <select id="posicao" class="input" required>
+            <option value="" disabled selected></option>
+            <option>Goalkeeper</option>
+            <option>Defender</option>
+            <option>Winger</option>
+            <option>Pivot</option>
+          </select>
+          <label>Position*</label>
+        </div>
+
+        <div class="field floating">
+          <select id="clube" class="input" required>
+            <option value="" disabled selected></option>
+            <option>Equipa 1</option>
+            <option>Equipa 2</option>
+            <option>Equipa 3</option>
+            <option>Equipa 4</option>
+            <option>Equipa 5</option>
+            <option>Equipa 6</option>
+          </select>
+          <label>Club*</label>
+        </div>
+
+        <div class="field floating">
+          <input id="numeroCamisa" class="input" required placeholder=" " />
+          <label>Jersey Number*</label>
+        </div>
+
+        <!-- CHECKBOXES -->
+        <label class="checkbox"><input type="checkbox" required><span>I declare that I have read and accept the <a href="regulamento.html">Tournament Rules</a>.</span></label>
+        <label class="checkbox"><input type="checkbox" required><span>I declare that I have read and accept the <a href="termos_condicoes.html">Terms & Conditions</a> as well as the <a href="politicas_privacidade.html">Privacy Policy</a>.</span></label>
+        <label class="checkbox"><input type="checkbox" required><span>I authorize the use of my image for tournament promotion purposes.</span></label>
+
+        <button id="btnInscrever" class="btn">Register</button>
+        <div id="messageDiv"></div>
+
+        <div class="divider"><span>Having trouble?</span></div>
+        <div class="footer">Contact the <a href="#">Committee</a></div>
+        <div class="note">*Minors under 18 must contact the Committee to validate the registration</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- EMAIL VERIFICATION MODAL start -->
+  <div id="verifyModal" class="verify-modal">
+    <div class="verify-card">
+      <h2>Verify Email</h2>
+      <p>
+        Please click the verification link that has been sent to
+        <strong id="userEmail"></strong> to verify your email address
+      </p>
+
+      <button id="resendEmail">Resend email</button>
+      <button id="checkVerification">Check verification</button>
+    </div>
+  </div>
+  <!-- EMAIL VERIFICATION MODAL end -->
+
+  <!-- FOOTER (injected via JS start) -->
+  <div id="footer"></div>
+  <!-- FOOTER (injected via JS end) -->
+
+  <!-- ========== SCRIPTS ========== -->
+  <!-- Global/base JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages/header-nav.js"></script>
+
+  <!-- Page-specific JS -->
+  <script src="assets/js/pages/jogadoresdoresinscritos.js"></script>
+  <script src="assets/js/pages/inscricao.js"></script>
+
+</body>
+</html>

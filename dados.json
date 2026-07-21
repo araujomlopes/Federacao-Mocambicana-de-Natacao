@@ -1,0 +1,2187 @@
+{
+  "ficha_jogo": [
+    {
+      "Jornada": "1",
+      "Data": "12/4/26",
+      "HomeTeam": "Ubuntu UD",
+      "HomeGoals": "8",
+      "AwayGoals": "3",
+      "AwayTeam": "Unguvu",
+      "ScorersHome": [
+        "Boby:1",
+        "Casemiro:4",
+        "Guebas:3"
+      ],
+      "ScorersAway": [
+        "Elton:1",
+        "Bacar:1",
+        "Mandava:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Boby",
+        "Paulo",
+        "Casemiro",
+        "Guebas",
+        "Guga",
+        "Rui",
+        "Chiquinho"
+      ],
+      "PlayersAway": [
+        "Bacar",
+        "Elton",
+        "Puco",
+        "Takuara",
+        "Mandava"
+      ],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "1",
+      "Data": "12/4/26",
+      "HomeTeam": "Fusion AD",
+      "HomeGoals": "3",
+      "AwayGoals": "2",
+      "AwayTeam": "Los Hermanos",
+      "ScorersHome": [
+        "Hilário:2",
+        "Ivan:1"
+      ],
+      "ScorersAway": [
+        "Lupula:1",
+        "Edinho:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [
+        "Lupula"
+      ],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Araújo",
+        "Zé",
+        "Félix",
+        "Dito",
+        "Hilário",
+        "Omar",
+        "Ivan"
+      ],
+      "PlayersAway": [
+        "Gabriel",
+        "Pitecas",
+        "Betinho",
+        "Mantorras",
+        "Tony",
+        "Lupula",
+        "Maporiza",
+        "Hélder",
+        "Edinho"
+      ],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "1",
+      "Data": "12/4/26",
+      "HomeTeam": "Los Compadres",
+      "HomeGoals": "3",
+      "AwayGoals": "0",
+      "AwayTeam": "Bairro Central FC",
+      "ScorersHome": [],
+      "ScorersAway": [],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Edú",
+        "Quintas",
+        "Napica",
+        "Montana",
+        "Dembelé"
+      ],
+      "PlayersAway": [],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "2",
+      "Data": "19/4/26",
+      "HomeTeam": "Ubuntu UD",
+      "HomeGoals": "7",
+      "AwayGoals": "8",
+      "AwayTeam": "Bairro Central FC",
+      "ScorersHome": [
+        "Chiquinho:2",
+        "Kamp:1",
+        "Guga 1",
+        "Casemiro:2",
+        "Boby: 1"
+      ],
+      "ScorersAway": [
+        "Munir:1",
+        "Halvarito:2",
+        "Fred:2",
+        "Edy:2",
+        "Balate:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Sive",
+        "Guebas",
+        "Paulo",
+        "Chiquinho",
+        "Kamp",
+        "Rui",
+        "Guga",
+        "Casemiro",
+        "Boby"
+      ],
+      "PlayersAway": [
+        "Munir",
+        "Halvarito",
+        "Fred",
+        "Edy",
+        "Ronalducho",
+        "Balate"
+      ],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "2",
+      "Data": "19/4/26",
+      "HomeTeam": "Los Hermanos",
+      "HomeGoals": "3",
+      "AwayGoals": "0",
+      "AwayTeam": "Los Compadres",
+      "ScorersHome": [],
+      "ScorersAway": [],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Lupula",
+        "Betinho",
+        "Hélder",
+        "Edinho",
+        "Tony",
+        "Maporiza"
+      ],
+      "PlayersAway": [],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "2",
+      "Data": "19/4/26",
+      "HomeTeam": "Unguvu",
+      "HomeGoals": "6",
+      "AwayGoals": "6",
+      "AwayTeam": "Fusion AD",
+      "ScorersHome": [
+        "Elton:3",
+        "Puco:2",
+        "Mandava:1"
+      ],
+      "ScorersAway": [
+        "Zé:1",
+        "Ivan:2",
+        "Félix:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Elton",
+        "Bacar",
+        "Taquara",
+        "Mandava",
+        "Idalécio",
+        "Daimone",
+        "Puco"
+      ],
+      "PlayersAway": [
+        "Araújo",
+        "Zé",
+        "Félix",
+        "Dito",
+        "Hilário",
+        "Omar",
+        "Ivan"
+      ],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "3",
+      "Data": "26/4/26",
+      "HomeTeam": "Unguvu",
+      "HomeGoals": "7",
+      "AwayGoals": "3",
+      "AwayTeam": "Los Hermanos",
+      "ScorersHome": [
+        "Elton:3",
+        "Takuara: 1",
+        "Daimone: 1",
+        "Puco: 2"
+      ],
+      "ScorersAway": [
+        "Maporiza: 1",
+        "Lupula: 1",
+        "Edinho: 1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Elton",
+        "Bacar",
+        "Taquara",
+        "Mandava",
+        "Idalécio",
+        "Daimone",
+        "Puco"
+      ],
+      "PlayersAway": [
+        "Maporisa",
+        "Lupula",
+        "Edinho",
+        "Hélder",
+        "Betinho",
+        "Gabriel",
+        "Mantorras"
+      ],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "3",
+      "Data": "26/4/26",
+      "HomeTeam": "Fusion AD",
+      "HomeGoals": "3",
+      "AwayGoals": "5",
+      "AwayTeam": "Bairro Central FC",
+      "ScorersHome": [
+        "Ivan:1",
+        "Dickson:2"
+      ],
+      "ScorersAway": [
+        "Fred:1",
+        "Edy:2",
+        "Halvarito:2",
+        "Munir:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Araújo",
+        "Zé",
+        "Félix",
+        "Dito",
+        "Hilário",
+        "Omar",
+        "Ivan"
+      ],
+      "PlayersAway": [
+        "Munir",
+        "Halvarito",
+        "Fred",
+        "Edy",
+        "Ronalducho",
+        "Balate"
+      ],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "3",
+      "Data": "26/4/26",
+      "HomeTeam": "Ubuntu UD",
+      "HomeGoals": "3",
+      "AwayGoals": "11",
+      "AwayTeam": "Los Compadres",
+      "ScorersHome": [
+        "Boby:1",
+        "Casemiro:2"
+      ],
+      "ScorersAway": [
+        "Montana:3",
+        "Quintas:1",
+        "Dembelé:6",
+        "Edú:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Boby",
+        "Kamp",
+        "Paulo",
+        "Casemiro"
+      ],
+      "PlayersAway": [
+        "Edú",
+        "Quintas",
+        "Napica",
+        "Montana",
+        "Dembelé"
+      ],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "4",
+      "Data": "3/5/26",
+      "HomeTeam": "Fusion AD",
+      "HomeGoals": "8",
+      "AwayGoals": "5",
+      "AwayTeam": "Los Compadres",
+      "ScorersHome": [
+        "Ivan:3",
+        "Omar:4",
+        "Dickson:1"
+      ],
+      "ScorersAway": [
+        "Dembelé:2",
+        "Rai:1",
+        "Montana:2"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [
+        "Rai",
+        "Quintas"
+      ],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Araújo",
+        "Zé",
+        "Dito",
+        "Hilário",
+        "Omar",
+        "Ivan"
+      ],
+      "PlayersAway": [
+        "Quintas",
+        "Napica",
+        "Montana",
+        "Dembelé"
+      ],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "4",
+      "Data": "3/5/26",
+      "HomeTeam": "Unguvu",
+      "HomeGoals": "6",
+      "AwayGoals": "2",
+      "AwayTeam": "Bairro Central FC",
+      "ScorersHome": [
+        "Puco:1",
+        "Elton:4",
+        "Bacar:1"
+      ],
+      "ScorersAway": [
+        "Halvarito:1",
+        "Etiene",
+        "1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Elton",
+        "Bacar",
+        "Taquara",
+        "Mandava",
+        "Idalécio",
+        "Daimone",
+        "Puco"
+      ],
+      "PlayersAway": [
+        "Munir",
+        "Halvarito",
+        "Fred",
+        "Ronalducho",
+        "Balate",
+        "Etiene"
+      ],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "4",
+      "Data": "3/5/26",
+      "HomeTeam": "Ubuntu UD",
+      "HomeGoals": "5",
+      "AwayGoals": "5",
+      "AwayTeam": "Los Hermanos",
+      "ScorersHome": [
+        "Rui:1",
+        "Alírio:1",
+        "Casemiro:1",
+        "Amarelinho:2"
+      ],
+      "ScorersAway": [
+        "Tony:1",
+        "Maporiza:2",
+        "Gabriel:2"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [
+        "Alírio"
+      ],
+      "YellowsAway": [
+        "Maporisa"
+      ],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Boby",
+        "Paulo",
+        "Casemiro",
+        "Alírio",
+        "Rui",
+        "Amarelinho"
+      ],
+      "PlayersAway": [
+        "Maporisa",
+        "Hélder",
+        "Betinho",
+        "Gabriel",
+        "Mantorras"
+      ],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "5",
+      "Data": "10/5/26",
+      "HomeTeam": "Los Hermanos",
+      "HomeGoals": "10",
+      "AwayGoals": "4",
+      "AwayTeam": "Bairro Central FC",
+      "ScorersHome": [
+        "Tony:2",
+        "Betinho:2",
+        "Maporiza:1",
+        "Hélder:3",
+        "Lupula:2"
+      ],
+      "ScorersAway": [
+        "Frerd:1",
+        "Munir:2",
+        "Etiene:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Maporisa",
+        "Lupula",
+        "Edinho",
+        "Hélder",
+        "Betinho",
+        "Mantorras"
+      ],
+      "PlayersAway": [
+        "Munir",
+        "Fred",
+        "Ronalducho",
+        "Balate",
+        "Etiene"
+      ],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "5",
+      "Data": "10/5/26",
+      "HomeTeam": "Ubuntu UD",
+      "HomeGoals": "3",
+      "AwayGoals": "3",
+      "AwayTeam": "Fusion AD",
+      "ScorersHome": [
+        "Rui:1",
+        "Amarelinho:2"
+      ],
+      "ScorersAway": [
+        "Hilário:1",
+        "Ivan:1",
+        "Dito:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [
+        "Ivan"
+      ],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Boby",
+        "Paulo",
+        "Casemiro",
+        "Alírio",
+        "Rui",
+        "Amarelinho"
+      ],
+      "PlayersAway": [
+        "Araújo",
+        "Zé",
+        "Dito",
+        "Hilário",
+        "Ivan"
+      ],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "5",
+      "Data": "10/5/26",
+      "HomeTeam": "Unguvu",
+      "HomeGoals": "5",
+      "AwayGoals": "2",
+      "AwayTeam": "Los Compadres",
+      "ScorersHome": [
+        "Mandava:2",
+        "Takuara:1",
+        "Elton:2"
+      ],
+      "ScorersAway": [
+        "Quintas:1",
+        "Maximo:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [
+        "Quintas"
+      ],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Elton",
+        "Bacar",
+        "Taquara",
+        "Mandava",
+        "Daimone",
+        "Puco"
+      ],
+      "PlayersAway": [
+        "Quintas",
+        "Napica",
+        "Montana",
+        "Dembelé",
+        "Máximo",
+        "Ray"
+      ],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "6",
+      "Data": "24/5/26",
+      "HomeTeam": "Los Compadres",
+      "HomeGoals": "9",
+      "AwayGoals": "5",
+      "AwayTeam": "Bairro Central FC",
+      "ScorersHome": [
+        "Maximo:5",
+        "Kian:1",
+        "Wender:1",
+        "Dembele:1",
+        "Rai:1"
+      ],
+      "ScorersAway": [
+        "Edy:3",
+        "Dany:1",
+        "Munir:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Napica",
+        "Montana",
+        "Dembelé",
+        "Maximo",
+        "Edú",
+        "Ray"
+      ],
+      "PlayersAway": [
+        "Munir",
+        "Fred",
+        "Ronalducho",
+        "Balate",
+        "Etiene",
+        "Magaia",
+        "Chon"
+      ],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "6",
+      "Data": "24/5/26",
+      "HomeTeam": "Los Hermanos",
+      "HomeGoals": "3",
+      "AwayGoals": "3",
+      "AwayTeam": "Fusion AD",
+      "ScorersHome": [
+        "Betinho:2",
+        "Gabriel:1"
+      ],
+      "ScorersAway": [
+        "Hilário:3"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [
+        "Dickson",
+        "Araújo"
+      ],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Maporisa",
+        "Lupula",
+        "Edinho",
+        "Hélder",
+        "Betinho",
+        "Mantorras"
+      ],
+      "PlayersAway": [
+        "Araújo",
+        "Zé",
+        "Dito",
+        "Hilário",
+        "Omar",
+        "Ivan",
+        "Tairise"
+      ],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "6",
+      "Data": "24/5/26",
+      "HomeTeam": "Unguvu",
+      "HomeGoals": "5",
+      "AwayGoals": "3",
+      "AwayTeam": "Ubuntu UD",
+      "ScorersHome": [
+        "Puco:2",
+        "Takuara:1",
+        "Elton:2"
+      ],
+      "ScorersAway": [
+        "Boby:1",
+        "Casemiro:1",
+        "Rodney:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Elton",
+        "Bacar",
+        "Taquara",
+        "Mandava",
+        "Daimone",
+        "Puco"
+      ],
+      "PlayersAway": [
+        "Boby",
+        "Paulo",
+        "Casemiro",
+        "Alírio",
+        "Amarelinho",
+        "Kiko"
+      ],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "7",
+      "Data": "31/5/26",
+      "HomeTeam": "Bairro Central FC",
+      "HomeGoals": "5",
+      "AwayGoals": "6",
+      "AwayTeam": "Ubuntu UD",
+      "ScorersHome": [
+        "Edy:1",
+        "Halvarito:3",
+        "Munir:1"
+      ],
+      "ScorersAway": [
+        "Alírio:1",
+        "Rui:2",
+        "Amarelinho:2",
+        "Boby:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Munir",
+        "Fred",
+        "Ronalducho",
+        "Balate",
+        "Etiene",
+        "Magaia",
+        "Chon"
+      ],
+      "PlayersAway": [
+        "Boby",
+        "Paulo",
+        "Casemiro",
+        "Alírio",
+        "Amarelinho",
+        "Kiko"
+      ],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "7",
+      "Data": "31/5/26",
+      "HomeTeam": "Los Compadres",
+      "HomeGoals": "0",
+      "AwayGoals": "10",
+      "AwayTeam": "Los Hermanos",
+      "ScorersHome": [],
+      "ScorersAway": [
+        "Tony:2",
+        "Helder:4",
+        "Edinho:2",
+        "Maporiza:2"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [
+        "Maximo"
+      ],
+      "YellowsAway": [],
+      "RedsHome": [
+        "Montana",
+        "Edú"
+      ],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Napica",
+        "Montana",
+        "Dembelé",
+        "Maximo",
+        "Edú",
+        "Ray"
+      ],
+      "PlayersAway": [
+        "Maporisa",
+        "Lupula",
+        "Edinho",
+        "Hélder",
+        "Betinho",
+        "Mantorras"
+      ],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "7",
+      "Data": "31/5/26",
+      "HomeTeam": "Fusion AD",
+      "HomeGoals": "5",
+      "AwayGoals": "5",
+      "AwayTeam": "Unguvu",
+      "ScorersHome": [
+        "Omar:1",
+        "Hilário:1",
+        "Takuara:3"
+      ],
+      "ScorersAway": [
+        "Puku:1",
+        "Elton:3"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [
+        "Ivan"
+      ],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Araújo",
+        "Zé",
+        "Dito",
+        "Hilário",
+        "Omar",
+        "Ivan",
+        "Tairise"
+      ],
+      "PlayersAway": [
+        "Elton",
+        "Bacar",
+        "Taquara",
+        "Mandava",
+        "Daimone",
+        "Puco"
+      ],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "8",
+      "Data": "7/6/26",
+      "HomeTeam": "Los Compadres",
+      "HomeGoals": "5",
+      "AwayGoals": "13",
+      "AwayTeam": "Ubuntu UD",
+      "ScorersHome": [
+        "Asheley:2",
+        "Dembele:3",
+        "Wender:1"
+      ],
+      "ScorersAway": [
+        "Kamp:1",
+        "Rodney:3",
+        "Casemiro:5",
+        "Alírio:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Napica",
+        "Montana",
+        "Dembelé",
+        "Maximo",
+        "Edú",
+        "Ray"
+      ],
+      "PlayersAway": [
+        "Boby",
+        "Paulo",
+        "Casemiro",
+        "Alírio",
+        "Amarelinho",
+        "Kiko"
+      ],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "8",
+      "Data": "7/6/26",
+      "HomeTeam": "Bairro Central FC",
+      "HomeGoals": "5",
+      "AwayGoals": "10",
+      "AwayTeam": "Fusion AD",
+      "ScorersHome": [
+        "Edy:2",
+        "Etiene:1",
+        "Halvarito:1",
+        "Munir:1"
+      ],
+      "ScorersAway": [
+        "Ivan:2",
+        "Araújo:3",
+        "Hilário:1",
+        "Omar:1",
+        "Tairise:3"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [
+        "Dito"
+      ],
+      "RedsHome": [],
+      "RedsAway": [
+        "Araújo"
+      ],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Munir",
+        "Fred",
+        "Ronalducho",
+        "Balate",
+        "Etiene",
+        "Magaia",
+        "Chon"
+      ],
+      "PlayersAway": [
+        "Araújo",
+        "Zé",
+        "Dito",
+        "Hilário",
+        "Omar",
+        "Ivan",
+        "Tairise"
+      ],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "8",
+      "Data": "7/6/26",
+      "HomeTeam": "Los Hermanos",
+      "HomeGoals": "6",
+      "AwayGoals": "5",
+      "AwayTeam": "Unguvu",
+      "ScorersHome": [
+        "Edunho:1",
+        "Helder:3",
+        "Tony:1",
+        "Leonel:1"
+      ],
+      "ScorersAway": [
+        "Elton:3",
+        "Takuara:1",
+        "Puko:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [
+        "Maporiza"
+      ],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Maporisa",
+        "Lupula",
+        "Edinho",
+        "Hélder",
+        "Betinho",
+        "Mantorras"
+      ],
+      "PlayersAway": [
+        "Elton",
+        "Bacar",
+        "Taquara",
+        "Mandava",
+        "Daimone",
+        "Puco"
+      ],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "9",
+      "Data": "14/6/26",
+      "HomeTeam": "Los Compadres",
+      "HomeGoals": "5",
+      "AwayGoals": "16",
+      "AwayTeam": "Fusion AD",
+      "ScorersHome": [
+        "Kian:2",
+        "Asheley:1",
+        "Rai:2"
+      ],
+      "ScorersAway": [
+        "Dickson: 2",
+        "Hiário: 7",
+        "Ivan: 7"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [
+        "Dickson"
+      ],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Napica",
+        "Montana",
+        "Dembelé",
+        "Maximo",
+        "Edú",
+        "Ray"
+      ],
+      "PlayersAway": [
+        "Araújo",
+        "Zé",
+        "Dito",
+        "Hilário",
+        "Omar",
+        "Ivan",
+        "Tairise"
+      ],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "9",
+      "Data": "14/6/26",
+      "HomeTeam": "Bairro Central FC",
+      "HomeGoals": "3",
+      "AwayGoals": "12",
+      "AwayTeam": "Unguvu",
+      "ScorersHome": [
+        "Edy:1",
+        "Fred:1"
+      ],
+      "ScorersAway": [
+        "Takuara:3",
+        "Bacar:3",
+        "Elton:5",
+        "Daimone:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Munir",
+        "Fred",
+        "Ronalducho",
+        "Balate",
+        "Etiene",
+        "Magaia",
+        "Chon"
+      ],
+      "PlayersAway": [
+        "Elton",
+        "Bacar",
+        "Taquara",
+        "Mandava",
+        "Daimone",
+        "Puco"
+      ],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "9",
+      "Data": "14/6/26",
+      "HomeTeam": "Los Hermanos",
+      "HomeGoals": "4",
+      "AwayGoals": "4",
+      "AwayTeam": "Ubuntu UD",
+      "ScorersHome": [
+        "Edinho:1",
+        "Betinho:1",
+        "Tony:1",
+        "Lupula:1"
+      ],
+      "ScorersAway": [
+        "Alírio:1",
+        "Rodney:1",
+        "Amarelinho:1",
+        "Casemiro:1"
+      ],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [
+        "Lupula",
+        "Edinho",
+        "Hélder",
+        "Betinho",
+        "Mantorras"
+      ],
+      "PlayersAway": [
+        "Boby",
+        "Paulo",
+        "Casemiro",
+        "Alírio",
+        "Amarelinho",
+        "Kiko"
+      ],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "10",
+      "Data": "21/6/26",
+      "HomeTeam": "Los Hermanos",
+      "HomeGoals": "",
+      "AwayGoals": "",
+      "AwayTeam": "Bairro Central FC",
+      "ScorersHome": [],
+      "ScorersAway": [],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [],
+      "PlayersAway": [],
+      "Time": "8:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "10",
+      "Data": "21/6/26",
+      "HomeTeam": "Fusion AD",
+      "HomeGoals": "",
+      "AwayGoals": "",
+      "AwayTeam": "Ubuntu UD",
+      "ScorersHome": [],
+      "ScorersAway": [],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [],
+      "PlayersAway": [],
+      "Time": "9:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    },
+    {
+      "Jornada": "10",
+      "Data": "21/6/26",
+      "HomeTeam": "Los Compadres",
+      "HomeGoals": "",
+      "AwayGoals": "",
+      "AwayTeam": "Unguvu",
+      "ScorersHome": [],
+      "ScorersAway": [],
+      "AssistsHome": [],
+      "AssistsAway": [],
+      "YellowsHome": [],
+      "YellowsAway": [],
+      "RedsHome": [],
+      "RedsAway": [],
+      "HomeGK": "",
+      "AwayGK": "",
+      "PlayersHome": [],
+      "PlayersAway": [],
+      "Time": "10:30",
+      "Local do jogo": "Inst. Industrial 1 de Maio",
+      "Yellow red Home": "",
+      "Yellow red Away": ""
+    }
+  ],
+  "equipas": [
+    {
+      "Team": "Ubuntu UD",
+      "City": "Tete",
+      "Coach": "Joao Dias",
+      "Founded": "2026",
+      "Logopng": "logo_equipa1.svg",
+      "background": "equipa1.svg"
+    },
+    {
+      "Team": "Unguvu",
+      "City": "Tete",
+      "Coach": "Joao Dias",
+      "Founded": "2026",
+      "Logopng": "logo_equipa2.svg",
+      "background": "equipa2.jpg"
+    },
+    {
+      "Team": "Fusion AD",
+      "City": "Tete",
+      "Coach": "Joao Dias",
+      "Founded": "2026",
+      "Logopng": "logo_equipa3.svg",
+      "background": "equipa3.jpg"
+    },
+    {
+      "Team": "Los Hermanos",
+      "City": "Tete",
+      "Coach": "Joao Dias",
+      "Founded": "2026",
+      "Logopng": "logo_equipa4.svg",
+      "background": "equipa4.jpg"
+    },
+    {
+      "Team": "Bairro Central FC",
+      "City": "Tete",
+      "Coach": "Joao Dias",
+      "Founded": "2026",
+      "Logopng": "logo_equipa5.svg",
+      "background": "equipa5.jpg"
+    },
+    {
+      "Team": "Los Compadres",
+      "City": "Tete",
+      "Coach": "Joao Dias",
+      "Founded": "2026",
+      "Logopng": "logo_equipa6.svg",
+      "background": "equipa6.jpg"
+    }
+  ],
+  "jogadores": [
+    {
+      "ID": "Alírio",
+      "Player": "Alírio",
+      "Apelido": "Apelido",
+      "Number": "",
+      "Position": "Fixo",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Alírio.png",
+      "Goals": "Alírio.webp"
+    },
+    {
+      "ID": "Amarelinho",
+      "Player": "Amarelinho",
+      "Apelido": "Apelido",
+      "Number": "",
+      "Position": "Fixo",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Amarelinho.png",
+      "Goals": "Amarelinho.webp"
+    },
+    {
+      "ID": "Silva",
+      "Player": "Silva",
+      "Apelido": "Apelido",
+      "Number": "9",
+      "Position": "Fixo",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Silva.png",
+      "Goals": "Silva.webp"
+    },
+    {
+      "ID": "Guebas",
+      "Player": "Guebas",
+      "Apelido": "Apelido",
+      "Number": "10",
+      "Position": "Fixo",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Guebas.png",
+      "Goals": "Guebas.webp"
+    },
+    {
+      "ID": "Paulo",
+      "Player": "Paulo",
+      "Apelido": "Apelido",
+      "Number": "11",
+      "Position": "Fixo",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Paulo.png",
+      "Goals": "Paulo.webp"
+    },
+    {
+      "ID": "Chiquinho",
+      "Player": "Chiquinho",
+      "Apelido": "Apelido",
+      "Number": "25",
+      "Position": "Fixo",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Chiquinho.png",
+      "Goals": "Chiquinho.webp"
+    },
+    {
+      "ID": "Kamp",
+      "Player": "Kamp",
+      "Apelido": "Apelido",
+      "Number": "5",
+      "Position": "Ala",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Kamp.png",
+      "Goals": "Kamp.webp"
+    },
+    {
+      "ID": "Rui",
+      "Player": "Rui",
+      "Apelido": "Apelido",
+      "Number": "13",
+      "Position": "Pivô",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Rui.png",
+      "Goals": "Rui.webp"
+    },
+    {
+      "ID": "Guga",
+      "Player": "Guga",
+      "Apelido": "Apelido",
+      "Number": "9",
+      "Position": "Guarda-redes",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Guga.png",
+      "Goals": "Guga.webp"
+    },
+    {
+      "ID": "Casemiro",
+      "Player": "Casemiro",
+      "Apelido": "Apelido",
+      "Number": "7",
+      "Position": "Pivô",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Casemiro.png",
+      "Goals": "Casemiro.webp"
+    },
+    {
+      "ID": "Boby",
+      "Player": "Boby",
+      "Apelido": "Apelido",
+      "Number": "70",
+      "Position": "Pivô",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "Boby.png",
+      "Goals": "Boby.webp"
+    },
+    {
+      "ID": "Rodney",
+      "Player": "Rodney",
+      "Apelido": "",
+      "Number": "70",
+      "Position": "Pivô",
+      "Team": "Ubuntu UD",
+      "foto_perfil": "",
+      "Goals": ""
+    },
+    {
+      "ID": "Daimone",
+      "Player": "Daimone",
+      "Apelido": "Apelido",
+      "Number": "35",
+      "Position": "Ala",
+      "Team": "Unguvu",
+      "foto_perfil": "Daimone.png",
+      "Goals": "Daimone.webp"
+    },
+    {
+      "ID": "Pedro",
+      "Player": "Pedro",
+      "Apelido": "Apelido",
+      "Number": "35",
+      "Position": "Ala",
+      "Team": "Unguvu",
+      "foto_perfil": "Pedro.png",
+      "Goals": "Pedro.webp"
+    },
+    {
+      "ID": "Idaécio",
+      "Player": "Idaécio",
+      "Apelido": "Apelido",
+      "Number": "35",
+      "Position": "Ala",
+      "Team": "Unguvu",
+      "foto_perfil": "Unguvu.png",
+      "Goals": "Unguvu.webp"
+    },
+    {
+      "ID": "Dannyboy",
+      "Player": "Dannyboy",
+      "Apelido": "Apelido",
+      "Number": "35",
+      "Position": "Ala",
+      "Team": "Unguvu",
+      "foto_perfil": "Dannyboy.png",
+      "Goals": "Dannyboy.webp"
+    },
+    {
+      "ID": "Bacar",
+      "Player": "Bacar",
+      "Apelido": "Apelido",
+      "Number": "5",
+      "Position": "Guarda-redes",
+      "Team": "Unguvu",
+      "foto_perfil": "Bacar.png",
+      "Goals": "Bacar.webp"
+    },
+    {
+      "ID": "Takuara",
+      "Player": "Takuara",
+      "Apelido": "Apelido",
+      "Number": "13",
+      "Position": "Pivô",
+      "Team": "Unguvu",
+      "foto_perfil": "Takuara.png",
+      "Goals": "Takuara.webp"
+    },
+    {
+      "ID": "Teles",
+      "Player": "Teles",
+      "Apelido": "Apelido",
+      "Number": "9",
+      "Position": "Fixo",
+      "Team": "Unguvu",
+      "foto_perfil": "Teles.png",
+      "Goals": "Teles.webp"
+    },
+    {
+      "ID": "Mário",
+      "Player": "Mário",
+      "Apelido": "Apelido",
+      "Number": "7",
+      "Position": "Fixo",
+      "Team": "Unguvu",
+      "foto_perfil": "Mário.png",
+      "Goals": "Mário.webp"
+    },
+    {
+      "ID": "Puco",
+      "Player": "Puco",
+      "Apelido": "Apelido",
+      "Number": "11",
+      "Position": "Pivô",
+      "Team": "Unguvu",
+      "foto_perfil": "Puco.png",
+      "Goals": "Puco.webp"
+    },
+    {
+      "ID": "Hermínio",
+      "Player": "Hermínio",
+      "Apelido": "Apelido",
+      "Number": "25",
+      "Position": "Ala",
+      "Team": "Unguvu",
+      "foto_perfil": "Hermínio.png",
+      "Goals": "Hermínio.webp"
+    },
+    {
+      "ID": "Mandava",
+      "Player": "Mandava",
+      "Apelido": "Apelido",
+      "Number": "7",
+      "Position": "Ala",
+      "Team": "Unguvu",
+      "foto_perfil": "Mandava.png",
+      "Goals": "Mandava.webp"
+    },
+    {
+      "ID": "Elton",
+      "Player": "Elton",
+      "Apelido": "Apelido",
+      "Number": "3",
+      "Position": "Ala",
+      "Team": "Unguvu",
+      "foto_perfil": "Elton.png",
+      "Goals": "Elton.webp"
+    },
+    {
+      "ID": "Dário Cossa",
+      "Player": "Dário Cossa",
+      "Apelido": "",
+      "Number": "3",
+      "Position": "Ala",
+      "Team": "Unguvu",
+      "foto_perfil": "",
+      "Goals": ""
+    },
+    {
+      "ID": "Zé",
+      "Player": "Zé",
+      "Apelido": "Gerson",
+      "Number": "12",
+      "Position": "Guarda-redes",
+      "Team": "Fusion AD",
+      "foto_perfil": "Zé.png",
+      "Goals": "Zé.webp"
+    },
+    {
+      "ID": "Félix",
+      "Player": "Félix",
+      "Apelido": "Ndombo",
+      "Number": "22",
+      "Position": "Ala",
+      "Team": "Fusion AD",
+      "foto_perfil": "Félix.png",
+      "Goals": "Félix.webp"
+    },
+    {
+      "ID": "Araújo",
+      "Player": "Araújo",
+      "Apelido": "Lópes",
+      "Number": "30",
+      "Position": "Ala",
+      "Team": "Fusion AD",
+      "foto_perfil": "Araújo.png",
+      "Goals": "Araújo.webp"
+    },
+    {
+      "ID": "Dickson",
+      "Player": "Dickson",
+      "Apelido": "Salé",
+      "Number": "9",
+      "Position": "Pivô",
+      "Team": "Fusion AD",
+      "foto_perfil": "Dickson.png",
+      "Goals": "Dickson.webp"
+    },
+    {
+      "ID": "Ruan",
+      "Player": "Ruan",
+      "Apelido": "Apelido",
+      "Number": "10",
+      "Position": "Fixo",
+      "Team": "Fusion AD",
+      "foto_perfil": "Ruan.png",
+      "Goals": "Ruan.webp"
+    },
+    {
+      "ID": "Dito",
+      "Player": "Dito",
+      "Apelido": "Andela",
+      "Number": "11",
+      "Position": "Pivô",
+      "Team": "Fusion AD",
+      "foto_perfil": "Dito.png",
+      "Goals": "Dito.webp"
+    },
+    {
+      "ID": "Hilário",
+      "Player": "Hilário",
+      "Apelido": "Cumaio",
+      "Number": "25",
+      "Position": "Ala",
+      "Team": "Fusion AD",
+      "foto_perfil": "Hilário.png",
+      "Goals": "Hilário.webp"
+    },
+    {
+      "ID": "Omar",
+      "Player": "Omar",
+      "Apelido": "Apelido",
+      "Number": "7",
+      "Position": "Ala",
+      "Team": "Fusion AD",
+      "foto_perfil": "Omar.png",
+      "Goals": "Omar.webp"
+    },
+    {
+      "ID": "Ivan",
+      "Player": "Ivan",
+      "Apelido": "Agostinho",
+      "Number": "3",
+      "Position": "Ala",
+      "Team": "Fusion AD",
+      "foto_perfil": "Ivan.png",
+      "Goals": "Ivan.webp"
+    },
+    {
+      "ID": "Tairise",
+      "Player": "Tairise",
+      "Apelido": "",
+      "Number": "3",
+      "Position": "Ala",
+      "Team": "Fusion AD",
+      "foto_perfil": "",
+      "Goals": ""
+    },
+    {
+      "ID": "Gabriel",
+      "Player": "Gabriel",
+      "Apelido": "Apelido",
+      "Number": "12",
+      "Position": "Pivô",
+      "Team": "Los Hermanos",
+      "foto_perfil": "Gabriel.png",
+      "Goals": "Gabriel.webp"
+    },
+    {
+      "ID": "Pitecas",
+      "Player": "Pitecas",
+      "Apelido": "Apelido",
+      "Number": "22",
+      "Position": "Pivô",
+      "Team": "Los Hermanos",
+      "foto_perfil": "Pitecas.png",
+      "Goals": "Pitecas.webp"
+    },
+    {
+      "ID": "Betinho",
+      "Player": "Betinho",
+      "Apelido": "Apelido",
+      "Number": "30",
+      "Position": "Pivô",
+      "Team": "Los Hermanos",
+      "foto_perfil": "Betinho.png",
+      "Goals": "Betinho.webp"
+    },
+    {
+      "ID": "Mantorras",
+      "Player": "Mantorras",
+      "Apelido": "Apelido",
+      "Number": "9",
+      "Position": "Fixo",
+      "Team": "Los Hermanos",
+      "foto_perfil": "Mantorras.png",
+      "Goals": "Mantorras.webp"
+    },
+    {
+      "ID": "Tony",
+      "Player": "Tony",
+      "Apelido": "Apelido",
+      "Number": "10",
+      "Position": "Ala",
+      "Team": "Los Hermanos",
+      "foto_perfil": "Tony.png",
+      "Goals": "Tony.webp"
+    },
+    {
+      "ID": "Lupula",
+      "Player": "Lupula",
+      "Apelido": "Apelido",
+      "Number": "11",
+      "Position": "Ala",
+      "Team": "Los Hermanos",
+      "foto_perfil": "Lupula.png",
+      "Goals": "Lupula.webp"
+    },
+    {
+      "ID": "Maporiza",
+      "Player": "Maporiza",
+      "Apelido": "Apelido",
+      "Number": "25",
+      "Position": "Guarda-redes",
+      "Team": "Los Hermanos",
+      "foto_perfil": "Maporiza.png",
+      "Goals": "Maporiza.webp"
+    },
+    {
+      "ID": "Hélder",
+      "Player": "Hélder",
+      "Apelido": "Apelido",
+      "Number": "7",
+      "Position": "Pivô",
+      "Team": "Los Hermanos",
+      "foto_perfil": "Hélder.png",
+      "Goals": "Hélder.webp"
+    },
+    {
+      "ID": "Edinho",
+      "Player": "Edinho",
+      "Apelido": "Apelido",
+      "Number": "3",
+      "Position": "Fixo",
+      "Team": "Los Hermanos",
+      "foto_perfil": "Edinho.png",
+      "Goals": "Edinho.webp"
+    },
+    {
+      "ID": "Etiene",
+      "Player": "Etiene",
+      "Apelido": "Apelido",
+      "Number": "12",
+      "Position": "Fixo",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Etiene.png",
+      "Goals": "Etiene.webp"
+    },
+    {
+      "ID": "Munir",
+      "Player": "Munir",
+      "Apelido": "Apelido",
+      "Number": "12",
+      "Position": "Fixo",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Munir.png",
+      "Goals": "Munir.webp"
+    },
+    {
+      "ID": "Halvarito",
+      "Player": "Halvarito",
+      "Apelido": "Apelido",
+      "Number": "22",
+      "Position": "Ala",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Halvarito.png",
+      "Goals": "Halvarito.webp"
+    },
+    {
+      "ID": "Fred",
+      "Player": "Fred",
+      "Apelido": "Apelido",
+      "Number": "30",
+      "Position": "Ala",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Fred.png",
+      "Goals": "Fred.webp"
+    },
+    {
+      "ID": "Edy",
+      "Player": "Edy",
+      "Apelido": "Apelido",
+      "Number": "9",
+      "Position": "Ala",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Edy.png",
+      "Goals": "Edy.webp"
+    },
+    {
+      "ID": "Sive",
+      "Player": "Sive",
+      "Apelido": "Apelido",
+      "Number": "10",
+      "Position": "Pivô",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Sive.png",
+      "Goals": "Sive.webp"
+    },
+    {
+      "ID": "Ronalducho",
+      "Player": "Ronalducho",
+      "Apelido": "Apelido",
+      "Number": "11",
+      "Position": "Guarda-redes",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Ronalducho.png",
+      "Goals": "Ronalducho.webp"
+    },
+    {
+      "ID": "Zito",
+      "Player": "Zito",
+      "Apelido": "Apelido",
+      "Number": "25",
+      "Position": "Ala",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Zito.png",
+      "Goals": "Zito.webp"
+    },
+    {
+      "ID": "Rost",
+      "Player": "Rost",
+      "Apelido": "Apelido",
+      "Number": "7",
+      "Position": "Ala",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Rost.png",
+      "Goals": "Rost.webp"
+    },
+    {
+      "ID": "Balate",
+      "Player": "Balate",
+      "Apelido": "Apelido",
+      "Number": "3",
+      "Position": "Fixo",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "Balate.png",
+      "Goals": "Balate.webp"
+    },
+    {
+      "ID": "Chon",
+      "Player": "Chon",
+      "Apelido": "",
+      "Number": "3",
+      "Position": "Fixo",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "",
+      "Goals": ""
+    },
+    {
+      "ID": "Magaia",
+      "Player": "Magaia",
+      "Apelido": "",
+      "Number": "3",
+      "Position": "Fixo",
+      "Team": "Bairro Central FC",
+      "foto_perfil": "",
+      "Goals": ""
+    },
+    {
+      "ID": "Rai",
+      "Player": "Rai",
+      "Apelido": "Apelido",
+      "Number": "12",
+      "Position": "Ala",
+      "Team": "Los Compadres",
+      "foto_perfil": "Rai.png",
+      "Goals": "Rai.webp"
+    },
+    {
+      "ID": "Edú",
+      "Player": "Edú",
+      "Apelido": "Apelido",
+      "Number": "12",
+      "Position": "Guarda-redes",
+      "Team": "Los Compadres",
+      "foto_perfil": "Edú.png",
+      "Goals": "Edú.webp"
+    },
+    {
+      "ID": "Gregório",
+      "Player": "Gregório",
+      "Apelido": "Apelido",
+      "Number": "22",
+      "Position": "Fixo",
+      "Team": "Los Compadres",
+      "foto_perfil": "Gregório.png",
+      "Goals": "Gregório.webp"
+    },
+    {
+      "ID": "Napica",
+      "Player": "Napica",
+      "Apelido": "Apelido",
+      "Number": "30",
+      "Position": "Ala",
+      "Team": "Los Compadres",
+      "foto_perfil": "Napica.png",
+      "Goals": "Napica.webp"
+    },
+    {
+      "ID": "Colaço",
+      "Player": "Colaço",
+      "Apelido": "Apelido",
+      "Number": "9",
+      "Position": "Ala",
+      "Team": "Los Compadres",
+      "foto_perfil": "Colaço.png",
+      "Goals": "Colaço.webp"
+    },
+    {
+      "ID": "Dembelé",
+      "Player": "Dembelé",
+      "Apelido": "Apelido",
+      "Number": "10",
+      "Position": "Ala",
+      "Team": "Los Compadres",
+      "foto_perfil": "Dembelé.png",
+      "Goals": "Dembelé.webp"
+    },
+    {
+      "ID": "Montana",
+      "Player": "Montana",
+      "Apelido": "Apelido",
+      "Number": "11",
+      "Position": "Pivô",
+      "Team": "Los Compadres",
+      "foto_perfil": "Montana.png",
+      "Goals": "Montana.webp"
+    },
+    {
+      "ID": "Kelvin",
+      "Player": "Kelvin",
+      "Apelido": "Apelido",
+      "Number": "25",
+      "Position": "Pivô",
+      "Team": "Los Compadres",
+      "foto_perfil": "Kelvin.png",
+      "Goals": "Kelvin.webp"
+    },
+    {
+      "ID": "Marvin",
+      "Player": "Marvin",
+      "Apelido": "Apelido",
+      "Number": "7",
+      "Position": "Ala",
+      "Team": "Los Compadres",
+      "foto_perfil": "Marvin.png",
+      "Goals": "Marvin.webp"
+    },
+    {
+      "ID": "Quintas",
+      "Player": "Quintas",
+      "Apelido": "Apelido",
+      "Number": "3",
+      "Position": "Ala",
+      "Team": "Los Compadres",
+      "foto_perfil": "Quintas.png",
+      "Goals": "Quintas.webp"
+    },
+    {
+      "ID": "Maximo",
+      "Player": "Maximo",
+      "Apelido": "",
+      "Number": "3",
+      "Position": "Ala",
+      "Team": "Los Compadres",
+      "foto_perfil": "",
+      "Goals": ""
+    },
+    {
+      "ID": "Kian",
+      "Player": "Kian",
+      "Apelido": "",
+      "Number": "3",
+      "Position": "Ala",
+      "Team": "Los Compadres",
+      "foto_perfil": "",
+      "Goals": ""
+    },
+    {
+      "ID": "Wender",
+      "Player": "Wender",
+      "Apelido": "",
+      "Number": "3",
+      "Position": "Ala",
+      "Team": "Los Compadres",
+      "foto_perfil": "",
+      "Goals": ""
+    }
+  ],
+  "sponsors": [
+    {
+      "Sponsor": "Sponsor 1,Equipa 1,Sponsor 1_80x80px.png,\"Lorem ipsum dolor sit amet",
+      "Equipa": "consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
+      "Equipa": "",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sponsor 2,Equipa 2,Sponsor 2_80x80px.png,\"Lorem ipsum dolor sit amet",
+      "Equipa": "consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
+      "Equipa": "",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sponsor 3,Equipa 3,Sponsor 3_80x80px.png,\"Lorem ipsum dolor sit amet",
+      "Equipa": "consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
+      "Equipa": "",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sponsor 4,Equipa 4,Sponsor 4_80x80px.png,\"Lorem ipsum dolor sit amet",
+      "Equipa": "consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
+      "Equipa": "",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sponsor 5,Equipa 5,Sponsor 5_80x80px.png,\"Lorem ipsum dolor sit amet",
+      "Equipa": "consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
+      "Equipa": "",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sponsor 6,Equipa 6,Sponsor 6_80x80px.png,\"Lorem ipsum dolor sit amet",
+      "Equipa": "consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "Picture": "",
+      "Mensagem": ""
+    },
+    {
+      "Sponsor": "Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
+      "Equipa": "",
+      "Picture": "",
+      "Mensagem": ""
+    }
+  ],
+  "metadados": [
+    {
+      "\"**LOREM IPSUM**": "**LOREM IPSUM DOLOR SIT AMET**"
+    },
+    {
+      "\"**LOREM IPSUM**": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "\"**LOREM IPSUM**": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident"
+    },
+    {
+      "\"**LOREM IPSUM**": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "\"**LOREM IPSUM**": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "\"**LOREM IPSUM**": "*— Lorem Ipsum*"
+    },
+    {
+      "\"**LOREM IPSUM**": "Lorem Ipsum Dolor 2026"
+    },
+    {
+      "\"**LOREM IPSUM**": "Lorem ipsum: 00 Lorem 2026"
+    },
+    {
+      "\"**LOREM IPSUM**": ""
+    }
+  ],
+  "capitulos": [],
+  "disciplina_regras": [],
+  "fases_competicao": [],
+  "financeiro": [],
+  "jornadas_planeadas": []
+}
