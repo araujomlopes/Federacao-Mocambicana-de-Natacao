@@ -714,13 +714,6 @@ nav {
 }
 
 /* LISTA */
-.nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: row; /* horizontal */
-  align-items: center;
-  gap: 20px;
-}
 
 /* LINKS */
 .nav-list a {
@@ -857,10 +850,6 @@ nav {
   }
 
   /* 🔴 CORREÇÃO 1 — submenu abrir no mobile */
-  .has-submenu > a {
-    pointer-events: none; /* impede navegação do # */
-    cursor: pointer;
-  }
 
   /* Estilo submenu */
   .submenu {
