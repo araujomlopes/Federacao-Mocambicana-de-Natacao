@@ -145,6 +145,7 @@
   .team-card img {
     width: 54px !important; /* Reduz o tamanho do SVG proporcionalmente no telemóvel */
     height: 54px !important; /* Mantém o aspeto quadrado padrão */
+    max-width: 100% !important; /* Força contenção absoluta dentro do flexbox */
   }
 
   .team-name {
