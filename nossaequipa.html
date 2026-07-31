@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Rios — Estrutura leve e responsiva — HTML e CSS puro, boas práticas de escritórios de design."
+    />
+    <title>Rios — Website Leve e Responsivo</title>
+
+    <!-- Google Fonts (RIOS-style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- nova fonte araujo test -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- nova fonte -->
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- CSS de página / componentes -->
+    <link rel="stylesheet" href="assets/css/pages/equipa.css" />
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <div id="header"></div>
+    <!-- ========== HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="main">
+      <!-- ========== SECÇÃO: A NOSSA EQUIPA FMN ========== -->
+      <!-- ========== CABEÇALHO DO COMPONENTE ========== -->
+      <div class="fmn-team-header-bg">
+        <div class="fmn-team-header-container">
+          <h1 class="fmn-team-main-title">NOSSA EQUIPA</h1>
+        </div>
+      </div>
+
+      <!-- ========== CAMINHO DE NAVEGAÇÃO (BREADCRUMB) ========== -->
+      <div class="fmn-team-breadcrumb-container">
+        <nav class="fmn-team-breadcrumb">
+          <span class="fmn-crumb-root">FMN</span>
+          <span class="fmn-crumb-separator">&gt;</span>
+          <span class="fmn-crumb-current">Órgãos Sociais</span>
+        </nav>
+      </div>
+
+      <!-- ========== SECÇÃO: A NOSSA EQUIPA FMN ========== -->
+      <div class="fmn-team-section">
+        <!-- Membro 2: Vice-Presidente -->
+        <div class="fmn-team-card">
+          <div class="fmn-team-photo-container">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="assets/images/perfil_jogador/colaboradores/avatar_800x800.webp"
+              />
+              <img
+                src="assets/images/perfil_jogador/colaboradores/avatar_640x640.webp"
+                alt="Vice-Presidente de Alto Rendimento"
+                loading="lazy"
+                class="fmn-team-photo"
+                width="320"
+                height="320"
+              />
+            </picture>
+          </div>
+          <div class="fmn-team-info">
+            <h3 class="fmn-team-name">JUSTINO FRANCISCO</h3>
+            <span class="fmn-team-role">Presidente</span>
+            <p class="fmn-team-bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Membro 3: Secretário-Geral -->
+        <div class="fmn-team-card">
+          <div class="fmn-team-photo-container">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="assets/images/perfil_jogador/colaboradores/avatar_800x800.webp"
+              />
+              <img
+                src="assets/images/perfil_jogador/colaboradores/avatar_640x640.webp"
+                alt="Secretário-Geral"
+                loading="lazy"
+                class="fmn-team-photo"
+                width="320"
+                height="320"
+              />
+            </picture>
+          </div>
+          <div class="fmn-team-info">
+            <h3 class="fmn-team-name">NOME E APELIDO</h3>
+            <span class="fmn-team-role">Secretária-Geral</span>
+            <p class="fmn-team-bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Membro 4: Diretor Financeiro -->
+        <div class="fmn-team-card">
+          <div class="fmn-team-photo-container">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="assets/images/perfil_jogador/colaboradores/avatar_800x800.webp"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/perfil_jogador/colaboradores/avatar_640x640.webp"
+                alt="Diretor Financeiro"
+                loading="lazy"
+                class="fmn-team-photo"
+                width="320"
+                height="320"
+              />
+            </picture>
+          </div>
+          <div class="fmn-team-info">
+            <h3 class="fmn-team-name">NOME E APELIDO</h3>
+            <span class="fmn-team-role">Diretora Financeira</span>
+            <p class="fmn-team-bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis pretium lorem primis
+              iaculis sit tellus. Eleifend suspendisse habitasse sed curabitur potenti integer
+              congue, rhoncus pretium cras suspendisse feugiat aliquet accumsan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== ESTILOS EXCLUSIVOS DO COMPONENTE ========== -->
+      <style>
+        /* --- Cabeçalho Cinzento Fiel --- */
+        .fmn-team-header-bg {
+          background-color: #f7f7f7;
+          width: 100%;
+          padding: 50px 0;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-header-container {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        .fmn-team-main-title {
+          font-family: 'Inter Tight', sans-serif;
+          font-size: 32px;
+          font-weight: 600;
+          color: #1a202c;
+          margin: 0;
+          letter-spacing: -0.5px;
+        }
+
+        /* --- Caminho de Navegação (Breadcrumb) --- */
+        .fmn-team-breadcrumb-container {
+          width: 100%;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-breadcrumb {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 20px;
+          font-size: 13px;
+          font-family: 'Inter', sans-serif;
+        }
+
+        .fmn-crumb-root {
+          color: #333333;
+          font-weight: 500;
+        }
+
+        .fmn-crumb-separator {
+          color: #aaaaaa;
+          margin: 0 8px;
+        }
+
+        .fmn-crumb-current {
+          color: #888888;
+        }
+
+        /* --- Área de Listagem da Equipa --- */
+        .fmn-team-section {
+          font-family: 'Inter', sans-serif;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 20px 20px 60px 20px;
+          color: #444444;
+        }
+
+        .fmn-team-card {
+          display: flex;
+          gap: 40px;
+          padding: 55px 0;
+          border-bottom: 1px solid #dddddd; /* Linha separadora suave idêntica à imagem */
+          align-items: flex-start;
+        }
+
+        /* Mantém a linha divisória suave em todos, exceto no último bloco inferior */
+        .fmn-team-card:last-child {
+          border-bottom: none;
+        }
+
+        .fmn-team-photo-container {
+          flex: 0 0 240px;
+          width: 240px;
+        }
+
+        .fmn-team-photo {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .fmn-team-info {
+          flex: 1;
+          padding-top: 5px;
+        }
+
+        .fmn-team-name {
+          font-family: 'Inter Tight', sans-serif;
+          font-size: 22px;
+          font-weight: 600;
+          color: #f4b41a;
+          margin: 0 0 5px 0;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+        }
+
+        .fmn-team-role {
+          font-size: 14px;
+          color: #999999;
+          display: block;
+          margin-bottom: 20px;
+          font-weight: 400;
+        }
+
+        .fmn-team-bio {
+          font-size: 15px;
+          line-height: 1.6;
+          color: #555555;
+          margin: 0;
+          text-align: left;
+        }
+
+        /* Bloco de Assinatura */
+        .fmn-team-signature-block {
+          margin-top: 25px;
+          display: inline-block;
+        }
+
+        .fmn-team-signature-img {
+          height: 45px;
+          width: auto;
+          display: block;
+          margin-bottom: 8px;
+          mix-blend-mode: multiply;
+        }
+
+        .fmn-team-signature-caption {
+          font-size: 11px;
+          color: #666666;
+          letter-spacing: 0.5px;
+          text-align: left;
+        }
+
+        .fmn-team-signature-caption strong {
+          color: #000000;
+        }
+
+        /* --- Responsividade Completa e Ajuste à Esquerda no Mobile --- */
+        @media (max-width: 768px) {
+          .fmn-team-header-bg {
+            padding: 35px 0;
+          }
+
+          .fmn-team-main-title {
+            font-size: 26px;
+          }
+
+          .fmn-team-card {
+            flex-direction: column;
+            gap: 25px;
+            padding: 40px 0;
+          }
+
+          .fmn-team-photo-container {
+            flex: none;
+            width: 100%;
+            max-width: 380px;
+          }
+
+          .fmn-team-info {
+            text-align: left;
+            width: 100%;
+          }
+
+          .fmn-team-bio {
+            text-align: left;
+          }
+
+          .fmn-team-signature-block {
+            display: block;
+            text-align: left;
+          }
+        }
+      </style>
+    </main>
+
+    <!-- FOOTER (injetado via JS start) -->
+    <div id="footer"></div>
+    <!-- FOOTER (injetado via JS end) -->
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="assets/js/pages/slider.js"></script>
+    <script src="assets/js/pages/squad.js"></script>
+
+    <!-- Scripts gerais -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/header-nav.js"></script>
+
+    <script src="assets/js/pages/theme.js"></script>
+  </body>
+</html>

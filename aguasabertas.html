@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Rios — Estrutura leve e responsiva — HTML e CSS puro, boas práticas de escritórios de design."
+    />
+    <title>Rios — Website Leve e Responsivo</title>
+
+    <!-- Google Fonts (RIOS-style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- nova fonte araujo test -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- nova fonte -->
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- CSS de página / componentes -->
+    <link rel="stylesheet" href="assets/css/pages/equipa.css" />
+    <link rel="stylesheet" href="assets/css/pages/equipaS.css" />
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <div id="header"></div>
+    <!-- ========== HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="main">
+
+
+      <!-- ========== SECÇÃO: A NOSSA EQUIPA FMN ========== -->
+      <!-- ========== CABEÇALHO DO COMPONENTE ========== -->
+      <div class="fmn-team-header-bg">
+        <div class="fmn-team-header-container">
+          <h1 class="fmn-team-main-title">AGUAS ABERTAS</h1>
+        </div>
+      </div>
+
+      <!-- ========== CAMINHO DE NAVEGAÇÃO (BREADCRUMB) ========== -->
+      <div class="fmn-team-breadcrumb-container">
+        <nav class="fmn-team-breadcrumb">
+          <span class="fmn-crumb-root">FMN</span>
+          <span class="fmn-crumb-separator">&gt;</span>
+          <span class="fmn-crumb-current">Aguas abertas</span>
+        </nav>
+      </div>
+      <style>
+        /* --- Cabeçalho Cinzento Fiel --- */
+        .fmn-team-header-bg {
+          background-color: #f7f7f7;
+          width: 100%;
+          padding: 50px 0;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-header-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 12px;
+        }
+
+        .fmn-team-main-title {
+          font-family: 'Inter Tight', sans-serif;
+          font-size: 32px;
+          font-weight: 600;
+          color: #1a202c;
+          margin: 0;
+          letter-spacing: -0.5px;
+        }
+
+        /* --- Caminho de Navegação (Breadcrumb) --- */
+        .fmn-team-breadcrumb-container {
+          width: 100%;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-breadcrumb {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 12px;
+          font-size: 13px;
+          font-family: 'Inter', sans-serif;
+        }
+
+        .fmn-crumb-root {
+          color: #333333;
+          font-weight: 500;
+        }
+
+        .fmn-crumb-separator {
+          color: #aaaaaa;
+          margin: 0 8px;
+        }
+
+        .fmn-crumb-current {
+          color: #888888;
+        }
+
+        /* --- Área de Listagem da Equipa --- */
+        .fmn-team-section {
+          font-family: 'Inter', sans-serif;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px 20px 60px 20px;
+          color: #444444;
+        }
+
+        .fmn-team-card {
+          display: flex;
+          gap: 40px;
+          padding: 55px 0;
+          border-bottom: 1px solid #dddddd; /* Linha separadora suave idêntica à imagem */
+          align-items: flex-start;
+        }
+
+        /* Mantém a linha divisória suave em todos, exceto no último bloco inferior */
+        .fmn-team-card:last-child {
+          border-bottom: none;
+        }
+
+        .fmn-team-photo-container {
+          flex: 0 0 240px;
+          width: 240px;
+        }
+
+        .fmn-team-photo {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .fmn-team-info {
+          flex: 1;
+          padding-top: 5px;
+        }
+
+        .fmn-team-name {
+          font-family: 'Inter Tight', sans-serif;
+          font-size: 22px;
+          font-weight: 600;
+          color: #f4b41a;
+          margin: 0 0 5px 0;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+        }
+
+        .fmn-team-role {
+          font-size: 14px;
+          color: #999999;
+          display: block;
+          margin-bottom: 20px;
+          font-weight: 400;
+        }
+
+        .fmn-team-bio {
+          font-size: 15px;
+          line-height: 1.6;
+          color: #555555;
+          margin: 0;
+          text-align: left;
+        }
+
+        /* Bloco de Assinatura */
+        .fmn-team-signature-block {
+          margin-top: 25px;
+          display: inline-block;
+        }
+
+        .fmn-team-signature-img {
+          height: 45px;
+          width: auto;
+          display: block;
+          margin-bottom: 8px;
+          mix-blend-mode: multiply;
+        }
+
+        .fmn-team-signature-caption {
+          font-size: 11px;
+          color: #666666;
+          letter-spacing: 0.5px;
+          text-align: left;
+        }
+
+        .fmn-team-signature-caption strong {
+          color: #000000;
+        }
+
+        /* --- Responsividade Completa e Ajuste à Esquerda no Mobile --- */
+        @media (max-width: 768px) {
+          .fmn-team-header-bg {
+            padding: 35px 0;
+          }
+
+          .fmn-team-main-title {
+            font-size: 26px;
+          }
+
+          .fmn-team-card {
+            flex-direction: column;
+            gap: 25px;
+            padding: 40px 0;
+          }
+
+          .fmn-team-photo-container {
+            flex: none;
+            width: 100%;
+            max-width: 380px;
+          }
+
+          .fmn-team-info {
+            text-align: left;
+            width: 100%;
+          }
+
+          .fmn-team-bio {
+            text-align: left;
+          }
+
+          .fmn-team-signature-block {
+            display: block;
+            text-align: left;
+          }
+        }
+      </style>
+      <!-- ========== CAMINHO DE NAVEGAÇÃO (BREADCRUMB) fim ========== -->
+
+      <!-- ========== Noticias inicio ========== -->
+
+
+      <section class="ultimas-fotos-section">
+        <div class="fotos-container">
+          <!-- Coluna de Introdução (Fixa) -->
+          <div class="fotos-intro-col">
+            <span class="fotos-tagline">Últimas Notícias</span>
+            <h2 class="fotos-main-title">Águas Abertas</h2>
+            <p class="fotos-intro-text">
+              Acompanhe a cobertura das travessias mais exigentes e das competições de fundo em Moçambique.
+      Fique por dentro das classificações, circuitos nacionais e do desempenho dos nossos nadadores
+      que desafiam a natureza em provas de resistência e superação.
+            </p>
+            <a href="noticias_geral.html" class="btn-todas-fotos">VER GALERIA</a>
+          </div>
+
+          <!-- Área do Slider (Cards) -->
+          <div class="fotos-slider-wrapper">
+            <div class="fotos-slider">
+              <!-- Card 1 -->
+              <article class="foto-card">
+                <div class="foto-image-wrapper">
+                  <img
+                    src="assets/images/noticias/aguas abertas card menor.webp"
+                    alt="House Renovation"
+                    class="foto-image"
+                    draggable="false"
+                  />
+                  <span class="foto-category">AGUAS ABERTAS</span>
+                </div>
+
+                <div class="foto-content">
+                  <h3 class="foto-title"><a href="noticia_1campeonato_aguasabertas.html">Lagoa Uembje</a></h3>
+                  <span class="foto-date">24 de Maio de 2026</span>
+                  <p class="foto-excerpt">
+                    1º Campeonato Nacional de Águas Abertas na Praia do Bilene
+                  </p>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="foto-card">
+                <div class="foto-image-wrapper">
+                  <img
+                    src="assets/images/noticias/galeria_glasgow_card_menor2.webp"
+                    alt="Construction Consultant"
+                    class="foto-image"
+                    draggable="false"
+                  />
+                  <span class="foto-category">NATACAO PURA</span>
+                </div>
+                <div class="foto-content">
+                  <h3 class="foto-title"><a href="noticia_commonwealthglasgow2026.html">COMMONWEALTH GLASGOW</a></h3>
+                  <span class="foto-date">Julho de 2026</span>
+                  <p class="foto-excerpt">
+                  Moçambique nos Jogos da Commonwealth Glasgow 2026
+                  </p>
+                </div>
+              </article>
+
+               <!-- Card 3 -->
+              <article class="foto-card">
+                <div class="foto-image-wrapper">
+                  <img
+                    src="assets/images/noticias/Noticia card menor1 nadador completo Angela xucumbi.webp"
+                    alt="Architecture & Building"
+                    class="foto-image"
+                    draggable="false"
+                  />
+                  <span class="foto-category">NATACAO PURA</span>
+                </div>
+                <div class="foto-content">
+                  <h3 class="foto-title"><a href="noticia_39edicao_nadadorcompleto2026.html">Piscina Raimundo Franisse</a></h3>
+                  <span class="foto-date">Abril de 2026</span>
+                  <p class="foto-excerpt">
+                    Ângela Xicumbi e Hugo de Sousa coroados vencedores da 39ª Edição do Torneio Nadador
+                Completo 2026..
+                  </p>
+                </div>
+              </article>
+
+              <!-- Card 4 -->
+              <article class="foto-card">
+                <div class="foto-image-wrapper">
+                  <img
+                    src="assets/images/noticias/historico_bronze_card_menor.webp"
+                    alt="New Project"
+                    class="foto-image"
+                    draggable="false"
+                  />
+                  <span class="foto-category">NATACAO PURA</span>
+                </div>
+                <div class="foto-content">
+                  <h3 class="foto-title"><a href="noticia_bronzeafricanojuniors2023.html">Africano de Juniores de 2023</a></h3>
+                  <span class="foto-date">Dezembro de 2023</span>
+                  <p class="foto-excerpt">
+                    A Seleção Nacional de natação de Moçambique garantiu a medalha de bronze na prova de estafetas 4×100 metros masculinos
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- O JavaScript vai injetar as bolinhas aqui de forma automática -->
+            <div class="fotos-slider-dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        /* ==========================================================================
+   RESET E ESTRUTURA BASE (Alinhada com a seção superior)
+   ========================================================================== */
+        .ultimas-fotos-section * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ultimas-fotos-section {
+          width: 100%;
+          padding: 60px 0;
+          overflow: hidden;
+          background-color: transparent;
+        }
+
+        /* Força o alinhamento magnético perfeito nas duas extremidades */
+        .fotos-container {
+          display: flex;
+          flex-direction: row;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 12px; /* Margem idêntica à seção de cima */
+          gap: 20px; /* Alinhado com o espaçamento da seção superior */
+          justify-content: space-between;
+        }
+
+        /* ==========================================================================
+   COLUNA DE INTRODUÇÃO (Lado a lado - Largura de partida fixa)
+   ========================================================================== */
+        .fotos-intro-col {
+          flex: 0 0 284px;
+          width: 284px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .fotos-tagline {
+          font-size: 11px;
+          text-transform: uppercase;
+          color: #999999;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+        }
+
+        .fotos-main-title {
+          font-size: 32px;
+          color: #222222;
+          font-weight: 700;
+          margin-bottom: 25px;
+          position: relative;
+          padding-bottom: 15px;
+        }
+
+        .fotos-main-title::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 40px;
+          height: 2px;
+          background-color:#0078d4;
+        }
+
+        .fotos-intro-text {
+          font-size: 14px;
+          line-height: 1.6;
+          color: #666666;
+          margin-bottom: 30px;
+        }
+
+        .btn-todas-fotos {
+          display: inline-block;
+          background-color: #0078d4;
+          color: white;
+          text-decoration: none;
+          font-size: 11px;
+          font-weight: 700;
+          padding: 15px 30px;
+          letter-spacing: 1px;
+        }
+
+        /* ==========================================================================
+   ÁREA DO SLIDER E CARDS (Fluida para eliminar erros milimétricos)
+   ========================================================================== */
+        .fotos-slider-wrapper {
+          flex: 1; /* Preenche dinamicamente até a margem direita exata do grid superior */
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .fotos-slider {
+          display: flex;
+          gap: 20px; /* Espaçamento de 20px idêntico entre os cards */
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          scrollbar-width: none;
+          padding-bottom: 20px;
+          cursor: grab;
+          user-select: none;
+        }
+
+        .fotos-slider:active {
+          cursor: grabbing;
+        }
+
+        .fotos-slider::-webkit-scrollbar {
+          display: none;
+        }
+
+        /* CALIBRAÇÃO EXATA: Adapta o tamanho dos cards ao wrapper de forma milimétrica */
+        .foto-card {
+          flex: 0 0 calc((100% - 40px) / 3); /* 100% do slider fluido menos 40px dos dois gaps */
+          scroll-snap-align: start;
+          display: flex;
+          flex-direction: column;
+          background-color: transparent !important;
+          background: none !important;
+        }
+
+        .foto-image-wrapper {
+          position: relative;
+          width: 100%;
+          pointer-events: none;
+        }
+
+        .foto-image {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .foto-category {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color:#0078d4;
+          color: white;
+          font-size: 10px;
+          font-weight: 700;
+          padding: 8px 15px;
+        }
+
+        .foto-content {
+          padding-top: 20px;
+          background-color: transparent !important;
+        }
+
+        .foto-title {
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 1.4;
+          margin-bottom: 8px;
+        }
+
+        .foto-title a {
+          color: #222222;
+          text-decoration: none;
+        }
+
+        .foto-date {
+          display: block;
+          font-size: 12px;
+          color: #999999;
+          margin-bottom: 15px;
+        }
+
+        .foto-date::before {
+          content: '📅';
+          margin-right: 5px;
+        }
+
+        .foto-excerpt {
+          font-size: 13px;
+          line-height: 1.6;
+          color: #666666;
+        }
+
+        /* ==========================================================================
+   PAGINAÇÃO (Bolinhas do Carrossel)
+   ========================================================================== */
+        .fotos-slider-dots {
+          display: flex;
+          justify-content: center;
+          gap: 8px;
+          margin-top: 15px;
+        }
+
+        .dot-btn {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: none;
+          background-color: #cccccc;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        .dot-btn.active {
+          background-color: #f5b025;
+        }
+
+        /* ==========================================================================
+   REGRAS PARA DISPOSITIVOS MÓVEIS (Apenas quebra abaixo de 992px)
+   ========================================================================== */
+        @media (max-width: 992px) {
+          .fotos-container {
+            flex-direction: column;
+            gap: 30px;
+            padding: 0 12px;
+          }
+
+          .fotos-intro-col {
+            flex: none;
+            width: 100%;
+            align-items: flex-start;
+            text-align: left;
+          }
+
+          .fotos-main-title::after {
+            left: 0;
+            transform: none;
+          }
+
+          .fotos-slider-wrapper {
+            flex: none;
+            width: 100%;
+          }
+
+          .fotos-slider {
+            gap: 15px;
+          }
+
+          .foto-card {
+            flex: 0 0 85%; /* No mobile mantém a fluidez para indicar o arrasto lateral */
+          }
+        }
+
+        .foto-image {
+          width: 100%;
+          height: auto;
+          display: block;
+          /* Aplica o arredondamento: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+          border-radius: var(--radius, 10px) var(--radius, 10px) 0 0;
+        }
+      </style>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Seletores atualizados para corresponder ao novo HTML de fotos
+          const slider = document.querySelector('.fotos-slider');
+          const dotsContainer = document.querySelector('.fotos-slider-dots');
+          const cards = document.querySelectorAll('.foto-card');
+
+          if (!slider || !dotsContainer || cards.length === 0) return;
+
+          // --- CRIAÇÃO DINÂMICA DAS BOLINHAS ---
+          // Varre todos os cards existentes no HTML e gera um botão para cada um
+          cards.forEach((card, index) => {
+            const dot = document.createElement('button');
+            dot.classList.add('dot-btn');
+            if (index === 0) dot.classList.add('active'); // Primeira começa ativa
+            dot.setAttribute('data-slide', index);
+            dot.setAttribute('aria-label', `Slide ${index + 1}`);
+            dotsContainer.appendChild(dot);
+          });
+
+          // Captura os botões gerados recentemente
+          const dots = document.querySelectorAll('.dot-btn');
+
+          // --- LÓGICA DE ARRASTAR COM O MOUSE (DRAG TO SCROLL) ---
+          let isDown = false;
+          let startX;
+          let scrollLeft;
+
+          slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.style.scrollBehavior = 'auto';
+            slider.style.scrollSnapType = 'none';
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+          });
+
+          slider.addEventListener('mouseleave', () => {
+            if (!isDown) return;
+            isDown = false;
+            finalizarArrasto();
+          });
+
+          slider.addEventListener('mouseup', () => {
+            if (!isDown) return;
+            isDown = false;
+            finalizarArrasto();
+          });
+
+          slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            slider.scrollLeft = scrollLeft - walk;
+          });
+
+          function finalizarArrasto() {
+            slider.style.scrollBehavior = 'smooth';
+            slider.style.scrollSnapType = 'x mandatory';
+            const currentScroll = slider.scrollLeft;
+            slider.scrollLeft = currentScroll + 1;
+            slider.scrollLeft = currentScroll;
+          }
+
+          // --- NAVEGAÇÃO AO CLICAR NAS BOLINHAS ---
+          dots.forEach((dot) => {
+            dot.addEventListener('click', () => {
+              slider.style.scrollBehavior = 'smooth';
+              const slideIndex = parseInt(dot.getAttribute('data-slide'));
+              const targetCard = cards[slideIndex];
+
+              if (targetCard) {
+                slider.scrollTo({
+                  left: targetCard.offsetLeft - slider.offsetLeft,
+                  behavior: 'smooth',
+                });
+              }
+            });
+          });
+
+          // --- ATUALIZAÇÃO SENSÍVEL AO SCROLL ---
+          slider.addEventListener('scroll', () => {
+            let activeIndex = 0;
+            let minDistance = Infinity;
+
+            cards.forEach((card, index) => {
+              const distance = Math.abs(
+                card.getBoundingClientRect().left - slider.getBoundingClientRect().left
+              );
+              if (distance < minDistance) {
+                minDistance = distance;
+                activeIndex = index;
+              }
+            });
+
+            dots.forEach((dot) => dot.classList.remove('active'));
+            if (dots[activeIndex]) {
+              dots[activeIndex].classList.add('active');
+            }
+          });
+        });
+      </script>
+
+      <!-- ========== Noticias fim ========== -->
+
+      <!-- ========== proximos eventos inicio ========== -->
+      <section class="fmn-event-banner">
+        <!-- Lado Esquerdo: Conteúdo Textual -->
+        <div class="fmn-content-col">
+          <span class="fmn-subtitle">Federação Moçambicana de Natação</span>
+          <h2 class="fmn-title">Próximos Eventos</h2>
+          <p class="fmn-description">
+            Fique por dentro do calendário oficial das competições nacionais e internacionais.
+            Acompanhe os nossos atletas de elite nas piscinas, campeonatos de águas abertas e
+            eventos de formação que impulsionam a natação em Moçambique!
+          </p>
+          <a href="#calendario" class="fmn-btn">VER MAIS EVENTOS</a>
+        </div>
+
+        <!-- Lado Direito: Imagem de Destaque -->
+        <div class="fmn-image-col">
+          <!-- Substitua o URL abaixo pela imagem oficial da FMN (ex: piscina ou atletas) -->
+          <img
+            src="assets/images/diversos/evento_aguas_abertas.webp"
+            alt="Eventos FMN Natacao"
+          />
+        </div>
+      </section>
+
+      <style>
+        /* Configuração e Contentor Principal */
+        .fmn-event-banner {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          min-height: 380px;
+          font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          overflow: hidden;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding:12px;
+        }
+
+        /* Coluna de Texto (Esquerda) */
+        .fmn-content-col {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 40px 60px;
+          box-sizing: border-box;
+          background-color: #ffffff;
+        }
+
+        /* Subtítulo Superior */
+        .fmn-subtitle {
+          font-size: 15px;
+          color: #555555;
+          margin-bottom: 12px;
+          font-weight: 500;
+        }
+
+        /* Título Principal Estilo "We are The Built" */
+        .fmn-title {
+          font-size: 34px;
+          color: #1e2a38; /* Azul escuro corporativo idêntico à imagem */
+          margin: 0 0 20px 0;
+          font-weight: 700;
+          line-height: 1.2;
+        }
+
+        /* Bloco de Texto Descritivo */
+        .fmn-description {
+          font-size: 15px;
+          color: #777777; /* Tom cinza suave para leitura legível */
+          line-height: 1.6;
+          margin: 0 0 30px 0;
+          max-width: 480px;
+        }
+
+        /* Botão de Ação Estilo "GET A QUOTE" */
+        .fmn-btn {
+          display: inline-block;
+          background-color: #0078d4; /* Amarelo/Laranja Cromo fiel à imagem */
+          color: #1e2a38;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          padding: 14px 32px;
+          border-radius: 2px;
+          transition: background-color 0.2s ease-in-out;
+        }
+
+        .fmn-btn:hover {
+          background-color: #2084e2; /* Efeito hover ligeiramente mais escuro */
+          color: white;
+        }
+
+        /* Coluna da Imagem (Direita) */
+        .fmn-image-col {
+          flex: 1;
+          position: relative;
+        }
+
+        .fmn-image-col img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        /* Responsividade para Ecrãs Móveis (Telemóveis) */
+        @media (max-width: 768px) {
+          .fmn-event-banner {
+            flex-direction: column-reverse; /* Imagem passa para cima no telemóvel */
+          }
+
+          .fmn-content-col {
+            padding: 30px 20px;
+          }
+
+          .fmn-title {
+            font-size: 28px;
+          }
+
+          .fmn-image-col {
+            height: 220px;
+          }
+        }
+      </style>
+
+      <!-- ==========proximos eventos  fim ========== -->
+
+
+
+
+
+
+
+      <div class="container teams-container">
+      <section class="teams-section">
+
+
+        <div class="teams-grid">
+          <!-- CARD MODELO BLIGA -->
+
+          <!-- equipa 1-->
+          <a href="#" class="team-link">
+            <div class="team-card" style="transition: 0.3s;">
+              <img src="assets/images/team-logo/logo_equipa1.svg" alt="Equipa 1 Logo" style="color: var(--text);">
+              <div class="team-info" style="color: var(--text);">
+                <div class="team-name" style="color: var(--text);">Selecção nacional</div>
+
+              </div>
+            </div>
+          </a>
+
+
+          <!-- equipa 5 -->
+          <a href="#" class="team-link">
+            <div class="team-card" style="transition: 0.3s;">
+              <img src="assets/images/team-logo/logo_equipa5.svg" alt="Equipa 5 Logo" style="color: var(--text);">
+              <div class="team-info" style="color: var(--text);">
+                <div class="team-name" style="color: var(--text);">Regulamentos</div>
+
+              </div>
+            </div>
+          </a>
+
+          <!-- equipa 6 -->
+          <a href="#" class="team-link">
+            <div class="team-card" style="transition: 0.3s;">
+              <img src="assets/images/team-logo/logo_equipa6.svg" alt="Equipa 6 Logo" style="color: var(--text);">
+              <div class="team-info" style="color: var(--text);">
+                <div class="team-name" style="color: var(--text);">Escolas de Formação</div>
+
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </section>
+    </div>
+
+
+
+
+
+
+
+      <div class="club-nav-content">
+            <div class="st-container">
+              <!-- TÍTULO PRINCIPAL COM DETALHE AMARELO -->
+
+
+              <!-- GRUPO DE ACORDEÕES -->
+              <div class="st-accordion-group">
+                <!-- ABA 1: MISSION (ABERTA) -->
+                <div class="st-accordion-item st-active">
+                  <button class="st-accordion-header st-bg-amber">
+                    <span>RECORDES NACIONAIS</span>
+                    <span class="st-icon">—</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                    Publicaremos em breve documentos em pdf relativos aos recordes mais recentes
+                      de atletas filiados na modalidade de natacao em aguas abertas.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- ABA 2: HONEST AND DEPENDABLE (FECHADA) -->
+                <div class="st-accordion-item">
+                  <button class="st-accordion-header st-bg-dark">
+                    <span>DOCUMENTOS AUXILIARES</span>
+                    <span class="st-icon">+</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                      Serao publicadas em breve as minutas, fichas de inscricao e outros documento
+                      que visam a facilitar o processo de gestao
+                    </p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <style>
+              /* Escopo isolado com o prefixo 'st-' */
+
+              .st-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 12px;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              }
+
+              /* Título com a linha amarela inferior esquerda */
+              .st-main-title {
+                font-size: 22px;
+                font-weight: 600;
+                color: #222222;
+                margin: 0 0 25px 0;
+                position: relative;
+                padding-bottom: 8px;
+              }
+
+              .st-main-title::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 45px;
+                height: 3px;
+                background-color: #fcae33; /* Amarelo idêntico ao da imagem */
+              }
+
+              /* Texto de introdução */
+              .st-intro-text {
+                font-size: 14px;
+                line-height: 1.7;
+                color: #444444;
+                margin-bottom: 35px;
+              }
+
+              /* Estrutura dos Acordeões */
+              .st-accordion-group {
+                display: flex;
+                flex-direction: column;
+              }
+
+              .st-accordion-item {
+                margin-bottom: 1px; /* Linha fina divisória entre as abas */
+              }
+
+              .st-accordion-header {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: none;
+                padding: 18px 24px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                text-align: left;
+                cursor: pointer;
+                outline: none;
+              }
+
+              /* Cores dos cabeçalhos */
+              .st-bg-amber {
+                background-color: #0078d4;
+                color: #ffffff;
+              }
+
+              .st-bg-dark {
+                background-color: #252525;
+                color: #ffffff;
+              }
+
+              .st-icon {
+                font-size: 16px;
+                font-weight: 400;
+              }
+
+              /* Conteúdo interno da aba */
+              .st-accordion-content {
+                background-color: #f9f9f9;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+              }
+
+              .st-accordion-content p {
+                padding: 25px 24px;
+                margin: 0;
+                font-size: 14px;
+                line-height: 1.7;
+                color: #777777;
+              }
+
+              /* Nova regra atualizada */
+              .st-accordion-item.st-active .st-accordion-content {
+                max-height: 500px; /* Valor maior para garantir que textos longos apareçam inteiros */
+                transition: max-height 0.4s ease-in;
+              }
+            </style>
+            <script>
+              document.querySelectorAll('.st-accordion-header').forEach((header) => {
+                header.addEventListener('click', () => {
+                  const currentItem = header.parentElement;
+                  const isOpen = currentItem.classList.contains('st-active');
+                  const icon = header.querySelector('.st-icon');
+
+                  // 1. Opcional: Fecha todas as outras abas antes de abrir a nova
+                  document.querySelectorAll('.st-accordion-item').forEach((item) => {
+                    item.classList.remove('st-active');
+                    const otherIcon = item.querySelector('.st-icon');
+                    if (otherIcon) otherIcon.textContent = '+';
+                  });
+
+                  // 2. Se a aba clicada não estava aberta, abre ela e muda o ícone
+                  if (!isOpen) {
+                    currentItem.classList.add('st-active');
+                    icon.textContent = '—';
+                  }
+                });
+              });
+            </script>
+    </main>
+
+    <!-- FOOTER (injetado via JS start) -->
+    <div id="footer"></div>
+    <!-- FOOTER (injetado via JS end) -->
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="assets/js/pages/slider.js"></script>
+    <script src="assets/js/pages/squad.js"></script>
+
+    <!-- Scripts gerais -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/header-nav.js"></script>
+
+    <script src="assets/js/pages/theme.js"></script>
+  </body>
+</html>

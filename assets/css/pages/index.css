@@ -218,9 +218,8 @@
   background-position: center;
 }
 
-/* DESKTOP — imagem maior estilo MotoGP, com espaçamento no topo */
+/* DESKTOP — imagem maior estilo, com espaçamento no topo */
 .rider-img {
-  filter:;
   position: absolute;
   right: 8px;
   bottom: 0;
@@ -676,7 +675,7 @@
 /* ===== PONTUACAO FIM===== */
 
 /* =====================================================
-   UFA Champions League Top Players Style
+   League Top Players Style
    ===================================================== */
 .top-players-track {
   display: flex;
@@ -699,7 +698,7 @@
 
 /* CARD UFA STYLE */
 .player-shield {
-  width: 108px; /* ligeiramente menor que Bundesliga para fidelidade UFA */
+  width: 108px; /* ligeiramente menor que fidelidade*/
   flex: 0 0 auto;
 }
 
@@ -1148,7 +1147,7 @@
 }
 
 /* =====================================================
-   MOTOGP – SYNC CALENDAR (COMPACT SCALE)
+   SYNC CALENDAR (COMPACT SCALE)
    ===================================================== */
 
 .motogp-calendar-sync {

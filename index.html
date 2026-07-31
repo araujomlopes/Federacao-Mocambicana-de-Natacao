@@ -4,10 +4,7 @@
     <!-- Meta tags obrigatórias -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta
-      name="description"
-      content="."
-    />
+    <meta name="description" content="." />
 
     <title>Rios — Website Leve e Responsivo</title>
 
@@ -36,496 +33,825 @@
       <!-- ================= HERO + SIDEBAR ================= -->
 
       <section class="araujolopes">
-      <div class="uefa-carousel">
-        <div class="f1-grid">
-          <!-- HERO -->
-          <article class="f1-hero">
-            <img
-              src="assets/images/diversos/pagina_inicial/projectocampofilia-1920.webp"
-              srcset="
-                assets/images/diversos/pagina_inicial/projectocampofilia-768.webp   768w,
-                assets/images/diversos/pagina_inicial/projectocampofilia-1280.webp 1280w,
-                assets/images/diversos/pagina_inicial/projectocampofilia-1920.webp 1920w
-              "
-              sizes="100vw"
-              alt="Mundialito de futsal do FILIA FC"
-              width="1920"
-              height="1080"
-              fetchpriority="high"
-              decoding="async"
-            />
-            <div class="f1-hero-content">
-              <span class="f1-tag">FMN</span>
-              <h1>Federação Moçambicana de Natação</h1>
-            </div>
-          </article>
+        <div class="uefa-carousel">
+          <div class="f1-grid">
+            <!-- HERO -->
 
-          <!-- SIDEBAR -->
-          <aside class="f1-sidebar">
-            <a href="" class="f1-card-link">
-              <div class="f1-card">
-                <img src="assets/images/diversos/topico (1).jpg" alt="" />
-                <div>
-                  <span class="f1-label label-academy">Inscrições Abertas</span>
-                  <h3>Inscrições abertas para o Campeonato Nacional.</h3>
+            <article class="f1-hero">
+              <img
+                src="assets/images/diversos/pagina_inicial/projectocampofilia-1920.webp"
+                srcset="
+                  assets/images/diversos/pagina_inicial/projectocampofilia-768.webp   768w,
+                  assets/images/diversos/pagina_inicial/projectocampofilia-1280.webp 1280w,
+                  assets/images/diversos/pagina_inicial/projectocampofilia-1920.webp 1920w
+                "
+                sizes="100vw"
+                alt="Mundialito de futsal do FILIA FC"
+                width="1920"
+                height="1080"
+                fetchpriority="high"
+                decoding="async"
+              />
+
+              <div class="f1-hero-content">
+                <div class="f1-hero-main-text">
+                  <span class="f1-tag">FMN</span>
+                  <h1>
+                    Federação Moçambicana de
+                    <span class="text-highlight"> Natação</span>
+                  </h1>
+                </div>
+
+                <!-- Menu Inferior transformado em Links Clicáveis -->
+                <div class="f1-hero-footer-menu">
+                  <a href="natacaopura.html" class="f1-footer-item">
+                    <h3>Natação Pura</h3>
+                    <p>Provas em piscina</p>
+                  </a>
+                  <a href="aguasabertas.html" class="f1-footer-item">
+                    <h3>Águas Abertas</h3>
+                    <p>Competições no mar</p>
+                  </a>
                 </div>
               </div>
-            </a>
-            <a href="" class="f1-card-link">
-              <div class="f1-card">
-                <img src="assets/images/diversos/topico (2).jpg" alt="" />
-                <div>
-                  <span class="f1-label label-academy">Seleção Nacional</span>
-                  <h3>Convocados para o Campeonato Africano de Natação 2026.</h3>
+
+              <!-- Scroll Down transformado em Link Clicável -->
+              <a href="#conteudo" class="f1-hero-scroll"> SCROLL DOWN </a>
+            </article>
+
+            <style>
+              /* Itens do Menu Inferior */
+              .f1-footer-item {
+                display: block;
+                text-decoration: none; /* Remove o sublinhado padrão de link */
+                color: #ffffff;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Linha inicial mais discreta */
+                padding-bottom: 15px;
+                cursor: pointer; /* Garante o dedo indicador */
+                transition: all 0.3s ease-in-out; /* Faz o efeito ser suave */
+              }
+
+              .f1-footer-item h3 {
+                font-size: 21px;
+                margin: 0 0 5px 0;
+                font-weight: 500;
+                color: rgb(255, 255, 255); /* Texto inicial ligeiramente opaco */
+                transition: color 0.3s ease-in-out;
+              }
+
+              .f1-footer-item p {
+                font-size: 0.85rem;
+                margin: 0;
+                color: rgb(196, 196, 196);
+              }
+
+              /* Efeito Hover: Quando o rato passa por cima do item */
+              .f1-footer-item:hover {
+                border-bottom-color: rgba(255, 255, 255, 1); /* Linha acende totalmente */
+              }
+
+              .f1-footer-item:hover h3 {
+                color: rgb(251, 190, 63); /* O título H3 acende em branco brilhante */
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Leve brilho opcional */
+              }
+
+              /* Texto Lateral "SCROLL DOWN" */
+              .f1-hero-scroll {
+                position: absolute;
+                right: 40px;
+                top: 25%;
+                color: rgba(255, 255, 255, 0.6); /* Inicialmente mais apagado */
+                font-size: 0.75rem;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                text-decoration: none;
+                transform: rotate(90deg);
+                transform-origin: right top;
+                white-space: nowrap;
+                cursor: pointer; /* Garante o dedo indicador */
+                transition: all 0.3s ease-in-out; /* Transição suave */
+              }
+
+              /* Efeito Hover no Scroll Down */
+              .f1-hero-scroll:hover {
+                color: #ffffff; /* Acende totalmente */
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Efeito de brilho */
+              }
+
+              /* Mantém o comportamento responsivo */
+              @media (max-width: 768px) {
+                .f1-hero-footer-menu {
+                  grid-template-columns: 1fr;
+                  gap: 20px;
+                }
+                .f1-hero-scroll {
+                  display: none;
+                }
+              }
+
+              /* Container Principal */
+
+              /* Área de Conteúdo Centralizada/Alinhada */
+              .f1-hero-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                padding: 10% 8% 5% 8%; /* Espaçamento interno das bordas */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; /* Separa o texto principal do menu inferior */
+                color: #ffffff;
+              }
+
+              /* Estilização do Título e Subtítulo */
+
+              .f1-hero-main-text h1 {
+                font-size: 2.5rem;
+                margin: 0;
+                font-weight: 600;
+              }
+
+              /* Cor amarela/dourada para a primeira palavra */
+              .f1-hero-main-text .text-highlight {
+                color: #f39c12; /* Ajuste o tom de amarelo conforme preferir */
+              }
+
+              /* Grid do Menu Inferior */
+              .f1-hero-footer-menu {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+                width: 100%;
+                max-width: 1200px; /* Limita a largura máxima das colunas */
+              }
+
+              /* Responsividade Básica para Telas Menores */
+              @media (max-width: 768px) {
+                .f1-hero-main-text h1 {
+                  font-size: 2.2rem;
+                }
+                .f1-hero-footer-menu {
+                  grid-template-columns: 1fr;
+                  gap: 20px;
+                }
+                .f1-hero-scroll {
+                  display: none; /* Esconde o scroll lateral em telas pequenas */
+                }
+              }
+
+              @media (max-width: 769px) {
+                .f1-hero {
+                  /* min-height: 440px; */
+                  min-height: 80dvh;
+                }
+                .f1-footer-item {
+                  max-width: 220px;
+                }
+              }
+            </style>
+
+            <!-- SIDEBAR -->
+            <aside class="f1-sidebar">
+              <a href="" class="f1-card-link">
+                <div class="f1-card">
+                  <img src="assets/images/diversos/topico (1).jpg" alt="" />
+                  <div>
+                    <span class="f1-label label-academy">Inscrições</span>
+                    <h3>Saber mais sobre inscrições em curso.</h3>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="" class="f1-card-link">
-              <div class="f1-card">
-                <img src="assets/images/diversos/topico (3).jpg" alt="" />
-                <div>
-                  <span class="f1-label label-academy">Ranking Nacional</span>
-                  <h3>Ranking atualizado dos atletas em todas as categorias e provas.</h3>
+              </a>
+              <a href="" class="f1-card-link">
+                <div class="f1-card">
+                  <img src="assets/images/diversos/topico (2).jpg" alt="" />
+                  <div>
+                    <span class="f1-label label-academy">Seleção Nacional</span>
+                    <h3>Convocados para o Campeonato Africano de Natação 2026.</h3>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="" class="f1-card-link">
-              <div class="f1-card">
-                <img src="assets/images/diversos/topico (4).jpg" alt="" />
-                <div>
-                  <span class="f1-label label-academy">Próxima Competição</span>
-                  <h3>2026 15 a 18 de Agosto • Piscina Olímpica do Zimpeto</h3>
+              </a>
+              <a href="" class="f1-card-link">
+                <div class="f1-card">
+                  <img src="assets/images/diversos/topico (3).jpg" alt="" />
+                  <div>
+                    <span class="f1-label label-academy">Comunicados</span>
+                    <h3>Acompanhe os comunicados mais recentes da FMN.</h3>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="" class="f1-card-link">
-              <div class="f1-card">
-                <img src="assets/images/diversos/topico (5).jpg" alt="" />
-                <div>
-                  <span class="f1-label label-academy">Recorde Nacional</span>
-                  <h3>100 m Livres Femininos estabelecido por Maria João.</h3>
+              </a>
+              <a href="" class="f1-card-link">
+                <div class="f1-card">
+                  <img src="assets/images/diversos/topico (4).jpg" alt="" />
+                  <div>
+                    <span class="f1-label label-academy">Próxima Competição</span>
+                    <h3>Acompanhe o calendario actualizado</h3>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </aside>
+              </a>
+              <a href="" class="f1-card-link">
+                <div class="f1-card">
+                  <img src="assets/images/diversos/topico (5).jpg" alt="" />
+                  <div>
+                    <span class="f1-label label-academy">Recorde Nacional</span>
+                    <h3>100 m Livres Femininos estabelecido por Maria João.</h3>
+                  </div>
+                </div>
+              </a>
+            </aside>
+          </div>
         </div>
-      </div>
-</section>
+      </section>
       <!-- ================= JOGOS ================= -->
 
+      <!-- ================= noticias inicio ================= -->
 
-
-
-
-
-
-
-<div class="partners-section">
-  <div class="partners-container">
-    <p class="partners-title"><strong>MODALIDADES</strong></p>
-
-    <div class="partners-grid">
-      <!-- Adidas -->
-      <div class="partner-item">
-        <div class="logo-wrapper">
-          <img src="assets/images/diversos/modalidades/natacao pura.svg" alt="" />
+      <div class="news-section">
+        <div class="news-header">
+          <h2>Últimas Notícias</h2>
         </div>
-        <span class="partner-name">Natacao Pura</span>
-      </div>
 
-      <!-- AWS -->
-      <div class="partner-item">
-        <div class="logo-wrapper">
-          <img src="assets/images/diversos/modalidades/natacao aguas abertas.svg" alt="" />
-        </div>
-        <span class="partner-name">Aguas Abertas</span>
-      </div>
-
-
-      <!-- Funny-Frisch -->
-      <div class="partner-item">
-        <div class="logo-wrapper">
-          <img src="assets/images/diversos/modalidades/natacao artistica.svg" alt="" />
-        </div>
-        <span class="partner-name">Natacao Artistica</span>
-      </div>
-
-      <!-- ServiceNow -->
-      <div class="partner-item">
-        <div class="logo-wrapper">
-          <img src="assets/images/diversos/modalidades/polo aquatico.svg" alt="" />
-        </div>
-        <span class="partner-name">Polo Aquatico</span>
-      </div>
-
-      <!-- Sorare -->
-      <div class="partner-item">
-        <div class="logo-wrapper">
-          <img src="assets/images/diversos/modalidades/saltos para a agua.svg" alt="" />
-        </div>
-        <span class="partner-name">Saltos Para a Agua</span>
-      </div>
-
-      <!-- Topps -->
-      <div class="partner-item">
-        <div class="logo-wrapper">
-          <img src="assets/images/diversos/modalidades/saltos de grandes alturas.svg" alt="" />
-        </div>
-        <span class="partner-name">Saltos De Grandes Alturas</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
- <div class="news-section">
-  <div class="news-header">
-    <h2>Últimas Notícias</h2>
-  </div>
-
-  <div class="news-grid">
-    <!-- Card Grande 1: Yamal -->
-    <div class="news-card card-large">
-      <img src="assets/images/diversos/Noticia card maior 1.webp" alt="" />
-      <div class="card-overlay">
-        <h3>Lorem ipsum dolor sit amet consectetur adipiscing.</h3>
-        <div class="card-meta">
-          <span class="hashtag">#Comite Olimpico</span>
-          <div class="sport-icon-wrapper"><img src="assets/images/diversos/modalidades/natacao pura.svg" alt="Icon"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2: Lautaro -->
-    <div class="news-card">
-      <div class="card-media">
-        <img src="assets/images/diversos/Noticia card menor1.webp" alt="" />
-        <span class="video-duration">07:36</span>
-      </div>
-      <div class="card-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-        <div class="card-meta">
-          <span class="hashtag">#Natação artistica</span>
-          <div class="sport-icon-wrapper"><img src="assets/images/diversos/modalidades/natacao aguas abertas.svg" alt="Icon"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3: Spain -->
-    <div class="news-card">
-      <div class="card-media">
-        <img src="assets/images/diversos/Noticia card menor2.webp" alt="" />
-      </div>
-      <div class="card-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-        <div class="card-meta">
-          <span class="hashtag">#Aguas profundas</span>
-          <div class="sport-icon-wrapper"><img src="assets/images/diversos/modalidades/natacao artistica.svg" alt="Icon"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4: Argentina -->
-    <div class="news-card">
-      <div class="card-media">
-        <img src="assets/images/diversos/Noticia card menor3.webp" alt="" />
-      </div>
-      <div class="card-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-        <div class="card-meta">
-          <span class="hashtag">#Saltos para a agua</span>
-          <div class="sport-icon-wrapper"><img src="assets/images/diversos/modalidades/polo aquatico.svg" alt="Icon"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 5: Draw -->
-    <div class="news-card">
-      <div class="card-media">
-        <img src="assets/images/diversos/Noticia card menor4.webp" alt="" />
-      </div>
-      <div class="card-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-        <div class="card-meta">
-          <span class="hashtag">#Polo aquatico</span>
-          <div class="sport-icon-wrapper"><img src="assets/images/diversos/modalidades/saltos de grandes alturas.svg" alt="Icon"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card Grande 6: Alvarez (CORRIGIDO) -->
-    <div class="news-card card-large card-right">
-      <img src="assets/images/diversos/Noticia card maior 2.webp" alt="" />
-      <span class="video-duration">07:01</span>
-      <div class="card-overlay">
-        <h3>Lorem ipsum dolor sit amet consectetur adipiscing.</h3>
-        <div class="card-meta">
-          <span class="hashtag">#Natação pura</span>
-          <div class="sport-icon-wrapper"><img src="assets/images/diversos/modalidades/saltos para a agua.svg" alt="Icon"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="news-footer">
-    <a href="#" class="btn-view-all">Var mais noticias</a>
-  </div>
-</div>
-
-
-
-     <div class="editors-section">
-        <div class="section-container">
-          <div class="section-header">
-            <h2>Videos</h2>
-            <div class="nav-arrows">
-              <button class="arrow-btn" id="prevBtn" aria-label="Anterior">
-                <svg viewBox="0 0 24 24">
-                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-                </svg>
-              </button>
-              <button class="arrow-btn" id="nextBtn" aria-label="Próximo">
-                <svg viewBox="0 0 24 24">
-                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                </svg>
-              </button>
+        <div class="news-grid">
+          <!-- Card Grande 1: Yamal (Substituído por tag <a>) -->
+          <a href="noticia_commonwealthglasgow2026.html" class="news-card card-large">
+            <img src="assets/images/noticias/Noticia card maior 1.webp" alt="" />
+            <div class="card-overlay">
+              <h3>Moçambique nos Jogos da Commonwealth 2026.</h3>
+              <div class="card-meta">
+                <span class="hashtag">#Glasgow, Escócia</span>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="slider-wrapper" id="sliderWrapper">
-            <div class="carousel-grid">
-              <!-- Card 1 -->
-              <div class="editor-card">
-                <div class="card-media">
-                  <img src="assets/images/diversos/noticiasslide1.webp" alt="Marquinhos" />
-                  <div class="video-duration">
-                    <span class="duration-text">03:04</span>
-                    <svg class="play-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <div class="card-date">31/05/2026</div>
-                  <p class="card-title">
-                    Lorem ipsum dolor sit amet outdoor fields text placeholder.
-                  </p>
+          <!-- Card 2: Lautaro (Substituído por tag <a>) -->
+          <a href="noticia_lanca_altorendimentonozimpeto.html" class="news-card">
+            <div class="card-media">
+              <img src="assets/images/noticias/card menor alto rendimento.webp" alt="" />
+              <span class="video-duration">07:36</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Presidente Justino Francisco anuncia projeto para Centro de Alto Rendimento no
+                Zimpeto
+              </p>
+              <div class="card-meta">
+                <span class="hashtag">#Infra-estruturas Zimpeto</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 3: Spain (Substituído por tag <a>) -->
+          <a href="noticia_1campeonato_aguasabertas.html" class="news-card">
+            <div class="card-media">
+              <img src="assets/images/noticias/aguas abertas card menor.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <p>
+                Lagoa Uembje recebe o 1º Campeonato Nacional de Águas Abertas na Praia do Bilene
+              </p>
+              <div class="card-meta">
+                <span class="hashtag">#Águas Abertas</span>
+                <div class="sport-icon-wrapper">
+                  <img
+                    src="assets/images/diversos/modalidades/natacao aguas abertas.svg"
+                    alt="Icon"
+                  />
                 </div>
               </div>
+            </div>
+          </a>
+
+          <!-- Card 4: Argentina (Substituído por tag <a>) -->
+          <a href="noticia_39edicao_nadadorcompleto2026.html" class="news-card">
+            <div class="card-media">
+              <img
+                src="assets/images/noticias/Noticia card menor1 nadador completo Angela xucumbi.webp"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <p>
+                Ângela Xicumbi e Hugo de Sousa coroados vencedores da 39ª Edição do Torneio Nadador
+                Completo 2026.
+              </p>
+              <div class="card-meta">
+                <span class="hashtag">#Natação Pura</span>
+                <div class="sport-icon-wrapper">
+                  <img src="assets/images/diversos/modalidades/natacao pura.svg" alt="Icon" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 5: Draw (Substituído por tag <a>) -->
+          <a href="noticia_bronzeafricanojuniors2023.html" class="news-card">
+            <div class="card-media">
+              <img src="assets/images/noticias/historico_bronze_card_menor.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <p>A histórica Medalha de Bronze no Africano de Juniores de 2023.</p>
+              <div class="card-meta">
+                <span class="hashtag">#Natação Pura</span>
+                <div class="sport-icon-wrapper">
+                  <img src="assets/images/diversos/modalidades/natacao pura.svg" alt="Icon" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card Grande 6: Alvarez (Substituído por tag <a>) -->
+          <a
+            href="noticia_justino_eleitopresedente_fmn.html"
+            class="news-card card-large card-right"
+          >
+            <img src="assets/images/noticias/card_maior_tomada_posse.webp" alt="" />
+            <span class="video-duration">07:01</span>
+            <div class="card-overlay">
+              <h3>
+                Novo elenco diretivo da FMN toma posse na sede do Comité Olímpico com foco na
+                expansão nacional.
+              </h3>
+              <div class="card-meta">
+                <span class="hashtag">#Nova Gestão</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="news-footer">
+          <a href="noticias_geral.html" class="btn-view-all">Ver mais notícias</a>
+        </div>
+      </div>
+
+      <style>
+        /* styles  da primeira seccao de noticias Faz o cursor virar a mãozinha no card */
+        .news-card {
+          cursor: pointer;
+          text-decoration: none; /* Remove sublinhados do texto dentro do link */
+          display: block; /* Garante que o link ocupe todo o espaço do card */
+          color: inherit; /* Mantém as cores originais dos textos */
+        }
+
+        /* Opcional: Efeito visual suave ao passar o mouse */
+        .news-card:hover {
+          opacity: 0.95;
+          transform: translateY(-2px);
+          transition: all 0.2s ease-in-out;
+        }
+      </style>
+
+      <section class="ultimas-fotos-section">
+        <div class="fotos-container">
+          <!-- Coluna de Introdução (Fixa) -->
+          <div class="fotos-intro-col">
+            <span class="fotos-tagline">Multimédia FMN</span>
+            <h2 class="fotos-main-title">Fotos e videos</h2>
+            <p class="fotos-intro-text">
+              Acompanhe de perto as braçadas que marcam a história da natação Moçambicana. Dos
+              torneios de Natação Pura ao Campeonato de Águas Abertas, documentamos o
+              desenvolvimento e a expansão da nossa modalidade.
+            </p>
+            <a href="#" class="btn-todas-fotos">VER GALERIA</a>
+          </div>
+
+          <!-- Área do Slider (Cards) -->
+          <div class="fotos-slider-wrapper">
+            <div class="fotos-slider">
+              <!-- Card 1 -->
+              <article class="foto-card">
+                <div class="foto-image-wrapper">
+                  <img
+                    src="assets/images/noticias/galeria_glasgow_card_menor.webp"
+                    alt="House Renovation"
+                    class="foto-image"
+                    draggable="false"
+                  />
+                  <span class="foto-category">NATACAO PURA</span>
+                </div>
+
+                <div class="foto-content">
+                  <span class="foto-date">Julho de 2026</span>
+                  <p class="foto-excerpt">Jogos da Commonwealth de 2026.</p>
+                </div>
+              </article>
 
               <!-- Card 2 -->
-              <div class="editor-card">
-                <div class="card-media">
-                  <img src="assets/images/diversos/noticiasslide2.webp" alt="Kvaratskhelia" />
-                  <div class="video-duration">
-                    <span class="duration-text">00:34</span>
-                    <svg class="play-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
-                      />
-                    </svg>
-                  </div>
+              <article class="foto-card">
+                <div class="foto-image-wrapper">
+                  <img
+                    src="assets/images/noticias/galeria_glasgow_card_menor2.webp"
+                    alt="Construction Consultant"
+                    class="foto-image"
+                    draggable="false"
+                  />
+                  <span class="foto-category">NATACAO PURA</span>
                 </div>
-                <div class="card-info">
-                  <div class="card-date">31/05/2026</div>
-                  <p class="card-title">Lorem ipsum dolor sit amet outdoor fields text placeholder.</p>
+                <div class="foto-content">
+                  <span class="foto-date">Julho de 2026</span>
+                  <p class="foto-excerpt">Jogos da Commonwealth de 2026.</p>
                 </div>
-              </div>
+              </article>
 
               <!-- Card 3 -->
-              <div class="editor-card">
-                <div class="card-media">
-                  <img src="assets/images/diversos/noticiasslide3.webp" alt="Vitinha" />
-                  <div class="video-duration">
-                    <span class="duration-text">01:53</span>
-                    <svg class="play-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
-                      />
-                    </svg>
-                  </div>
+              <article class="foto-card">
+                <div class="foto-image-wrapper">
+                  <img
+                    src="assets/images/noticias/galeria_glasgow_card_menor3.webp"
+                    alt="Architecture & Building"
+                    class="foto-image"
+                    draggable="false"
+                  />
+                  <span class="foto-category">NATACAO PURA</span>
                 </div>
-                <div class="card-info">
-                  <div class="card-date">31/05/2026</div>
-                  <p class="card-title">Lorem ipsum dolor sit amet outdoor fields text placeholder.</p>
+                <div class="foto-content">
+                  <span class="foto-date">Junho de 2022</span>
+                  <p class="foto-excerpt">Campeonatos Mundiais de Budapeste, Hungria.</p>
                 </div>
-              </div>
+              </article>
 
               <!-- Card 4 -->
-              <div class="editor-card">
-                <div class="card-media">
-                  <img src="assets/images/diversos/noticiasslide4.webp" alt="Paris vs Arsenal" />
-                  <div class="video-duration">
-                    <span class="duration-text">01:19</span>
-                    <svg class="play-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
-                      />
-                    </svg>
-                  </div>
+              <article class="foto-card">
+                <div class="foto-image-wrapper">
+                  <img
+                    src="assets/images/noticias/galeria_glasgow_card_menor4.webp"
+                    alt="New Project"
+                    class="foto-image"
+                    draggable="false"
+                  />
+                  <span class="foto-category"></span>
                 </div>
-                <div class="card-info">
-                  <div class="card-date">31/05/2026</div>
-                  <p class="card-title">Lorem ipsum dolor sit amet outdoor fields text placeholder.</p>
+                <div class="foto-content">
+                  <span class="foto-date"></span>
+                  <p class="foto-excerpt"></p>
                 </div>
-              </div>
+              </article>
             </div>
-          </div>
 
-          <div class="footer-action">
-            <a href="#" class="btn-see-all">Ver mais</a>
+            <!-- O JavaScript vai injetar as bolinhas aqui de forma automática -->
+            <div class="fotos-slider-dots"></div>
           </div>
         </div>
-      </div>
+      </section>
 
+      <style>
+        /* ==========================================================================
+   RESET E ESTRUTURA BASE (Alinhada com a seção superior)
+   ========================================================================== */
+        .ultimas-fotos-section * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ultimas-fotos-section {
+          width: 100%;
+          padding: 60px 0;
+          overflow: hidden;
+          background-color: transparent;
+        }
+
+        /* Força o alinhamento magnético perfeito nas duas extremidades */
+        .fotos-container {
+          display: flex;
+          flex-direction: row;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 12px; /* Margem idêntica à seção de cima */
+          gap: 20px; /* Alinhado com o espaçamento da seção superior */
+          justify-content: space-between;
+        }
+
+        /* ==========================================================================
+   COLUNA DE INTRODUÇÃO (Lado a lado - Largura de partida fixa)
+   ========================================================================== */
+        .fotos-intro-col {
+          flex: 0 0 284px;
+          width: 284px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .fotos-tagline {
+          font-size: 11px;
+          text-transform: uppercase;
+          color: #999999;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+        }
+
+        .fotos-main-title {
+          font-size: 32px;
+          color: #222222;
+          font-weight: 700;
+          margin-bottom: 25px;
+          position: relative;
+          padding-bottom: 15px;
+        }
+
+        .fotos-main-title::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 40px;
+          height: 2px;
+          background-color: #0078d4;
+        }
+
+        .fotos-intro-text {
+          font-size: 14px;
+          line-height: 1.6;
+          color: #666666;
+          margin-bottom: 30px;
+        }
+
+        .btn-todas-fotos {
+          display: inline-block;
+          background-color: #0078d4;
+          color: white;
+          text-decoration: none;
+          font-size: 11px;
+          font-weight: 700;
+          padding: 15px 30px;
+          letter-spacing: 1px;
+        }
+
+        /* ==========================================================================
+   ÁREA DO SLIDER E CARDS (Fluida para eliminar erros milimétricos)
+   ========================================================================== */
+        .fotos-slider-wrapper {
+          flex: 1; /* Preenche dinamicamente até a margem direita exata do grid superior */
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .fotos-slider {
+          display: flex;
+          gap: 20px; /* Espaçamento de 20px idêntico entre os cards */
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          scrollbar-width: none;
+          padding-bottom: 20px;
+          cursor: grab;
+          user-select: none;
+        }
+
+        .fotos-slider:active {
+          cursor: grabbing;
+        }
+
+        .fotos-slider::-webkit-scrollbar {
+          display: none;
+        }
+
+        /* CALIBRAÇÃO EXATA: Adapta o tamanho dos cards ao wrapper de forma milimétrica */
+        .foto-card {
+          flex: 0 0 calc((100% - 40px) / 3); /* 100% do slider fluido menos 40px dos dois gaps */
+          scroll-snap-align: start;
+          display: flex;
+          flex-direction: column;
+          background-color: transparent !important;
+          background: none !important;
+        }
+
+        .foto-image-wrapper {
+          position: relative;
+          width: 100%;
+          pointer-events: none;
+        }
+
+        .foto-image {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .foto-category {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #0078d4;
+          color: white;
+          font-size: 10px;
+          font-weight: 700;
+          padding: 8px 15px;
+        }
+
+        .foto-content {
+          padding-top: 20px;
+          background-color: transparent !important;
+        }
+
+        .foto-title {
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 1.4;
+          margin-bottom: 8px;
+        }
+
+        .foto-title a {
+          color: #222222;
+          text-decoration: none;
+        }
+
+        .foto-date {
+          display: block;
+          font-size: 12px;
+          color: #999999;
+          margin-bottom: 15px;
+        }
+
+        .foto-date::before {
+          content: '📅';
+          margin-right: 5px;
+        }
+
+        .foto-excerpt {
+          font-size: 13px;
+          line-height: 1.6;
+          color: #666666;
+        }
+
+        /* ==========================================================================
+   PAGINAÇÃO (Bolinhas do Carrossel)
+   ========================================================================== */
+        .fotos-slider-dots {
+          display: flex;
+          justify-content: center;
+          gap: 8px;
+          margin-top: 15px;
+        }
+
+        .dot-btn {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: none;
+          background-color: #cccccc;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        .dot-btn.active {
+          background-color: #f5b025;
+        }
+
+        /* ==========================================================================
+   REGRAS PARA DISPOSITIVOS MÓVEIS (Apenas quebra abaixo de 992px)
+   ========================================================================== */
+        @media (max-width: 992px) {
+          .fotos-container {
+            flex-direction: column;
+            gap: 30px;
+            padding: 0 12px;
+          }
+
+          .fotos-intro-col {
+            flex: none;
+            width: 100%;
+            align-items: flex-start;
+            text-align: left;
+          }
+
+          .fotos-main-title::after {
+            left: 0;
+            transform: none;
+          }
+
+          .fotos-slider-wrapper {
+            flex: none;
+            width: 100%;
+          }
+
+          .fotos-slider {
+            gap: 15px;
+          }
+
+          .foto-card {
+            flex: 0 0 85%; /* No mobile mantém a fluidez para indicar o arrasto lateral */
+          }
+        }
+
+        .foto-image {
+          width: 100%;
+          height: auto;
+          display: block;
+          /* Aplica o arredondamento: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+          border-radius: var(--radius, 10px) var(--radius, 10px) 0 0;
+        }
+      </style>
       <script>
-        const wrapper = document.getElementById('sliderWrapper');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
+        document.addEventListener('DOMContentLoaded', function () {
+          // Seletores atualizados para corresponder ao novo HTML de fotos
+          const slider = document.querySelector('.fotos-slider');
+          const dotsContainer = document.querySelector('.fotos-slider-dots');
+          const cards = document.querySelectorAll('.foto-card');
 
-        nextBtn.addEventListener('click', () => {
-          const cardWidth = wrapper.querySelector('.editor-card').offsetWidth + 16;
-          wrapper.scrollBy({ left: cardWidth, behavior: 'smooth' });
-        });
+          if (!slider || !dotsContainer || cards.length === 0) return;
 
-        prevBtn.addEventListener('click', () => {
-          const cardWidth = wrapper.querySelector('.editor-card').offsetWidth + 16;
-          wrapper.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-        });
-      </script>
+          // --- CRIAÇÃO DINÂMICA DAS BOLINHAS ---
+          // Varre todos os cards existentes no HTML e gera um botão para cada um
+          cards.forEach((card, index) => {
+            const dot = document.createElement('button');
+            dot.classList.add('dot-btn');
+            if (index === 0) dot.classList.add('active'); // Primeira começa ativa
+            dot.setAttribute('data-slide', index);
+            dot.setAttribute('aria-label', `Slide ${index + 1}`);
+            dotsContainer.appendChild(dot);
+          });
 
-      <div class="photos-section">
-        <div class="section-container">
-          <div class="section-header">
-            <h2>Fotos recentes</h2>
-            <div class="nav-arrows">
-              <button class="arrow-btn" id="photoPrevBtn" aria-label="Anterior">
-                <svg viewBox="0 0 24 24">
-                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-                </svg>
-              </button>
-              <button class="arrow-btn" id="photoNextBtn" aria-label="Próximo">
-                <svg viewBox="0 0 24 24">
-                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                </svg>
-              </button>
-            </div>
-          </div>
+          // Captura os botões gerados recentemente
+          const dots = document.querySelectorAll('.dot-btn');
 
-          <div class="slider-wrapper" id="photoSliderWrapper">
-            <div class="carousel-grid">
-              <!-- Card 1 -->
-              <div class="photo-card">
-                <div class="card-media">
-                  <img src="assets/images/diversos/noticiasslide5.webp" alt="Galeria 1" />
-                  <div class="photo-badge">
-                    <span class="badge-text">24 Photos</span>
-                    <svg class="camera-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <div class="card-date">20/07/2026</div>
-                  <p class="card-title">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
+          // --- LÓGICA DE ARRASTAR COM O MOUSE (DRAG TO SCROLL) ---
+          let isDown = false;
+          let startX;
+          let scrollLeft;
 
-              <!-- Card 2 -->
-              <div class="photo-card">
-                <div class="card-media">
-                  <img src="assets/images/diversos/noticiasslide6.webp" alt="Galeria 2" />
-                  <div class="photo-badge">
-                    <span class="badge-text">12 Photos</span>
-                    <svg class="camera-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <div class="card-date">20/07/2026</div>
-                  <p class="card-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                </div>
-              </div>
+          slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.style.scrollBehavior = 'auto';
+            slider.style.scrollSnapType = 'none';
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+          });
 
-              <!-- Card 3 -->
-              <div class="photo-card">
-                <div class="card-media">
-                  <img src="assets/images/diversos/noticiasslide7.webp" alt="" />
-                  <div class="photo-badge">
-                    <span class="badge-text">45 Photos</span>
-                    <svg class="camera-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <div class="card-date">19/07/2026</div>
-                  <p class="card-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                </div>
-              </div>
+          slider.addEventListener('mouseleave', () => {
+            if (!isDown) return;
+            isDown = false;
+            finalizarArrasto();
+          });
 
-              <!-- Card 4 -->
-              <div class="photo-card">
-                <div class="card-media">
-                  <img src="assets/images/diversos/noticiasslide8.webp" alt="" />
-                  <div class="photo-badge">
-                    <span class="badge-text">18 Photos</span>
-                    <svg class="camera-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <div class="card-date">18/07/2026</div>
-                  <p class="card-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          slider.addEventListener('mouseup', () => {
+            if (!isDown) return;
+            isDown = false;
+            finalizarArrasto();
+          });
 
-          <div class="footer-action">
-            <a href="#" class="btn-see-all">Galeria completa</a>
-          </div>
-        </div>
-      </div>
+          slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            slider.scrollLeft = scrollLeft - walk;
+          });
 
-      <script>
-        const photoWrapper = document.getElementById('photoSliderWrapper');
-        const photoPrevBtn = document.getElementById('photoPrevBtn');
-        const photoNextBtn = document.getElementById('photoNextBtn');
+          function finalizarArrasto() {
+            slider.style.scrollBehavior = 'smooth';
+            slider.style.scrollSnapType = 'x mandatory';
+            const currentScroll = slider.scrollLeft;
+            slider.scrollLeft = currentScroll + 1;
+            slider.scrollLeft = currentScroll;
+          }
 
-        photoNextBtn.addEventListener('click', () => {
-          const cardWidth = photoWrapper.querySelector('.photo-card').offsetWidth + 20;
-          photoWrapper.scrollBy({ left: cardWidth, behavior: 'smooth' });
-        });
+          // --- NAVEGAÇÃO AO CLICAR NAS BOLINHAS ---
+          dots.forEach((dot) => {
+            dot.addEventListener('click', () => {
+              slider.style.scrollBehavior = 'smooth';
+              const slideIndex = parseInt(dot.getAttribute('data-slide'));
+              const targetCard = cards[slideIndex];
 
-        photoPrevBtn.addEventListener('click', () => {
-          const cardWidth = photoWrapper.querySelector('.photo-card').offsetWidth + 20;
-          photoWrapper.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+              if (targetCard) {
+                slider.scrollTo({
+                  left: targetCard.offsetLeft - slider.offsetLeft,
+                  behavior: 'smooth',
+                });
+              }
+            });
+          });
+
+          // --- ATUALIZAÇÃO SENSÍVEL AO SCROLL ---
+          slider.addEventListener('scroll', () => {
+            let activeIndex = 0;
+            let minDistance = Infinity;
+
+            cards.forEach((card, index) => {
+              const distance = Math.abs(
+                card.getBoundingClientRect().left - slider.getBoundingClientRect().left
+              );
+              if (distance < minDistance) {
+                minDistance = distance;
+                activeIndex = index;
+              }
+            });
+
+            dots.forEach((dot) => dot.classList.remove('active'));
+            if (dots[activeIndex]) {
+              dots[activeIndex].classList.add('active');
+            }
+          });
         });
       </script>
 
       <!-- ================= DISCIPLINA ================= -->
+    </main>
 
-      <!-- ================= MELHORES MARCADORES ================= -->
+    <!-- ================= MELHORES MARCADORES ================= -->
 
     <!-- ================= FOOTER ================= -->
     <div id="footer"></div>

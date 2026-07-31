@@ -492,7 +492,7 @@ a {
   line-height: 1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--text);
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -564,7 +564,7 @@ a {
   margin-top: 0.2rem;
 }
 
-/* LOGO – ajustado para equivaler à Bundesliga */
+/* LOGO – ajustado para equivaler */
 .brand {
   display: flex;
   align-items: center;
@@ -642,7 +642,7 @@ body {
 
 /* Logo */
 .brand img {
-  height: 36px;
+  height: 45px;
   display: block;
 }
 

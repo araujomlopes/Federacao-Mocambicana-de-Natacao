@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Rios — Estrutura leve e responsiva — HTML e CSS puro, boas práticas de escritórios de design."
+    />
+    <title>Rios — Website Leve e Responsivo</title>
+    <link rel="stylesheet" href="assets/css/firefox-fixes.css" />
+
+    <!-- Google Fonts (style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Geral -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- CSS Página Equipas -->
+    <link rel="stylesheet" href="assets/css/pages/equipas.css" />
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <div id="header"></div>
+    <!-- ========== HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="main">
+      <article class="news-block">
+        <!-- Imagem de Destaque Superior -->
+        <div class="news-featured-image">
+          <img
+            src="assets/images/noticias/paginaprincipal noticia nadador completo Angela xucumbi.webp"
+            alt="Trabalhadores da construção civil"
+          />
+        </div>
+
+        <!-- Cabeçalho da Notícia -->
+        <header class="news-header">
+          <h1 class="news-title">
+            Ângela Xicumbi e Hugo de Sousa coroados vencedores da 39.ª Edição do Torneio Nadador
+            Completo 2026
+          </h1>
+          <div class="news-meta">
+            <span class="news-date">14 de Abril de 2026</span>
+            <span class="news-comments">1</span>
+          </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <div class="news-content">
+          <p>
+            Caiu o pano sobre a 39.ª Edição do Torneio Nadador Completo 2026, um dos certames mais
+            tradicionais e competitivos da capital, organizado pela Associação de Natação da Cidade
+            de Maputo (ANCM) na Piscina Raimundo Franisse.
+          </p>
+
+          <p>
+            Ao longo de dois dias de intensas disputas em todos os estilos olímpicos (Mariposa,
+            Costas, Bruços e Livres), os atletas lutaram ponto a ponto para ditar quem seriam os
+            nadadores mais versáteis da época.
+          </p>
+
+          <p>
+            No setor feminino, o grande destaque da competição foi Ângela Xicumbi, que conquistou o
+            título absoluto com um total de 2.471 pontos e esteve em plano soberbo ao bater três
+            recordes de categoria ao longo do fim de semana. Xicumbi fixou novas marcas nos 100
+            metros mariposa (1.08,91), nos 100 metros bruços (1.20,46) e nos 100 metros livres
+            (1.07,2). Já no setor masculino, o título de Nadador Completo foi para Hugo de Sousa,
+            que alcançou o topo do pódio ao somar 2.418 pontos após dominar as suas séries.
+          </p>
+
+          <!-- Bloco de Destaque Amarelo -->
+          <blockquote class="news-highlight-block">
+            <strong
+              >O torneio reuniu nove equipas, incluindo potências locais como o Ferroviário de
+              Maputo, os Golfinhos, o Clube Naval, os Tubarões e o Clube Barracudas, além de
+              participações especiais como a dos masters do Banco de Moçambique e dos filhos dos
+              trabalhadores da Petromoc. A cobertura completa sobre as pontuações finais por escalão
+              e as reações dos novos campeões estão disponíveis no portal do</strong
+            >
+          </blockquote>
+        </div>
+      </article>
+
+      <style>
+        /* Container Principal */
+        .news-block {
+          max-width: 800px;
+          margin: 0 auto;
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          color: #444444;
+          line-height: 1.6;
+          font-size: 14px;
+          padding: 12px;
+        }
+
+        /* Imagens */
+        .news-featured-image img,
+        .news-secondary-image img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        /* Cabeçalho */
+        .news-header {
+          margin: 25px 0 15px 0;
+        }
+
+        .news-title {
+          font-size: 18px;
+          font-weight: bold;
+          color: #111111;
+          text-transform: uppercase;
+          margin: 0 0 8px 0;
+          letter-spacing: 0.5px;
+        }
+
+        .news-meta {
+          font-size: 12px;
+          color: #888888;
+        }
+
+        .news-meta span {
+          margin-right: 15px;
+        }
+
+        /* Espaçamento dos Parágrafos */
+        .news-content p {
+          margin-bottom: 18px;
+          text-align: justify;
+        }
+
+        /* Bloco de Destaque Amarelo */
+        .news-highlight-block {
+          border-left: 4px solid #f6b426;
+          padding-left: 20px;
+          margin: 25px 0;
+          font-size: 14.5px;
+          color: #222222;
+        }
+
+        /* Layout de Duas Colunas (Inferior) */
+        .news-secondary-section {
+          display: flex;
+          gap: 20px;
+          margin: 25px 0;
+          align-items: flex-start;
+        }
+
+        .news-secondary-image {
+          flex: 0 0 35%;
+        }
+
+        .news-secondary-text {
+          flex: 1;
+        }
+
+        .news-secondary-text p:first-child {
+          margin-top: 0;
+        }
+
+        /* Responsividade para Telas Menores */
+        @media (max-width: 600px) {
+          .news-secondary-section {
+            flex-direction: column;
+          }
+          .news-secondary-image {
+            width: 100%;
+          }
+        }
+      </style>
+    </main>
+
+    <!-- FOOTER (injetado via JS start) -->
+    <div id="footer"></div>
+    <!-- FOOTER (injetado via JS end) -->
+
+    <!-- Scripts da página -->
+    <script src="assets/js/pages/slider.js"></script>
+    <script src="assets/js/pages/equipas.js"></script>
+
+    <!-- Scripts gerais -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/pages/footer.js"></script>
+    <script src="assets/js/pages/header-nav.js"></script>
+
+    <script src="assets/js/pages/theme.js"></script>
+  </body>
+</html>

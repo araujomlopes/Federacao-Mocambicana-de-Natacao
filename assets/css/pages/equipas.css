@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 12px;
   box-sizing: border-box;
   padding-top: 50px;
   padding-bottom: 60px;
@@ -41,14 +41,14 @@
 }
 
 /* Tablet: 2 cards por linha */
-@media(min-width: 700px) {
+@media (min-width: 700px) {
   .teams-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
 /* Desktop: 3 cards por linha */
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .teams-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -72,14 +72,16 @@
   display: flex;
   align-items: center;
   gap: 22px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   min-width: 0; /* Permite encolher no Firefox */
 }
 
 .team-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.09);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.09);
 }
 
 .team-card > img {
@@ -143,8 +145,3 @@
     font-size: 14px;
   }
 }
-
-
-
-
-
