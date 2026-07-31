@@ -715,6 +715,25 @@ nav {
 
 /* LISTA */
 
+.submenu a {
+  display: block;
+  padding: 12px 22px;
+
+  color: #222;
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+
+.submenu a:hover {
+  background-color: #edf4ff; /* Azul muito claro */
+  color: #0066d9;
+}
+
 /* LINKS */
 .nav-list a {
   position: relative;
@@ -737,22 +756,18 @@ nav {
 }
 
 /* HOVER (efeito LiveScore) */
+/* 1. Adicione a transição no estado normal do link */
+.nav-list a {
+  /* ... mantenha suas outras regras aqui (font-size, color, etc.) ... */
+  transition: color 0.3s ease; /* faz a cor mudar suavemente */
+}
+
+/* 2. Modifique o estado hover */
 .nav-list a:hover {
-  color: var(--text-dynamic);
-  transform: scale(1.05); /* cresce em todas direções */
+  color: #d89b21; /* mantém apenas a mudança de cor */
 }
 
 /* LINHA ANIMADA */
-.nav-list a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  height: 2px;
-  width: 0;
-  background: #ff6b00;
-  transition: width 0.25s ease;
-}
 
 /* HOVER LINHA */
 .nav-list a:hover::after {
@@ -850,12 +865,6 @@ nav {
   }
 
   /* 🔴 CORREÇÃO 1 — submenu abrir no mobile */
-
-  /* Estilo submenu */
-  .submenu {
-    border-left: 2px solid var(--accent);
-    padding-left: 1rem;
-  }
 }
 
 /* =========================================================

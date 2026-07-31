@@ -64,10 +64,6 @@
 HEADER NAVIGATION
 ========================================================= */
 
-  nav {
-    margin-left: auto;
-  }
-
   .nav-list {
     display: flex;
     align-items: center;
@@ -101,72 +97,16 @@ HEADER NAVIGATION
     transition: 0.25s;
   }
 
-  .nav-list > li > a:hover {
-    color: #0078d7;
-  }
 
-  .nav-list > li > a::after {
-    content: '';
 
-    position: absolute;
 
-    bottom: 0;
 
-    left: 0;
-
-    width: 0;
-
-    height: 3px;
-
-    background: #0078d7;
-
-    transition: 0.25s;
-  }
-
-  .nav-list > li:hover > a::after {
-    width: 100%;
-  }
 
   /* ===================================
 SUBMENU
 =================================== */
 
-  .submenu {
-    position: absolute;
 
-    left: 0;
-    top: 100%;
-
-    min-width: 260px;
-
-    background: #fff;
-
-    border-radius: 14px;
-
-    padding: 12px 0;
-
-    list-style: none;
-
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-
-    opacity: 0;
-
-    visibility: hidden;
-
-    transform: translateY(12px);
-
-    transition: 0.28s;
-
-    z-index: 999;
-  }
-
-  .has-submenu:hover > .submenu {
-    opacity: 1;
-
-    visibility: visible;
-
-    transform: translateY(0);
-  }
 
   .submenu li {
     width: 100%;
@@ -184,21 +124,11 @@ SUBMENU
     transition: 0.18s;
   }
 
-  .submenu a:hover {
-    background: #f5f7fb;
 
-    color: #0078d7;
-
-    padding-left: 28px;
-  }
 
   /* ===================================
 MOBILE
 =================================== */
-
-  .nav-toggle {
-    display: none;
-  }
 
   @media (max-width: 900px) {
     .nav-toggle {
