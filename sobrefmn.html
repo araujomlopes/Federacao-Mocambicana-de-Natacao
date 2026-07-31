@@ -1,0 +1,1160 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Rios — Estrutura leve e responsiva — HTML e CSS puro, boas práticas de escritórios de design."
+    />
+    <title>Rios — Website Leve e Responsivo</title>
+
+    <!-- Google Fonts (RIOS-style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- nova fonte araujo test -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- nova fonte -->
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- CSS de página / componentes -->
+    <link rel="stylesheet" href="assets/css/pages/equipa.css" />
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <div id="header"></div>
+    <!-- ========== HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="main">
+      <!-- =========================================================
+     CONTEÚDO
+========================================================= -->
+
+      <!-- ========== CABEÇALHO DO COMPONENTE ========== -->
+      <div class="fmn-team-header-bg">
+        <div class="fmn-team-header-container">
+          <h1 class="fmn-team-main-title">SOBRE NOS</h1>
+        </div>
+      </div>
+      <!-- ========== CAMINHO DE NAVEGAÇÃO (BREADCRUMB) ========== -->
+      <div class="fmn-team-breadcrumb-container">
+        <nav class="fmn-team-breadcrumb">
+          <span class="fmn-crumb-root">FMN</span>
+          <span class="fmn-crumb-separator">&gt;</span>
+          <span class="fmn-crumb-current">Sobre MFN</span>
+        </nav>
+      </div>
+      <style>
+        /* --- Cabeçalho Cinzento Fiel --- */
+        .fmn-team-header-bg {
+          background-color: #f7f7f7;
+          width: 100%;
+          padding: 50px 0;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-header-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 12px;
+        }
+
+        .fmn-team-main-title {
+          font-size: 32px;
+          font-weight: 600;
+          color: #1a202c;
+          margin: 0;
+          letter-spacing: -0.5px;
+        }
+
+        /* --- Caminho de Navegação (Breadcrumb) --- */
+        .fmn-team-breadcrumb-container {
+          width: 100%;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-breadcrumb {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 12px;
+          font-size: 13px;
+        }
+
+        .fmn-crumb-root {
+          color: #333333;
+          font-weight: 500;
+        }
+
+        .fmn-crumb-separator {
+          color: #aaaaaa;
+          margin: 0 8px;
+        }
+
+        .fmn-crumb-current {
+          color: #888888;
+        }
+
+        /* --- Área de Listagem da Equipa --- */
+        .fmn-team-section {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px 20px 60px 20px;
+          color: #444444;
+        }
+
+        .fmn-team-card {
+          display: flex;
+          gap: 40px;
+          padding: 55px 0;
+          border-bottom: 1px solid #dddddd; /* Linha separadora suave idêntica à imagem */
+          align-items: flex-start;
+        }
+
+        /* Mantém a linha divisória suave em todos, exceto no último bloco inferior */
+        .fmn-team-card:last-child {
+          border-bottom: none;
+        }
+
+        .fmn-team-photo-container {
+          flex: 0 0 240px;
+          width: 240px;
+        }
+
+        .fmn-team-photo {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .fmn-team-info {
+          flex: 1;
+          padding-top: 5px;
+        }
+
+        .fmn-team-name {
+          font-size: 22px;
+          font-weight: 600;
+          color: #f4b41a;
+          margin: 0 0 5px 0;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+        }
+
+        .fmn-team-role {
+          font-size: 14px;
+          color: #999999;
+          display: block;
+          margin-bottom: 20px;
+          font-weight: 400;
+        }
+
+        .fmn-team-bio {
+          font-size: 15px;
+          line-height: 1.6;
+          color: #555555;
+          margin: 0;
+          text-align: left;
+        }
+
+        /* Bloco de Assinatura */
+        .fmn-team-signature-block {
+          margin-top: 25px;
+          display: inline-block;
+        }
+
+        .fmn-team-signature-img {
+          height: 45px;
+          width: auto;
+          display: block;
+          margin-bottom: 8px;
+          mix-blend-mode: multiply;
+        }
+
+        .fmn-team-signature-caption {
+          font-size: 11px;
+          color: #666666;
+          letter-spacing: 0.5px;
+          text-align: left;
+        }
+
+        .fmn-team-signature-caption strong {
+          color: #000000;
+        }
+
+        /* --- Responsividade Completa e Ajuste à Esquerda no Mobile --- */
+        @media (max-width: 768px) {
+          .fmn-team-header-bg {
+            padding: 35px 0;
+          }
+
+          .fmn-team-main-title {
+            font-size: 26px;
+          }
+
+          .fmn-team-card {
+            flex-direction: column;
+            gap: 25px;
+            padding: 40px 0;
+          }
+
+          .fmn-team-photo-container {
+            flex: none;
+            width: 100%;
+            max-width: 380px;
+          }
+
+          .fmn-team-info {
+            text-align: left;
+            width: 100%;
+          }
+
+          .fmn-team-bio {
+            text-align: left;
+          }
+
+          .fmn-team-signature-block {
+            display: block;
+            text-align: left;
+          }
+        }
+      </style>
+
+      <style>
+        /* Escopo isolado com o prefixo 'tb-' para evitar conflitos no seu site */
+
+        .tb-container {
+          display: grid;
+          grid-template-columns: 260px 1fr;
+          gap: 40px;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 12px;
+          color: #333333;
+        }
+
+        /* --- SIDEBAR --- */
+        .tb-sidebar {
+          display: flex;
+          flex-direction: column;
+          gap: 35px;
+        }
+
+        .tb-section {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .tb-sidebar-title {
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          margin: 0 0 20px 0;
+          color: #222222;
+        }
+
+        /* Brochures */
+        .tb-brochure-card {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          border: 2px solid #f3b52a;
+          padding: 18px;
+          margin-bottom: 12px;
+          text-decoration: none;
+          background-color: #ffffff;
+          transition: background-color 0.2s ease;
+        }
+
+        .tb-brochure-card:hover {
+          background-color: #fffdf6;
+        }
+
+        .tb-card-icon {
+          color: #0078d4;
+          display: flex;
+          align-items: center;
+        }
+
+        .tb-card-info {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .tb-card-title {
+          font-size: 14px;
+          font-weight: bold;
+          color: #333333;
+        }
+
+        .tb-card-meta {
+          font-size: 11px;
+          color: #888888;
+          margin-top: 2px;
+        }
+
+        /* CTA Box Amarela */
+        .tb-cta-box {
+          background-color: #ffffff;
+          padding: 35px 25px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .tb-cta-title {
+          font-size: 20px;
+          font-weight: 700;
+          color: #222222;
+          margin: 0 0 15px 0;
+          line-height: 1.3;
+        }
+
+        .tb-cta-text {
+          font-size: 13px;
+          line-height: 1.6;
+          color: #333333;
+          margin: 0 0 25px 0;
+        }
+
+        .tb-btn-contact {
+          align-self: flex-start;
+          background-color: #222222;
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 11px;
+          font-weight: bold;
+          padding: 12px 24px;
+          letter-spacing: 1px;
+          transition: background-color 0.2s ease;
+        }
+
+        .tb-btn-contact:hover {
+          background-color: #333333;
+        }
+
+        /* Working Time */
+        .tb-time-intro {
+          font-size: 13px;
+          line-height: 1.6;
+          color: #555555;
+          margin: 0 0 15px 0;
+        }
+
+        .tb-time-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .tb-time-list li {
+          font-size: 13px;
+          color: #555555;
+          display: flex;
+          align-items: center;
+        }
+
+        .tb-icon-clock {
+          margin-right: 8px;
+          font-size: 12px;
+          filter: grayscale(100%); /* Mantém o emoji discreto */
+        }
+
+        /* --- CONTEÚDO PRINCIPAL DIREITO --- */
+        .tb-main-content {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .tb-hero-card {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          background-color: #f9f9f9;
+          align-items: center;
+        }
+
+        .tb-hero-text {
+          padding: 50px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .tb-subtitle {
+          font-size: 14px;
+          color: #777777;
+          margin-bottom: 8px;
+        }
+
+        .tb-main-title {
+          font-size: 32px;
+          font-weight: 700;
+          color: #222222;
+          margin: 0 0 20px 0;
+        }
+
+        .tb-description {
+          font-size: 14px;
+          line-height: 1.7;
+          color: #777777;
+          margin: 0 0 30px 0;
+        }
+
+        .tb-btn-quote {
+          align-self: flex-start;
+          background-color: #f3b52a;
+          color: #222222;
+          text-decoration: none;
+          font-size: 11px;
+          font-weight: bold;
+          padding: 15px 30px;
+          letter-spacing: 1px;
+          transition: background-color 0.2s ease;
+        }
+
+        .tb-btn-quote:hover {
+          background-color: #e2a620;
+        }
+
+        .tb-hero-image {
+          height: 100%;
+          width: 100%;
+        }
+
+        .tb-hero-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 900px) {
+          .tb-container {
+            grid-template-columns: 1fr;
+            gap: 40px;
+          }
+
+          .tb-hero-card {
+            grid-template-columns: 1fr;
+          }
+
+          .tb-hero-image {
+            height: 300px;
+            order: -1; /* Imagem passa para cima no mobile */
+          }
+
+          .tb-hero-text {
+            padding: 30px;
+          }
+        }
+      </style>
+      <div class="tb-container">
+        <!-- BARRA LATERAL ESQUERDA -->
+        <aside class="tb-sidebar">
+          <!-- SEÇÃO: OUR BROCHURES -->
+          <section class="tb-section">
+            <h3 class="tb-sidebar-title">NOSSAS BROCHURAS</h3>
+
+            <a href="#" class="tb-brochure-card">
+              <div class="tb-card-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="tb-card-info">
+                <span class="tb-card-title">Brochura FMN</span>
+                <span class="tb-card-meta">2.3 mb, PDF</span>
+              </div>
+            </a>
+
+            <a href="#" class="tb-brochure-card">
+              <div class="tb-card-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="tb-card-info">
+                <span class="tb-card-title">Apresentacao FMN</span>
+                <span class="tb-card-meta">2.3 mb, PDF</span>
+              </div>
+            </a>
+          </section>
+
+          <!-- SEÇÃO: DO YOU HAVE ANY QUESTIONS? -->
+          <section class="tb-cta-box">
+            <h3 class="tb-cta-title">Queres saber mais sobre a FMN?</h3>
+            <p class="tb-cta-text">
+              Venha ate aos nossos escritorios ou preencha e submeta o formulario online.
+            </p>
+            <a href="contactenos.html" class="tb-btn-contact">CONTACTE-NOS</a>
+          </section>
+
+          <!-- SEÇÃO: WORKING TIME -->
+          <section class="tb-section">
+            <h3 class="tb-sidebar-title">HORÁRIO</h3>
+            <p class="tb-time-intro">
+              O escritório da FMN situa-se na Av. Ahmed Sekou Touré, Nº 974, 1º Andar.
+            </p>
+
+            <ul class="tb-time-list">
+              <li>
+                <span class="tb-icon-clock">🕒</span>
+                <strong>Segunda a Sexta:</strong> 08:00 às 15:30
+              </li>
+              <li>
+                <span class="tb-icon-clock">🕒</span>
+                <strong>Sábado:</strong> Fechado
+              </li>
+              <li>
+                <span class="tb-icon-clock">🕒</span>
+                <strong>Domingo:</strong> Fechado
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL DIREITO -->
+        <main class="tb-main-content">
+          <div class="tb-hero-card">
+            <div class="tb-hero-text">
+              <span class="tb-subtitle">Somos a FMN</span>
+              <h2 class="tb-main-title">Mais de 45 Anos de História</h2>
+              <p class="tb-description">
+                Desde a nossa fundação em 1978, mantemo-nos fiéis aos mesmos princípios: massificar
+                os desportos aquáticos, elevar o nome de Moçambique além-fronteiras e garantir a
+                excelência na formação dos nossos atletas!
+              </p>
+            </div>
+
+            <div class="tb-hero-image">
+              <!-- Substitua o src pela URL real da sua imagem -->
+              <img
+                src="assets/images/diversos/istockphoto-1178808605-1024x1024.jpg"
+                alt="The Built Cityscape"
+              />
+            </div>
+          </div>
+
+          <div class="club-nav-content">
+            <div class="st-container">
+              <!-- TÍTULO PRINCIPAL COM DETALHE AMARELO -->
+              <h2 class="st-main-title">Historia</h2>
+
+              <!-- PARÁGRAFO INTRODUTÓRIO -->
+              <p class="st-intro-text">
+                A Federação Moçambicana de Natação (FMN) foi fundada em 1978, logo após a
+                independência nacional, com o propósito de organizar, regulamentar e massificar os
+                desportos aquáticos no país. Abaixo, os principais marcos cronológicos que resumem a
+                evolução da federação e da modalidade:
+              </p>
+
+              <!-- GRUPO DE ACORDEÕES -->
+              <div class="st-accordion-group">
+                <!-- ABA 1: MISSION (ABERTA) -->
+                <div class="st-accordion-item st-active">
+                  <button class="st-accordion-header st-bg-amber">
+                    <span>1960 Raízes Olímpicas Pré-Federação</span>
+                    <span class="st-icon">—</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                      Regina Veloso torna-se a primeira nadadora olímpica de Moçambique ao competir
+                      nos Jogos Olímpicos de Roma
+                    </p>
+                  </div>
+                </div>
+
+                <!-- ABA 2: HONEST AND DEPENDABLE (FECHADA) -->
+                <div class="st-accordion-item">
+                  <button class="st-accordion-header st-bg-dark">
+                    <span>1978 Fundação da FMN</span>
+                    <span class="st-icon">+</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                      O organismo é formalmente constituído para liderar o desporto a nível nacional
+                      e filiar o país nos órgãos internacionais (como a atual World Aquatics).
+                    </p>
+                  </div>
+                </div>
+
+                <!-- ABA 3: OUR QUALITY (FECHADA) -->
+                <div class="st-accordion-item">
+                  <button class="st-accordion-header st-bg-dark">
+                    <span>1987 Criação do Torneio Nadador Completo</span>
+                    <span class="st-icon">+</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                      Inicia-se a tradicional competição focada na descoberta de novos talentos e
+                      polivalência dos atletas.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- ABA 3: OUR QUALITY (FECHADA) -->
+                <div class="st-accordion-item">
+                  <button class="st-accordion-header st-bg-dark">
+                    <span>2011 Jogos Africanos de Maputo</span>
+                    <span class="st-icon">+</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                      A construção do Complexo Olímpico do Zimpeto dota a natação nacional de uma
+                      infraestrutura de padrão internacional.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- ABA 3: OUR QUALITY (FECHADA) -->
+                <div class="st-accordion-item">
+                  <button class="st-accordion-header st-bg-dark">
+                    <span>2013 a 2014 Gestão do Zimpeto</span>
+                    <span class="st-icon">+</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                      Em maio de 2013, o Ministério da Juventude e Desportos cede a gestão da
+                      Piscina Olímpica do Zimpeto à FMN (liderada na época por Gilberto Mendes). Em
+                      2014, o espaço passa a ser gerido pela Associação da Cidade de Maputo.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- ABA 3: OUR QUALITY (FECHADA) -->
+                <div class="st-accordion-item">
+                  <button class="st-accordion-header st-bg-dark">
+                    <span>2019 Nova Liderança</span>
+                    <span class="st-icon">+</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                      Deolinda Mabote assume a presidência da federação, focando-se na estabilização
+                      financeira e expansão da natação de águas abertas
+                    </p>
+                  </div>
+                </div>
+
+                <!-- RECOMENDAÇÃO: ABA 4: OUR HISTORY (FECHADA) -->
+                <div class="st-accordion-item">
+                  <button class="st-accordion-header st-bg-dark">
+                    <span>2025 Eleições e Transição</span>
+                    <span class="st-icon">+</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                      Em 3 de maio de 2025, Justino Francisco vence as eleições presidenciais por
+                      voto de qualidade e assume oficialmente a direção da FMN no dia 19 de maio.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="st-accordion-item">
+                  <button class="st-accordion-header st-bg-dark">
+                    <span>2026 Rumo ao Alto Rendimento</span>
+                    <span class="st-icon">+</span>
+                  </button>
+                  <div class="st-accordion-content">
+                    <p>
+                      Em julho de 2026, a nova liderança lança o projeto para transformar a Piscina
+                      Olímpica do Zimpeto num Centro de Alto Rendimento oficial, visando a
+                      qualificação inédita de nadadores nacionais por tempos mínimos de acesso aos
+                      Jogos Olímpicos
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <style>
+              /* Escopo isolado com o prefixo 'st-' */
+
+              .st-container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 20px;
+                padding-left: 0px;
+                padding-right: 0px;
+              }
+
+              /* Título com a linha amarela inferior esquerda */
+              .st-main-title {
+                font-size: 22px;
+                font-weight: 600;
+                color: #222222;
+                margin: 0 0 25px 0;
+                position: relative;
+                padding-bottom: 8px;
+              }
+
+              .st-main-title::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 45px;
+                height: 3px;
+                background-color: #0078d4; /* Amarelo idêntico ao da imagem */
+              }
+
+              /* Texto de introdução */
+              .st-intro-text {
+                font-size: 14px;
+                line-height: 1.7;
+                color: #444444;
+                margin-bottom: 35px;
+              }
+
+              /* Estrutura dos Acordeões */
+              .st-accordion-group {
+                display: flex;
+                flex-direction: column;
+              }
+
+              .st-accordion-item {
+                margin-bottom: 1px; /* Linha fina divisória entre as abas */
+              }
+
+              .st-accordion-header {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: none;
+                padding: 18px 24px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                text-align: left;
+                cursor: pointer;
+                outline: none;
+              }
+
+              /* Cores dos cabeçalhos */
+              .st-bg-amber {
+                background-color: #0078d4;
+                color: #ffffff;
+              }
+
+              .st-bg-dark {
+                background-color: #252525;
+                color: #ffffff;
+              }
+
+              .st-icon {
+                font-size: 16px;
+                font-weight: 400;
+              }
+
+              /* Conteúdo interno da aba */
+              .st-accordion-content {
+                background-color: #f9f9f9;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+              }
+
+              .st-accordion-content p {
+                padding: 25px 24px;
+                margin: 0;
+                font-size: 14px;
+                line-height: 1.7;
+                color: #777777;
+              }
+
+              /* Nova regra atualizada */
+              .st-accordion-item.st-active .st-accordion-content {
+                max-height: 500px; /* Valor maior para garantir que textos longos apareçam inteiros */
+                transition: max-height 0.4s ease-in;
+              }
+            </style>
+            <script>
+              document.querySelectorAll('.st-accordion-header').forEach((header) => {
+                header.addEventListener('click', () => {
+                  const currentItem = header.parentElement;
+                  const isOpen = currentItem.classList.contains('st-active');
+                  const icon = header.querySelector('.st-icon');
+
+                  // 1. Opcional: Fecha todas as outras abas antes de abrir a nova
+                  document.querySelectorAll('.st-accordion-item').forEach((item) => {
+                    item.classList.remove('st-active');
+                    const otherIcon = item.querySelector('.st-icon');
+                    if (otherIcon) otherIcon.textContent = '+';
+                  });
+
+                  // 2. Se a aba clicada não estava aberta, abre ela e muda o ícone
+                  if (!isOpen) {
+                    currentItem.classList.add('st-active');
+                    icon.textContent = '—';
+                  }
+                });
+              });
+            </script>
+
+            <div class="pr-container">
+              <!-- TÍTULO DA SEÇÃO COM LINHA AMARELA -->
+              <h2 class="pr-main-title">Modalides</h2>
+              <p class="st-intro-text">
+                A Federação Moçambicana de Natação (FMN) é a entidade máxima reguladora dos
+                desportos aquáticos em Moçambique, tutelando oficialmente as modalidades de natação
+                pura (provas em piscina de estilos como livre, bruços, costas e mariposa), águas
+                abertas (maratonas aquáticas em rios ou mares) e promovendo a formação técnica
+                destas vertentes regulamentadas pela World Aquatics. A federação é encarregue de
+                coordenar a preparação de atletas e seleções em escalões de formação e seniores.
+              </p>
+              <!-- GRELHA DE PROCESSO / SERVIÇOS -->
+              <div class="pr-grid">
+                <!-- ITEM 1: COMMERCIAL BUILDINGS -->
+                <div class="pr-item">
+                  <div class="pr-icon-circle">
+                    <img
+                      src="assets/images/diversos/modalidades/natacao pura.svg"
+                      alt="Ícone Natação Pura"
+                      class="pr-icon-img"
+                    />
+                  </div>
+                  <div class="pr-text-box">
+                    <span class="pr-tag">PISCINAS</span>
+                    <h3 class="pr-title">NATAÇÃO PURA</h3>
+                  </div>
+                </div>
+
+                <!-- ITEM 6: WATER TREATMENT (BAIXO) -->
+                <div class="pr-item">
+                  <div class="pr-icon-circle">
+                    <img
+                      src="assets/images/diversos/modalidades/natacao aguas abertas.svg"
+                      alt="Ícone Águas Abertas"
+                      class="pr-icon-img"
+                    />
+                  </div>
+                  <div class="pr-text-box">
+                    <span class="pr-tag">TRAVESSIAS</span>
+                    <h3 class="pr-title">AGUAS ABERTAS</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <style>
+              /* Escopo isolado usando o prefixo 'pr-' */
+
+              .pr-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 40px 0px;
+              }
+
+              /* Título com detalhe da linha amarela */
+              .pr-main-title {
+                font-size: 22px;
+                font-weight: 600;
+                color: #222222;
+                margin: 0 0 25px 0;
+                position: relative;
+                padding-bottom: 12px;
+              }
+
+              .pr-main-title::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 50px;
+                height: 2px;
+                background-color: #fcae33; /* Amarelo idêntico ao do tema */
+              }
+
+              /* Estrutura de Grelha Responsiva */
+              .pr-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 200px;
+                row-gap: 60px;
+              }
+
+              /* Item Individual */
+              .pr-item {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                background-color: white;
+              }
+
+              /* Círculo do Ícone */
+              .pr-icon-circle {
+                width: 76px;
+                height: 76px;
+                background-color: #0078d4;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                color: #ffffff;
+              }
+
+              /* Tamanho dos SVGs dentro do círculo */
+              .pr-icon-circle svg {
+                width: 32px;
+                height: 32px;
+              }
+
+              /* Caixa de Texto */
+              .pr-text-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              }
+
+              /* Etiqueta "PROVIDE" */
+              .pr-tag {
+                font-size: 11px;
+                font-weight: 500;
+                color: #999999;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+              }
+
+              /* Título do Serviço */
+              .pr-title {
+                font-size: 15px;
+                font-weight: 700;
+                color: #2c2c2c;
+                margin: 0;
+                line-height: 1.3;
+                letter-spacing: 0.5px;
+              }
+
+              /* --- ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS --- */
+              @media (max-width: 992px) {
+                .pr-grid {
+                  grid-template-columns: repeat(2, 1fr);
+                  column-gap: 30px;
+                  row-gap: 40px;
+                }
+              }
+
+              @media (max-width: 600px) {
+                .pr-grid {
+                  grid-template-columns: 1fr;
+                  row-gap: 35px;
+                }
+
+                .pr-item {
+                  gap: 20px;
+                }
+
+                .pr-icon-circle {
+                  width: 66px;
+                  height: 66px;
+                }
+
+                .pr-icon-circle svg {
+                  width: 28px;
+                  height: 28px;
+                }
+              }
+            </style>
+          </div>
+
+          <!-- ================= parceiros inicio ================= -->
+          <section class="fmn-partnerzone-section">
+            <div class="fmn-partnerzone-wrapper">
+              <div class="fmn-partnerzone-navbar">
+                <h2 class="fmn-partnerzone-heading">PARCEIROS</h2>
+                <a href="#" class="fmn-partnerzone-btn-view">Ver todos</a>
+              </div>
+
+              <div class="fmn-partnerzone-display-grid">
+                <!-- Substitua o atributo 'src' pelo caminho real dos seus logótipos -->
+                <div class="fmn-partnerzone-logo-box">
+                  <img
+                    src="assets/images/parceiros/africaaquatics.svg"
+                    alt="Parceiro 1"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="fmn-partnerzone-logo-box">
+                  <img src="assets/images/parceiros/apasam.svg" alt="Parceiro 2" loading="lazy" />
+                </div>
+                <div class="fmn-partnerzone-logo-box">
+                  <img src="assets/images/parceiros/cana.svg" alt="Parceiro 3" loading="lazy" />
+                </div>
+                <div class="fmn-partnerzone-logo-box">
+                  <img
+                    src="assets/images/parceiros/comiteolimpico.svg"
+                    alt="Parceiro 4"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="fmn-partnerzone-logo-box">
+                  <img
+                    src="assets/images/parceiros/worldaquatics.svg"
+                    alt="Parceiro 5"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <style>
+            /* Escopo fechado para evitar vazamento de estilos globalmente */
+
+            .fmn-partnerzone-section * {
+              box-sizing: border-box; /* Garante que paddings não quebrem o layout */
+            }
+
+            .fmn-partnerzone-wrapper {
+              max-width: 1200px;
+              margin: 0 auto !important;
+              padding: 12px;
+            }
+
+            .fmn-partnerzone-navbar {
+              display: flex !important;
+              justify-content: space-between !important;
+              align-items: center !important;
+
+              padding-bottom: 15px !important;
+              margin-bottom: 30px !important;
+            }
+
+            .fmn-partnerzone-heading {
+              color: #06153b !important;
+              font-size: 1.5rem !important;
+              font-weight: 900 !important;
+              letter-spacing: -0.5px !important;
+              margin: 0 !important;
+              text-transform: uppercase !important;
+            }
+
+            .fmn-partnerzone-btn-view {
+              color: #06153b !important;
+              font-size: 0.85rem !important;
+              font-weight: 600 !important;
+              text-decoration: none !important;
+              opacity: 0.8 !important;
+              transition: opacity 0.2s ease !important;
+            }
+
+            .fmn-partnerzone-btn-view:hover {
+              opacity: 1 !important;
+            }
+
+            /* Sistema de grelha flexível focado em mobile */
+            .fmn-partnerzone-display-grid {
+              display: flex !important;
+              flex-wrap: wrap !important;
+              justify-content: center !important;
+              align-items: center !important;
+              gap: 30px !important;
+            }
+
+            .fmn-partnerzone-logo-box {
+              display: flex !important;
+              justify-content: center !important;
+              align-items: center !important;
+              flex: 1 1 calc(16.66% - 30px) !important;
+              min-width: 120px !important;
+              max-width: 160px !important;
+              padding: 10px !important;
+            }
+
+            .fmn-partnerzone-logo-box img {
+              width: 100% !important;
+              height: auto !important;
+              object-fit: contain !important;
+
+              opacity: 0.7 !important;
+              transition:
+                opacity 0.3s ease,
+                transform 0.3s ease !important;
+            }
+
+            .fmn-partnerzone-logo-box img:hover {
+              opacity: 1 !important;
+              transform: scale(1.05) !important;
+            }
+
+            /* Media Queries com seletores idênticos para manter a prioridade */
+            @media (max-width: 768px) {
+              .fmn-partnerzone-section {
+                padding: 30px 15px !important;
+              }
+
+              .fmn-partnerzone-heading {
+                font-size: 1.2rem !important;
+              }
+
+              .fmn-partnerzone-display-grid {
+                gap: 20px !important;
+              }
+
+              .fmn-partnerzone-logo-box {
+                flex: 1 1 calc(33.33% - 20px) !important; /* Reduz para 3 logos por linha em tablets */
+                min-width: 80px !important;
+              }
+            }
+
+            @media (max-width: 480px) {
+              .fmn-partnerzone-logo-box {
+                flex: 1 1 calc(50% - 20px) !important; /* Reduz para 2 logos por linha em ecrãs pequenos */
+              }
+            }
+          </style>
+          <!-- ================= parceiros fim ================= -->
+        </main>
+      </div>
+    </main>
+
+    <!-- FOOTER (injetado via JS start) -->
+    <div id="footer"></div>
+    <!-- FOOTER (injetado via JS end) -->
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="assets/js/pages/slider.js"></script>
+    <script src="assets/js/pages/squad.js"></script>
+
+    <!-- Scripts gerais -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/header-nav.js"></script>
+
+    <script src="assets/js/pages/theme.js"></script>
+  </body>
+</html>

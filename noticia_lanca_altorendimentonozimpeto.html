@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Rios — Estrutura leve e responsiva — HTML e CSS puro, boas práticas de escritórios de design."
+    />
+    <title>Rios — Website Leve e Responsivo</title>
+    <link rel="stylesheet" href="assets/css/firefox-fixes.css" />
+
+    <!-- Google Fonts (style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Geral -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- CSS Página Equipas -->
+    <link rel="stylesheet" href="assets/css/pages/equipas.css" />
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <div id="header"></div>
+    <!-- ========== HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="main">
+      <article class="news-block">
+        <!-- Imagem de Destaque Superior -->
+        <div class="news-featured-image">
+          <img
+            src="assets/images/noticias/principal alto rendimento.webp"
+            alt="Trabalhadores da construção civil"
+          />
+        </div>
+
+        <!-- Cabeçalho da Notícia -->
+        <header class="news-header">
+          <h1 class="news-title">
+            Presidente Justino Francisco anuncia projeto para Centro de Alto Rendimento no Zimpeto
+          </h1>
+          <div class="news-meta">
+            <span class="news-date">Julho de 2026</span>
+            <span class="news-comments">1</span>
+          </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <div class="news-content">
+          <p>
+            Maputo — O Presidente da FMN, Justino Francisco, anunciou formalmente as linhas mestras
+            do ambicioso projeto que visa transformar a Piscina Olímpica do Zimpeto num Centro de
+            Alto Rendimento (CAR) de referência regional.
+          </p>
+
+          <p>
+            O plano estratégico tem como objetivo central dotar a infraestrutura de condições
+            técnicas, científicas e logísticas de topo mundial, permitindo que os melhores atletas
+            moçambicanos realizem a sua preparação em solo pátrio com o máximo rigor.
+          </p>
+
+          <p>
+            O projeto foca-se na otimização de recursos e na criação de parcerias internacionais
+            para a formação de treinadores e引入 (introdução) de tecnologias de análise biomecânica
+            de ponta. "O nosso objetivo a médio prazo é claro: queremos parar de depender
+            exclusivamente de convites e garantir a qualificação direta por tempos (mínimos A e B)
+            para os Jogos Olímpicos", afirmou o timoneiro da federação.
+          </p>
+
+          <!-- Bloco de Destaque Amarelo -->
+          <blockquote class="news-highlight-block">
+            <strong
+              >A FMN iniciará em breve as rondas de negociação com o Governo e parceiros
+              internacionais para a captação de investimento para a infraestrutura.</strong
+            >
+          </blockquote>
+        </div>
+      </article>
+
+      <style>
+        /* Container Principal */
+        .news-block {
+          max-width: 800px;
+          margin: 0 auto;
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          color: #444444;
+          line-height: 1.6;
+          font-size: 14px;
+          padding: 12px;
+        }
+
+        /* Imagens */
+        .news-featured-image img,
+        .news-secondary-image img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        /* Cabeçalho */
+        .news-header {
+          margin: 25px 0 15px 0;
+        }
+
+        .news-title {
+          font-size: 18px;
+          font-weight: bold;
+          color: #111111;
+          text-transform: uppercase;
+          margin: 0 0 8px 0;
+          letter-spacing: 0.5px;
+        }
+
+        .news-meta {
+          font-size: 12px;
+          color: #888888;
+        }
+
+        .news-meta span {
+          margin-right: 15px;
+        }
+
+        /* Espaçamento dos Parágrafos */
+        .news-content p {
+          margin-bottom: 18px;
+          text-align: justify;
+        }
+
+        /* Bloco de Destaque Amarelo */
+        .news-highlight-block {
+          border-left: 4px solid #f6b426;
+          padding-left: 20px;
+          margin: 25px 0;
+          font-size: 14.5px;
+          color: #222222;
+        }
+
+        /* Layout de Duas Colunas (Inferior) */
+        .news-secondary-section {
+          display: flex;
+          gap: 20px;
+          margin: 25px 0;
+          align-items: flex-start;
+        }
+
+        .news-secondary-image {
+          flex: 0 0 35%;
+        }
+
+        .news-secondary-text {
+          flex: 1;
+        }
+
+        .news-secondary-text p:first-child {
+          margin-top: 0;
+        }
+
+        /* Responsividade para Telas Menores */
+        @media (max-width: 600px) {
+          .news-secondary-section {
+            flex-direction: column;
+          }
+          .news-secondary-image {
+            width: 100%;
+          }
+        }
+      </style>
+    </main>
+
+    <!-- FOOTER (injetado via JS start) -->
+    <div id="footer"></div>
+    <!-- FOOTER (injetado via JS end) -->
+
+    <!-- Scripts da página -->
+    <script src="assets/js/pages/slider.js"></script>
+    <script src="assets/js/pages/equipas.js"></script>
+
+    <!-- Scripts gerais -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/pages/footer.js"></script>
+    <script src="assets/js/pages/header-nav.js"></script>
+
+    <script src="assets/js/pages/theme.js"></script>
+  </body>
+</html>

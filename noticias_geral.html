@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Rios — Estrutura leve e responsiva — HTML e CSS puro, boas práticas de escritórios de design."
+    />
+    <title>Rios — Website Leve e Responsivo</title>
+    <link rel="stylesheet" href="assets/css/firefox-fixes.css" />
+
+    <!-- Google Fonts (style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Geral -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- CSS Página Equipas -->
+    <link rel="stylesheet" href="assets/css/pages/equipas.css" />
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <div id="header"></div>
+    <!-- ========== HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="main">
+      <!-- ========== CAMINHO DE NAVEGAÇÃO (BREADCRUMB) ========== -->
+      <div class="fmn-team-header-bg">
+        <div class="fmn-team-header-container">
+          <h1 class="fmn-team-main-title">TODAS NOTICIAS</h1>
+        </div>
+      </div>
+      <div class="fmn-team-breadcrumb-container">
+        <nav class="fmn-team-breadcrumb">
+          <span class="fmn-crumb-root">FMN</span>
+          <span class="fmn-crumb-separator">&gt;</span>
+          <span class="fmn-crumb-current">Noticias</span>
+        </nav>
+      </div>
+      <style>
+        /* --- Cabeçalho Cinzento Fiel --- */
+        .fmn-team-header-bg {
+          background-color: #f7f7f7;
+          width: 100%;
+          padding: 50px 0;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-header-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 12px;
+        }
+
+        .fmn-team-main-title {
+          font-family: 'Inter Tight', sans-serif;
+          font-size: 32px;
+          font-weight: 600;
+          color: #1a202c;
+          margin: 0;
+          letter-spacing: -0.5px;
+        }
+
+        /* --- Caminho de Navegação (Breadcrumb) --- */
+        .fmn-team-breadcrumb-container {
+          width: 100%;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-breadcrumb {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 12px;
+          font-size: 13px;
+          font-family: 'Inter', sans-serif;
+        }
+
+        .fmn-crumb-root {
+          color: #333333;
+          font-weight: 500;
+        }
+
+        .fmn-crumb-separator {
+          color: #aaaaaa;
+          margin: 0 8px;
+        }
+
+        .fmn-crumb-current {
+          color: #888888;
+        }
+
+        /* --- Área de Listagem da Equipa --- */
+        .fmn-team-section {
+          font-family: 'Inter', sans-serif;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px 20px 60px 20px;
+          color: #444444;
+        }
+
+        .fmn-team-card {
+          display: flex;
+          gap: 40px;
+          padding: 55px 0;
+          border-bottom: 1px solid #dddddd; /* Linha separadora suave idêntica à imagem */
+          align-items: flex-start;
+        }
+
+        /* Mantém a linha divisória suave em todos, exceto no último bloco inferior */
+        .fmn-team-card:last-child {
+          border-bottom: none;
+        }
+
+        .fmn-team-photo-container {
+          flex: 0 0 240px;
+          width: 240px;
+        }
+
+        .fmn-team-photo {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .fmn-team-info {
+          flex: 1;
+          padding-top: 5px;
+        }
+
+        .fmn-team-name {
+          font-family: 'Inter Tight', sans-serif;
+          font-size: 22px;
+          font-weight: 600;
+          color: #f4b41a;
+          margin: 0 0 5px 0;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+        }
+
+        .fmn-team-role {
+          font-size: 14px;
+          color: #999999;
+          display: block;
+          margin-bottom: 20px;
+          font-weight: 400;
+        }
+
+        .fmn-team-bio {
+          font-size: 15px;
+          line-height: 1.6;
+          color: #555555;
+          margin: 0;
+          text-align: left;
+        }
+
+        /* Bloco de Assinatura */
+        .fmn-team-signature-block {
+          margin-top: 25px;
+          display: inline-block;
+        }
+
+        .fmn-team-signature-img {
+          height: 45px;
+          width: auto;
+          display: block;
+          margin-bottom: 8px;
+          mix-blend-mode: multiply;
+        }
+
+        .fmn-team-signature-caption {
+          font-size: 11px;
+          color: #666666;
+          letter-spacing: 0.5px;
+          text-align: left;
+        }
+
+        .fmn-team-signature-caption strong {
+          color: #000000;
+        }
+
+        /* --- Responsividade Completa e Ajuste à Esquerda no Mobile --- */
+        @media (max-width: 768px) {
+          .fmn-team-header-bg {
+            padding: 35px 0;
+          }
+
+          .fmn-team-main-title {
+            font-size: 26px;
+          }
+
+          .fmn-team-card {
+            flex-direction: column;
+            gap: 25px;
+            padding: 40px 0;
+          }
+
+          .fmn-team-photo-container {
+            flex: none;
+            width: 100%;
+            max-width: 380px;
+          }
+
+          .fmn-team-info {
+            text-align: left;
+            width: 100%;
+          }
+
+          .fmn-team-bio {
+            text-align: left;
+          }
+
+          .fmn-team-signature-block {
+            display: block;
+            text-align: left;
+          }
+        }
+      </style>
+      <!-- ========== CAMINHO DE NAVEGAÇÃO (BREADCRUMB) fim ========== -->
+
+      <!-- ================= noticias inicio ================= -->
+
+      <div class="news-section">
+        <div class="news-header">
+          <h2>Últimas Notícias</h2>
+        </div>
+
+        <div class="news-grid">
+          <!-- Card Grande 1: Yamal (Substituído por tag <a>) -->
+          <a href="noticia_commonwealthglasgow2026.html" class="news-card card-large">
+            <img src="assets/images/noticias/Noticia card maior 1.webp" alt="" />
+            <div class="card-overlay">
+              <h3>Moçambique nos Jogos da Commonwealth 2026.</h3>
+              <div class="card-meta">
+                <span class="hashtag">#Glasgow, Escócia</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 2: Lautaro (Substituído por tag <a>) -->
+          <a href="noticia_lanca_altorendimentonozimpeto.html" class="news-card">
+            <div class="card-media">
+              <img src="assets/images/noticias/card menor alto rendimento.webp" alt="" />
+              <span class="video-duration">07:36</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Presidente Justino Francisco anuncia projeto para Centro de Alto Rendimento no
+                Zimpeto
+              </p>
+              <div class="card-meta">
+                <span class="hashtag">#Infra-estruturas Zimpeto</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 3: Spain (Substituído por tag <a>) -->
+          <a href="noticia_1campeonato_aguasabertas.html" class="news-card">
+            <div class="card-media">
+              <img src="assets/images/noticias/aguas abertas card menor.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <p>
+                Lagoa Uembje recebe o 1º Campeonato Nacional de Águas Abertas na Praia do Bilene
+              </p>
+              <div class="card-meta">
+                <span class="hashtag">#Águas Abertas</span>
+                <div class="sport-icon-wrapper">
+                  <img
+                    src="assets/images/diversos/modalidades/natacao aguas abertas.svg"
+                    alt="Icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 4: Argentina (Substituído por tag <a>) -->
+          <a href="noticia_39edicao_nadadorcompleto2026.html" class="news-card">
+            <div class="card-media">
+              <img
+                src="assets/images/noticias/Noticia card menor1 nadador completo Angela xucumbi.webp"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <p>
+                Ângela Xicumbi e Hugo de Sousa coroados vencedores da 39ª Edição do Torneio Nadador
+                Completo 2026.
+              </p>
+              <div class="card-meta">
+                <span class="hashtag">#Natação Pura</span>
+                <div class="sport-icon-wrapper">
+                  <img src="assets/images/diversos/modalidades/natacao pura.svg" alt="Icon" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 5: Draw (Substituído por tag <a>) -->
+          <a href="noticia_bronzeafricanojuniors2023.html" class="news-card">
+            <div class="card-media">
+              <img src="assets/images/noticias/historico_bronze_card_menor.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <p>A histórica Medalha de Bronze no Africano de Juniores de 2023.</p>
+              <div class="card-meta">
+                <span class="hashtag">#Natação Pura</span>
+                <div class="sport-icon-wrapper">
+                  <img src="assets/images/diversos/modalidades/natacao pura.svg" alt="Icon" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card Grande 6: Alvarez (Substituído por tag <a>) -->
+          <a
+            href="noticia_justino_eleitopresedente_fmn.html"
+            class="news-card card-large card-right"
+          >
+            <img src="assets/images/noticias/card_maior_tomada_posse.webp" alt="" />
+            <span class="video-duration">07:01</span>
+            <div class="card-overlay">
+              <h3>
+                Novo elenco diretivo da FMN toma posse na sede do Comité Olímpico com foco na
+                expansão nacional.
+              </h3>
+              <div class="card-meta">
+                <span class="hashtag">#Nova Gestão</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <style>
+        /* styles  da primeira seccao de noticias Faz o cursor virar a mãozinha no card */
+        .news-card {
+          cursor: pointer;
+          text-decoration: none; /* Remove sublinhados do texto dentro do link */
+          display: block; /* Garante que o link ocupe todo o espaço do card */
+          color: inherit; /* Mantém as cores originais dos textos */
+        }
+
+        /* Opcional: Efeito visual suave ao passar o mouse */
+        .news-card:hover {
+          opacity: 0.95;
+          transform: translateY(-2px);
+          transition: all 0.2s ease-in-out;
+        }
+      </style>
+
+      <!-- ========== EQUIPAS FIM ========== -->
+    </main>
+
+    <!-- FOOTER (injetado via JS start) -->
+    <div id="footer"></div>
+    <!-- FOOTER (injetado via JS end) -->
+
+    <!-- Scripts da página -->
+    <script src="assets/js/pages/slider.js"></script>
+    <script src="assets/js/pages/equipas.js"></script>
+
+    <!-- Scripts gerais -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/pages/footer.js"></script>
+    <script src="assets/js/pages/header-nav.js"></script>
+
+    <script src="assets/js/pages/theme.js"></script>
+  </body>
+</html>

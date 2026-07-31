@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- VIEWPORT CORRETO (Firefox Mobile safe) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <meta
+      name="description"
+      content="Rios — Estrutura leve e responsiva — HTML e CSS puro, boas práticas de escritórios de design."
+    />
+
+    <title>Rios — Calendário</title>
+
+    <!-- GOOGLE FONTS (USTYLE) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS BASE -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- CSS DA PÁGINA -->
+    <link rel="stylesheet" href="assets/css/pages/jogos.css" />
+
+    <!-- FIXES GLOBAIS (SEMPRE POR ÚLTIMO) -->
+    <link rel="stylesheet" href="assets/css/firefox-fixes.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <div id="header"></div>
+    <!-- ================= HEADER ================= -->
+
+    <!-- ================= MAIN ================= -->
+    <main id="main">
+      <div class="feedback-container">
+        <!-- Seção do Mapa -->
+        <div class="map-container">
+          <!-- Substitua o link do src abaixo pelo código de incorporação (iframe) do seu próprio mapa do Google se desejar -->
+          <iframe
+            src="https://google.com"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        <!-- Seção do Formulário -->
+        <div class="feedback-header">
+          <h2>Formulário de contacto</h2>
+          <h3>FALE CONNOSCO</h3>
+        </div>
+
+        <p class="feedback-instruction">
+          Se deseja submeter uma questão ou solicitar informações sobre competições e licenciamento,
+          por favor preencha o formulário:
+        </p>
+
+        <form class="feedback-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Nome *" required />
+            </div>
+            <div class="form-group">
+              <input type="text" id="company" name="company" placeholder="Clube / Associação" />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email *" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Assunto (ex: Inscrição, Arbitragem, Provas)"
+              />
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <textarea id="message" name="message" rows="5" placeholder="Sua Mensagem"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <style>
+        .feedback-container {
+          font-family: Arial, sans-serif;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 12px;
+          color: #333333;
+        }
+
+        /* Estilo do container do mapa */
+        .map-container {
+          width: 100%;
+          margin-bottom: 40px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .map-container iframe {
+          display: block;
+          width: 100%;
+        }
+
+        .feedback-header h2 {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: #222222;
+        }
+
+        .feedback-header h3 {
+          font-size: 14px;
+          font-weight: normal;
+          color: #777777;
+          margin-top: 0;
+          margin-bottom: 30px;
+          letter-spacing: 0.5px;
+        }
+
+        .feedback-instruction {
+          font-size: 15px;
+          margin-bottom: 25px;
+          color: #444444;
+        }
+
+        .form-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+          width: 100%;
+          padding: 15px;
+          border: 1px solid #e0e0e0;
+          background-color: #ffffff; /* Fundo branco para destacar no #f4f4f4 */
+          font-size: 14px;
+          color: #333333;
+          box-sizing: border-box;
+          border-radius: 4px;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+          color: #999999;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+          outline: none;
+          border-color: #aaaaaa;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .full-width {
+          width: 100%;
+        }
+
+        /* Responsividade para celulares */
+        @media (max-width: 768px) {
+          .form-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+          }
+          .map-container iframe {
+            height: 300px; /* Reduz a altura do mapa em telas menores */
+          }
+        }
+      </style>
+
+      <div class="info-section-container">
+        <!-- Bloco 1: Horário de Funcionamento -->
+        <div class="info-block">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="#fbb03b">
+              <path
+                d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm-5-7H7v2h7v-2z"
+              />
+            </svg>
+          </div>
+          <div class="info-content">
+            <h3>Horário de Funcionamento</h3>
+            <p class="highlight-text">
+              Secretaria Geral da FMN disponível para atendimento ao público institucional e
+              atletas.
+            </p>
+            <p>Segunda a Sexta: 08:00 às 15:30</p>
+            <p>Sábado: Fechado (Eventos e Provas conforme calendário)</p>
+            <p>Domingo: Fechado</p>
+          </div>
+        </div>
+
+        <!-- Bloco 2: Informação de Endereço -->
+        <div class="info-block">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="#fbb03b">
+              <path
+                d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"
+              />
+            </svg>
+          </div>
+          <div class="info-content">
+            <h3>Endereço Oficial</h3>
+            <p>Federação Moçambicana de Natação</p>
+            <p>Av. Ahmed Sekou Touré, Nº 974, 1º Andar</p>
+            <p>Maputo, Moçambique</p>
+          </div>
+        </div>
+
+        <!-- Bloco 3: Detalhes de Contacto -->
+        <div class="info-block">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="#fbb03b">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+          </div>
+          <div class="info-content">
+            <h3>Detalhes de Contacto</h3>
+            <p>+258 21 000 000 / +258 84 000 000</p>
+            <p><a href="mailto:secretaria@fmn.co.mz" class="email-link">secretaria@fmn.co.mz</a></p>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .info-section-container {
+          font-family: Arial, sans-serif;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 40px 12px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 30px;
+        }
+
+        .info-block {
+          display: flex;
+          align-items: flex-start;
+          flex: 1;
+
+          padding: 25px;
+        }
+
+        .info-icon {
+          width: 32px;
+          height: 32px;
+          margin-right: 18px;
+          flex-shrink: 0;
+        }
+
+        .info-icon svg {
+          width: 100%;
+          height: 100%;
+          fill:#0078d4 ;
+        }
+
+        .info-content h3 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #222222;
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+
+        .info-content p {
+          font-size: 14px;
+          color: #777777;
+          line-height: 1.6;
+          margin: 0 0 8px 0;
+        }
+
+        .info-content p:last-child {
+          margin-bottom: 0;
+        }
+
+        .info-content .highlight-text {
+          font-weight: bold;
+          color: #555555;
+        }
+
+        .email-link {
+          color: #0078d4; /* Amarelo idêntico ao da imagem */
+          text-decoration: none;
+        }
+
+        .email-link:hover {
+          text-decoration: underline;
+        }
+
+        /* Ajuste responsivo para telas pequenas (Tablets e Celulares) */
+        @media (max-width: 992px) {
+          .info-section-container {
+            flex-direction: column;
+            gap: 20px;
+          }
+
+          .info-block {
+            width: 100%;
+            box-sizing: border-box;
+          }
+        }
+      </style>
+    </main>
+    <!-- ================= MAIN ================= -->
+
+    <!-- ================= FOOTER ================= -->
+    <div id="footer"></div>
+    <!-- ================= FOOTER ================= -->
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="assets/js/pages/jogos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/header-nav.js"></script>
+
+    <script src="assets/js/pages/theme.js"></script>
+  </body>
+</html>
