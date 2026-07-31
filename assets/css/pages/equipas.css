@@ -1,6 +1,6 @@
-/* ===========================
+/* ==========================================================================
    Container principal
-=========================== */
+   ========================================================================== */
 .teams-container {
   width: 100%;
   max-width: 1200px;
@@ -11,9 +11,9 @@
   padding-bottom: 60px;
 }
 
-/* ===========================
+/* ==========================================================================
    Títulos
-=========================== */
+   ========================================================================== */
 .teams-title {
   font-size: 28px;
   margin: 0 0 6px 0;
@@ -30,9 +30,9 @@
   overflow-wrap: anywhere;
 }
 
-/* ===========================
+/* ==========================================================================
    Grid de Equipas
-=========================== */
+   ========================================================================== */
 .teams-grid {
   display: grid;
   gap: 22px;
@@ -54,17 +54,18 @@
   }
 }
 
-/* ===========================
+/* ==========================================================================
    Links dos cards
-=========================== */
+   ========================================================================== */
 .team-link {
   text-decoration: none;
   color: inherit;
+  display: block; /* Garante comportamento correto do link em bloco */
 }
 
-/* ===========================
+/* ==========================================================================
    Card da equipa
-=========================== */
+   ========================================================================== */
 .team-card {
   background: var(--surface);
   border-radius: 0.4rem;
@@ -77,6 +78,7 @@
     transform 0.2s ease,
     box-shadow 0.2s ease;
   min-width: 0; /* Permite encolher no Firefox */
+  box-sizing: border-box;
 }
 
 .team-card:hover {
@@ -84,21 +86,24 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.09);
 }
 
-.team-card > img {
-  width: 72px;
-  height: 72px;
+/* Seletor reforçado para as imagens */
+.team-card img {
+  width: 72px !important; /* Garante que o tamanho fixo padrão seja respeitado */
+  height: 72px !important; /* Evita distorções verticais do SVG */
+  max-width: 100% !important; /* Força contenção absoluta dentro do flexbox */
   object-fit: contain;
   flex-shrink: 0;
 }
 
-/* ===========================
+/* ==========================================================================
    Info da equipa
-=========================== */
+   ========================================================================== */
 .team-info {
   display: flex;
   flex-direction: column;
   line-height: 1.25;
   min-width: 0; /* Correção Firefox */
+  flex: 1; /* Força a caixa de texto a ocupar o espaço restante */
 }
 
 .team-name {
@@ -121,27 +126,32 @@
 }
 
 .stadium-icon {
-  width: 20px;
+  width: 20px !important;
+  height: auto !important;
   opacity: 0.8;
   flex-shrink: 0;
 }
 
-/* ===========================
-   Responsivo para telas pequenas
-=========================== */
+/* ==========================================================================
+   Responsivo para telas pequenas (Mobile Fix)
+   ========================================================================== */
 @media (max-width: 540px) {
   .team-card {
     gap: 16px;
-    padding: 14px 16px;
+    padding: 16px;
+    align-items: center; /* Alinha o ícone e o texto verticalmente ao centro */
   }
-  .team-card > img {
-    width: 60px;
-    height: 60px;
+
+  .team-card img {
+    width: 54px !important; /* Reduz o tamanho do SVG proporcionalmente no telemóvel */
+    height: 54px !important; /* Mantém o aspeto quadrado padrão */
   }
+
   .team-name {
-    font-size: 18px;
+    font-size: 16px; /* Ajuste ligeiro para não quebrar linhas desnecessariamente */
   }
+
   .team-stadium {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
