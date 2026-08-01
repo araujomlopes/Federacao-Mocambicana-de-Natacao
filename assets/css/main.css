@@ -727,11 +727,8 @@ nav {
     color 0.2s ease;
 }
 
-
-
 .submenu a:hover {
-  background-color: #edf4ff; /* Azul muito claro */
-  color: #0066d9;
+  background-color:#ff6b00; /* Azul muito claro */
 }
 
 /* LINKS */
@@ -739,7 +736,7 @@ nav {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: var(--text-topbar);
+
   font-weight: 500;
   transition:
     color 0.15s ease-out,
@@ -764,8 +761,13 @@ nav {
 
 /* 2. Modifique o estado hover */
 .nav-list a:hover {
-  color: #d89b21; /* mantém apenas a mudança de cor */
+
 }
+
+.nav-list > li > a:hover{
+color: #d89b21; /* mantém apenas a mudança de cor */
+}
+
 
 /* LINHA ANIMADA */
 
@@ -825,9 +827,9 @@ nav {
     top: 100%;
     left: 0;
     min-width: 200px;
-    background: var(--surface);
+    background: #fff;
     border-radius: 0;
-    padding: 0.5rem 0;
+    padding: 0;
     box-shadow: var(--shadow);
     display: none;
   }
