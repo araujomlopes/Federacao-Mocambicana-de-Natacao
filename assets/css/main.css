@@ -1434,7 +1434,7 @@ body {
 .card-right {
   grid-column: span 1;
   grid-row: span 1;
-  min-height: 240px;
+  min-height: 340px;
   position: relative;
 }
 
@@ -2206,3 +2206,85 @@ body {
   position: relative;
   z-index: 5;
 }
+
+/* ==========================
+   Sponsors Footer start
+========================== */
+.footer-sponsors {
+  padding-top: 1.3rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.footer-sponsors .container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.footer-sponsors-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #9fa0a4;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+.footer-sponsors-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer-sponsors-list a {
+  display: flex; /* Mantido flex para perfeito alinhamento */
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.footer-sponsors-list a:hover {
+  transform: translateY(-3px);
+}
+
+.footer-sponsors-list img {
+  /* CORREÇÃO AQUI: Força uma largura para o SVG não colapsar */
+  width: 130px;
+  height: auto;
+
+  /* Mantém um limite de altura para logos verticais não estourarem */
+  max-height: 45px;
+
+  display: block;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.footer-sponsors-list a:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .footer-sponsors {
+    padding: 30px 15px;
+  }
+
+  .footer-sponsors-list {
+    gap: 30px;
+  }
+
+  .footer-sponsors-list img {
+    width: 100px; /* Reduz o tamanho em telas mobile */
+    max-height: 35px;
+  }
+}
+
+/* ==========================
+   Sponsors Footer end
+========================== */

@@ -371,15 +371,16 @@
           max-width: 1200px;
           margin: 0 auto;
           padding: 0 12px; /* Margem idêntica à seção de cima */
-          gap: 20px; /* Alinhado com o espaçamento da seção superior */
+          gap: 20px; /* Espaçamento ideal entre as colunas */
           justify-content: space-between;
+          width: 100%;
         }
 
         /* ==========================================================================
    COLUNA DE INTRODUÇÃO (Lado a lado - Largura de partida fixa)
    ========================================================================== */
         .fotos-intro-col {
-          flex: 0 0 284px;
+          flex: 0 0 279px;
           width: 284px;
           display: flex;
           flex-direction: column;
@@ -410,7 +411,7 @@
           left: 0;
           width: 40px;
           height: 2px;
-          background-color:#0078d4;
+          background-color: #0078d4;
         }
 
         .fotos-intro-text {
@@ -429,28 +430,35 @@
           font-weight: 700;
           padding: 15px 30px;
           letter-spacing: 1px;
+          transition: background-color 0.2s ease;
+        }
+
+        .btn-todas-fotos:hover {
+          background-color: #005a9e;
         }
 
         /* ==========================================================================
-   ÁREA DO SLIDER E CARDS (Fluida para eliminar erros milimétricos)
+   ÁREA DO SLIDER E CARDS (Tamanho Fixo Estilo UEFA)
    ========================================================================== */
         .fotos-slider-wrapper {
           flex: 1; /* Preenche dinamicamente até a margem direita exata do grid superior */
           overflow: hidden;
           display: flex;
           flex-direction: column;
+          max-width: 100%; /* Impede o wrapper de esticar além do espaço do flex container */
         }
 
         .fotos-slider {
           display: flex;
-          gap: 20px; /* Espaçamento de 20px idêntico entre os cards */
+          gap: 20px; /* Espaçamento rígido entre os cards */
           overflow-x: auto;
           scroll-snap-type: x mandatory;
           scroll-behavior: smooth;
-          scrollbar-width: none;
+          scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
           padding-bottom: 20px;
           cursor: grab;
           user-select: none;
+          width: 100%;
         }
 
         .fotos-slider:active {
@@ -458,12 +466,14 @@
         }
 
         .fotos-slider::-webkit-scrollbar {
-          display: none;
+          display: none; /* Oculta a barra de rolagem no Chrome, Safari e Edge */
         }
 
-        /* CALIBRAÇÃO EXATA: Adapta o tamanho dos cards ao wrapper de forma milimétrica */
+        /* Largura fixa pura: os cards NUNCA mudam de tamanho, apenas transbordam para os lados */
         .foto-card {
-          flex: 0 0 calc((100% - 40px) / 3); /* 100% do slider fluido menos 40px dos dois gaps */
+          flex: 0 0 280px;
+          width: 280px;
+          min-width: 280px; /* Garante que o flexbox não esmague o card */
           scroll-snap-align: start;
           display: flex;
           flex-direction: column;
@@ -479,15 +489,17 @@
 
         .foto-image {
           width: 100%;
-          height: auto;
+          height: 185px; /* Altura fixa para manter o alinhamento perfeito dos cards */
+          object-fit: cover; /* Recorta a imagem proporcionalmente sem distorcer */
           display: block;
+          border-radius: var(--radius, 10px) var(--radius, 10px) 0 0;
         }
 
         .foto-category {
           position: absolute;
           bottom: 0;
           left: 0;
-          background-color:#0078d4;
+          background-color: #0078d4;
           color: white;
           font-size: 10px;
           font-weight: 700;
@@ -554,13 +566,15 @@
         }
 
         /* ==========================================================================
-   REGRAS PARA DISPOSITIVOS MÓVEIS (Apenas quebra abaixo de 992px)
+   RESPONSIVIDADE E QUEBRAS DE TELA (Breakpoints)
    ========================================================================== */
+
+        /* Telas Médias e Mobile (Abaixo de 992px) */
         @media (max-width: 992px) {
           .fotos-container {
             flex-direction: column;
             gap: 30px;
-            padding: 0 12px;
+            padding: 0 16px;
           }
 
           .fotos-intro-col {
@@ -580,44 +594,30 @@
             width: 100%;
           }
 
-          .fotos-slider {
-            gap: 15px;
-          }
-
-          .foto-card {
-            flex: 0 0 85%; /* No mobile mantém a fluidez para indicar o arrasto lateral */
-          }
-        }
-
-        .foto-image {
-          width: 100%;
-          height: auto;
-          display: block;
-          /* Aplica o arredondamento: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
-          border-radius: var(--radius, 10px) var(--radius, 10px) 0 0;
+          /* Os cards continuam com 280px fixos, permitindo scroll lateral infinito no telemóvel */
         }
       </style>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
-          // Seletores atualizados para corresponder ao novo HTML de fotos
+          // Seletores para os elementos do slider
           const slider = document.querySelector('.fotos-slider');
           const dotsContainer = document.querySelector('.fotos-slider-dots');
           const cards = document.querySelectorAll('.foto-card');
 
           if (!slider || !dotsContainer || cards.length === 0) return;
 
-          // --- CRIAÇÃO DINÂMICA DAS BOLINHAS ---
+          // --- CRIAÇÃO DINÂMICA DAS BOLINHAS (DOTS) ---
           // Varre todos os cards existentes no HTML e gera um botão para cada um
           cards.forEach((card, index) => {
             const dot = document.createElement('button');
             dot.classList.add('dot-btn');
-            if (index === 0) dot.classList.add('active'); // Primeira começa ativa
+            if (index === 0) dot.classList.add('active'); // A primeira começa ativa
             dot.setAttribute('data-slide', index);
             dot.setAttribute('aria-label', `Slide ${index + 1}`);
             dotsContainer.appendChild(dot);
           });
 
-          // Captura os botões gerados recentemente
+          // Captura as bolinhas que acabaram de ser injetadas no HTML
           const dots = document.querySelectorAll('.dot-btn');
 
           // --- LÓGICA DE ARRASTAR COM O MOUSE (DRAG TO SCROLL) ---
@@ -627,8 +627,8 @@
 
           slider.addEventListener('mousedown', (e) => {
             isDown = true;
-            slider.style.scrollBehavior = 'auto';
-            slider.style.scrollSnapType = 'none';
+            slider.style.scrollBehavior = 'auto'; // Remove o smooth temporariamente para o arrasto ser instantâneo
+            slider.style.scrollSnapType = 'none'; // Desativa o snap para não travar o movimento do rato
             startX = e.pageX - slider.offsetLeft;
             scrollLeft = slider.scrollLeft;
           });
@@ -649,19 +649,21 @@
             if (!isDown) return;
             e.preventDefault();
             const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 1.5;
+            const walk = (x - startX) * 1.5; // Fator de velocidade do arrasto
             slider.scrollLeft = scrollLeft - walk;
           });
 
           function finalizarArrasto() {
             slider.style.scrollBehavior = 'smooth';
-            slider.style.scrollSnapType = 'x mandatory';
+            slider.style.scrollSnapType = 'x mandatory'; // Devolve o efeito magnético estilo UEFA
+
+            // Pequeno truque para forçar o navegador a recalcular o posicionamento do snap imediatamente
             const currentScroll = slider.scrollLeft;
             slider.scrollLeft = currentScroll + 1;
             slider.scrollLeft = currentScroll;
           }
 
-          // --- NAVEGAÇÃO AO CLICAR NAS BOLINHAS ---
+          // --- NAVEGAÇÃO AO CLICAR NAS BOLINHAS (CORREÇÃO ESTILO UEFA) ---
           dots.forEach((dot) => {
             dot.addEventListener('click', () => {
               slider.style.scrollBehavior = 'smooth';
@@ -669,29 +671,36 @@
               const targetCard = cards[slideIndex];
 
               if (targetCard) {
+                // Calcula a posição exata baseada estritamente no offset do próprio card
+                const targetScrollLeft = targetCard.offsetLeft - slider.offsetLeft;
+
                 slider.scrollTo({
-                  left: targetCard.offsetLeft - slider.offsetLeft,
+                  left: targetScrollLeft,
                   behavior: 'smooth',
                 });
               }
             });
           });
 
-          // --- ATUALIZAÇÃO SENSÍVEL AO SCROLL ---
+          // --- ATUALIZAÇÃO REATIVA DO DOT ATIVO DURANTE O SCROLL ---
           slider.addEventListener('scroll', () => {
             let activeIndex = 0;
             let minDistance = Infinity;
 
             cards.forEach((card, index) => {
+              // Mede a distância de cada card em relação ao canto esquerdo visível do slider
               const distance = Math.abs(
                 card.getBoundingClientRect().left - slider.getBoundingClientRect().left
               );
+
+              // O card que estiver mais próximo do canto esquerdo será considerado o ativo
               if (distance < minDistance) {
                 minDistance = distance;
                 activeIndex = index;
               }
             });
 
+            // Remove a classe ativa de todos os dots e adiciona apenas no dot correto
             dots.forEach((dot) => dot.classList.remove('active'));
             if (dots[activeIndex]) {
               dots[activeIndex].classList.add('active');
