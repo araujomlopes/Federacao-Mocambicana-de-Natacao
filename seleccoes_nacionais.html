@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+     content="Rios — Website institucional - MFN."
+    />
+    <title>Rios — Website Leve e Responsivo</title>
+    <link rel="stylesheet" href="assets/css/firefox-fixes.css" />
+
+    <!-- Google Fonts (-style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Geral -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- CSS Página Equipas -->
+    <link rel="stylesheet" href="assets/css/pages/equipas.css" />
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <div id="header"></div>
+    <!-- ========== HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="main">
+      <!-- ========== EQUIPAS INICIO ========== -->
+      <div class="container teams-container">
+        <section class="teams-section">
+          <h2 class="teams-title">Atletas</h2>
+          <div class="teams-subtitle">Seleccoes nacionais</div>
+
+          <div class="widget-ranking-container">
+
+    <!-- CARD 1 -->
+    <div class="ranking-card-item">
+        <div class="card-header">
+            <div class="header-title">Nome completo <br>do Atleta</div>
+            <img class="club-badge" src="assets/images/team-logo/barracudasweb.webp" alt="Escudo">
+            <img class="player-cutoff" src="assets/images/perfil_jogador/seleccao nacional/dfl-obj-j01r3r-dfl-clu-00000g-dfl-sea-0001k9.webp" alt="Jogador">
+        </div>
+        <ul class="ranking-list">
+            <li class="ranking-row leader">
+                <span class="player-name"><strong>Ano de nascimento</strong></span>
+                <span class="score-val">1996</span>
+            </li>
+            <li class="ranking-row">
+                <span class="player-name">Clube</span>
+                <span class="score-val">Golfinhos</span>
+            </li>
+            <li class="ranking-row">
+                <span class="player-name">Estreia</span>
+                <span class="score-val">2022</span>
+            </li>
+            <li class="ranking-row">
+                <span class="player-name">Internacionalizacoes</span>
+                <span class="score-val">1</span>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="ranking-card-item">
+        <div class="card-header">
+            <div class="header-title">Nome completo <br>do Atleta</div>
+            <img class="club-badge" src="assets/images/team-logo/golfinhoswebp.webp" alt="Escudo">
+            <img class="player-cutoff" src="assets/images/perfil_jogador/seleccao nacional/dfl-obj-j01r3r-dfl-clu-00000g-dfl-sea-0001k9.webp" alt="Jogador">
+        </div>
+        <ul class="ranking-list">
+            <li class="ranking-row leader">
+                <span class="player-name"><strong>Ano de nascimento</strong></span>
+                <span class="score-val">1996</span>
+            </li>
+            <li class="ranking-row">
+                <span class="player-name">Clube</span>
+                <span class="score-val">Golfinhos</span>
+            </li>
+            <li class="ranking-row">
+                <span class="player-name">Estreia</span>
+                <span class="score-val">2022</span>
+            </li>
+            <li class="ranking-row">
+                <span class="player-name">Internacionalizacoes</span>
+                <span class="score-val">1</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="ranking-card-item">
+        <div class="card-header">
+            <div class="header-title">Nome completo <br>do Atleta</div>
+            <img class="club-badge" src="assets/images/team-logo/clube_nautico_beirawebp.webp" alt="Escudo">
+            <img class="player-cutoff" src="assets/images/perfil_jogador/seleccao nacional/dfl-obj-j01r3r-dfl-clu-00000g-dfl-sea-0001k9.webp" alt="Jogador">
+        </div>
+        <ul class="ranking-list">
+            <li class="ranking-row leader">
+                <span class="player-name"><strong>Ano de nascimento</strong></span>
+                <span class="score-val">1996</span>
+            </li>
+            <li class="ranking-row">
+                <span class="player-name">Clube</span>
+                <span class="score-val">Clube nautico</span>
+            </li>
+            <li class="ranking-row">
+                <span class="player-name">Estreia</span>
+                <span class="score-val">2022</span>
+            </li>
+            <li class="ranking-row">
+                <span class="player-name">Internacionalizacoes</span>
+                <span class="score-val">1</span>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+<style>
+  /* CONTAINER PRINCIPAL: Alinha os 3 cards lado a lado no desktop */
+.widget-ranking-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* CARD INDIVIDUAL */
+.ranking-card-item {
+    background: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* CABEÇALHO CINZA COM TEXTURA PONTILHADA */
+.ranking-card-item .card-header {
+    background-image: radial-gradient(#e0e0e0 1.5px, transparent 1.5px);
+    background-size: 8px 8px;
+    padding: 13px 18px 0px;
+    position: relative;
+    box-sizing: border-box;
+    height: 135px;
+    width: 100%;
+
+}
+
+.ranking-card-item .header-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #000000;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    max-width: 60%;
+}
+
+.ranking-card-item .club-badge {
+    width: 42px;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+}
+
+/* RECORTE DO JOGADOR ALINHADO À DIREITA */
+.ranking-card-item .player-cutoff {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 135px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* LISTA DE CLASSIFICAÇÃO */
+.ranking-card-item .ranking-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ranking-card-item .ranking-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px 0 18px;
+    border-bottom: 1px solid #eeeeee;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    color: #222222;
+    box-sizing: border-box;
+    height: 45px;
+}
+
+/* DESTAQUE PARA O LÍDER (PRIMEIRA LINHA) */
+.ranking-card-item .ranking-row.leader {
+    color: #000000;
+}
+
+.ranking-card-item .player-name {
+    text-transform: uppercase;
+}
+
+.ranking-card-item .leader .player-name {
+    font-weight: 700;
+}
+
+.ranking-card-item .score-val {
+    font-weight: 500;
+}
+
+.ranking-card-item .leader .score-val {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+
+/* BOTÃO INFERIOR */
+.ranking-card-item .btn-full-list {
+    background: none;
+    border: none;
+    padding: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-align: start;
+    width: 100%;
+    margin-top: auto;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+    height: 45px;
+}
+
+.ranking-card-item .btn-full-list:hover {
+    background-color: #fafafa;
+}
+
+/* RESPONSIVIDADE: Empilha em telas menores que 992px */
+@media (max-width: 992px) {
+    .widget-ranking-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
+
+</style>
+
+      <!-- ========== EQUIPAS FIM ========== -->
+
+      <!-- Elemento de Nota Informativa (Página de Clubes Filiados) -->
+      <div class="club-notice-container">
+        <hr class="club-notice-divider" />
+        <p class="club-notice-text">
+          A lista dos atletas constituintes das Seleções Nacionais é atualizada periodicamente pela Direção Técnica da Federação Moçambicana de Natação (FMN), com base no ranking oficial de tempos, índices de desempenho (World Aquatics Points) e convocações oficiais vigentes. Eventuais omissões, atualizações de recordes pessoais ou incorreções nos dados estatísticos devem ser comunicadas oficialmente pelo clube do atleta à Secretaria Geral da FMN.
+        </p>
+      </div>
+
+      <style>
+        /* Container principal para garantir o alinhamento na página */
+        .club-notice-container {
+          width: 100%;
+          max-width: 1200px; /* Alinhe com a largura máxima do seu site */
+          margin: 24px auto;
+          padding: 0 16px;
+          box-sizing: border-box;
+          font-family:
+            -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Linha divisória horizontal sutil no topo */
+        .club-notice-divider {
+          border: 0;
+          height: 1px;
+          background-color: #e2e8f0; /* Cinza claro suave */
+          margin-bottom: 16px;
+        }
+
+        /* Estilização fiel do texto informativo */
+        .club-notice-text {
+          font-size: 13px; /* Fonte pequena e discreta */
+          line-height: 1.5; /* Espaçamento de linha confortável para leitura */
+          color: #64748b; /* Tom cinza médio/escuro profissional */
+          margin: 0;
+          text-align: left;
+          font-weight: 400;
+          letter-spacing: -0.01em;
+        }
+
+        /* Ajuste responsivo para telas menores */
+        @media (max-width: 768px) {
+          .club-notice-text {
+            font-size: 12.5px;
+            line-height: 1.4;
+          }
+        }
+      </style>
+    </main>
+
+    <!-- FOOTER (injetado via JS start) -->
+    <div id="footer"></div>
+    <!-- FOOTER (injetado via JS end) -->
+
+    <!-- Scripts da página -->
+    <script src="assets/js/pages/slider.js"></script>
+    <!-- Scripts gerais -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/pages/footer.js"></script>
+    <script src="assets/js/pages/header-nav.js"></script>
+
+
+  </body>
+</html>
