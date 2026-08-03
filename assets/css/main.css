@@ -2271,9 +2271,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .footer-sponsors {
-    padding: 30px 15px;
-  }
+
 
   .footer-sponsors-list {
     gap: 10px;
