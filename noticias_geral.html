@@ -226,14 +226,32 @@
       <!-- ================= noticias inicio ================= -->
 
       <div class="news-section">
+        <!-- Cabeçalho da Seção -->
         <div class="news-header">
           <h2>Últimas Notícias</h2>
         </div>
 
+        <!-- Grelha Principal de Notícias -->
         <div class="news-grid">
-          <!-- Card Grande 1: Yamal (Substituído por tag <a>) -->
+          <!-- ==========================================
+         CARD 1: JOGOS DA COMMONWEALTH 2026 (CARD GRANDE)
+         ========================================== -->
           <a href="noticia_commonwealthglasgow2026.html" class="news-card card-large">
-            <img src="assets/images/noticias/Noticia card maior 1.webp" alt="" />
+            <picture>
+              <!-- [MOBILE] Se a tela for menor que 576px, o navegador baixa esta imagem (Tamanho ideal: 400px de largura) -->
+              <source
+                media="(max-width: 576px)"
+                srcset="assets/images/noticias/ultimas_noticias/400px_glasgow.webp"
+              />
+
+              <!-- [DESKTOP] Imagem padrão para computadores (Tamanho ideal: 800px de largura devido ao formato grande) -->
+              <!-- Nota: Não leva loading="lazy" porque está no topo da tela e deve abrir imediatamente -->
+              <img
+                src="assets/images/noticias/ultimas_noticias/800px_glasgow.webp"
+                alt="Atletas moçambicanos nos Jogos da Commonwealth"
+                decoding="async"
+              />
+            </picture>
             <div class="card-overlay">
               <h3>Moçambique nos Jogos da Commonwealth 2026.</h3>
               <div class="card-meta">
@@ -242,15 +260,29 @@
             </div>
           </a>
 
-          <!-- Card 2: Lautaro (Substituído por tag <a>) -->
+          <!-- ==========================================
+         CARD 2: CENTRO DE ALTO RENDIMENTO ZIMPETO (CARD COMUM)
+         ========================================== -->
           <a href="noticia_lanca_altorendimentonozimpeto.html" class="news-card">
             <div class="card-media">
-              <img src="assets/images/noticias/card menor alto rendimento.webp" alt="" />
+              <picture>
+                <!-- [MOBILE] Imagem leve para telemóveis (Tamanho ideal: 400px de largura) -->
+                <source media="(max-width: 576px)" srcset="" />
+
+                <!-- [DESKTOP] Imagem padrão para computadores (Tamanho ideal: 600px de largura) -->
+                <!-- Nota: Leva loading="lazy" porque está mais abaixo e só carrega se o usuário fizer scroll -->
+                <img
+                  src="assets/images/noticias/ultimas_noticias/600px_altorendimento.webp"
+                  alt="Projeto do Centro de Alto Rendimento no Zimpeto"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <span class="video-duration">07:36</span>
             </div>
             <div class="card-content">
               <p>
-                Presidente Justino Francisco anuncia projeto para Centro de Alto Rendimento no
+                Presidente Justino Francisco announces projeto para Centro de Alto Rendimento no
                 Zimpeto
               </p>
               <div class="card-meta">
@@ -259,10 +291,23 @@
             </div>
           </a>
 
-          <!-- Card 3: Spain (Substituído por tag <a>) -->
+          <!-- ==========================================
+         CARD 3: CAMPEONATO DE ÁGUAS ABERTAS (CARD COMUM)
+         ========================================== -->
           <a href="noticia_1campeonato_aguasabertas.html" class="news-card">
             <div class="card-media">
-              <img src="assets/images/noticias/aguas abertas card menor.webp" alt="" />
+              <picture>
+                <!-- [MOBILE] Imagem leve para telemóveis (Tamanho ideal: 400px de largura) -->
+                <source media="(max-width: 576px)" srcset="" />
+
+                <!-- [DESKTOP] Imagem padrão para computadores (Tamanho ideal: 600px de largura) -->
+                <img
+                  src="assets/images/noticias/ultimas_noticias/600px_bilene_aguas_abertas.webp"
+                  alt="Largada do Campeonato Nacional de Águas Abertas na Praia do Bilene"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="card-content">
               <p>
@@ -271,22 +316,34 @@
               <div class="card-meta">
                 <span class="hashtag">#Águas Abertas</span>
                 <div class="sport-icon-wrapper">
+                  <!-- Ícone SVG leve (Não precisa de versão mobile porque SVGs são vetores ultra leves) -->
                   <img
                     src="assets/images/diversos/modalidades/natacao aguas abertas.svg"
-                    alt="Icon"
+                    alt="Ícone Águas Abertas"
+                    loading="lazy"
                   />
                 </div>
               </div>
             </div>
           </a>
 
-          <!-- Card 4: Argentina (Substituído por tag <a>) -->
+          <!-- ==========================================
+         CARD 4: TORNEIO NADADOR COMPLETO 2026 (CARD COMUM)
+         ========================================== -->
           <a href="noticia_39edicao_nadadorcompleto2026.html" class="news-card">
             <div class="card-media">
-              <img
-                src="assets/images/noticias/Noticia card menor1 nadador completo Angela xucumbi.webp"
-                alt=""
-              />
+              <picture>
+                <!-- [MOBILE] Imagem leve para telemóveis (Tamanho ideal: 400px de largura) -->
+                <source media="(max-width: 576px)" srcset="" />
+
+                <!-- [DESKTOP] Imagem padrão para computadores (Tamanho ideal: 600px de largura) -->
+                <img
+                  src="assets/images/noticias/ultimas_noticias/600px_nadador_completo.webp"
+                  alt="Ângela Xicumbi e Hugo de Sousa coroados vencedores"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="card-content">
               <p>
@@ -296,34 +353,71 @@
               <div class="card-meta">
                 <span class="hashtag">#Natação Pura</span>
                 <div class="sport-icon-wrapper">
-                  <img src="assets/images/diversos/modalidades/natacao pura.svg" alt="Icon" />
+                  <img
+                    src="assets/images/diversos/modalidades/natacao pura.svg"
+                    alt="Ícone Natação Pura"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
           </a>
 
-          <!-- Card 5: Draw (Substituído por tag <a>) -->
+          <!-- ==========================================
+         CARD 5: MEDALHA DE BRONZE HISTÓRICA (CARD COMUM)
+         ========================================== -->
           <a href="noticia_bronzeafricanojuniors2023.html" class="news-card">
             <div class="card-media">
-              <img src="assets/images/noticias/historico_bronze_card_menor.webp" alt="" />
+              <picture>
+                <!-- [MOBILE] Imagem leve para telemóveis (Tamanho ideal: 400px de largura) -->
+                <source media="(max-width: 576px)" srcset="" />
+
+                <!-- [DESKTOP] Imagem padrão para computadores (Tamanho ideal: 600px de largura) -->
+                <img
+                  src="assets/images/noticias/ultimas_noticias/600px_historica_medalha_bronze.webp"
+                  alt="Pódio da Medalha de Bronze no Africano de Juniores de 2023"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="card-content">
               <p>A histórica Medalha de Bronze no Africano de Juniores de 2023.</p>
               <div class="card-meta">
                 <span class="hashtag">#Natação Pura</span>
                 <div class="sport-icon-wrapper">
-                  <img src="assets/images/diversos/modalidades/natacao pura.svg" alt="Icon" />
+                  <img
+                    src="assets/images/diversos/modalidades/natacao pura.svg"
+                    alt="Ícone Natação Pura"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
           </a>
 
-          <!-- Card Grande 6: Alvarez (Substituído por tag <a>) -->
+          <!-- ==========================================
+         CARD 6: TOMADA DE POSSE DA FMN (CARD GRANDE)
+         ========================================== -->
           <a
             href="noticia_justino_eleitopresedente_fmn.html"
             class="news-card card-large card-right"
           >
-            <img src="assets/images/noticias/card_maior_tomada_posse.webp" alt="" />
+            <picture>
+              <!-- [MOBILE] Imagem leve para telemóveis (Tamanho ideal: 400px de largura) -->
+              <source
+                media="(max-width: 576px)"
+                srcset="assets/images/noticias/ultimas_noticias/400px_tomada_posse.webp"
+              />
+
+              <!-- [DESKTOP] Imagem padrão para computadores (Tamanho ideal: 800px de largura) -->
+              <img
+                src="assets/images/noticias/ultimas_noticias/800px_tomada_posse.webp"
+                alt="Novo elenco diretivo da FMN toma posse na sede do Comité Olímpico"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <span class="video-duration">07:01</span>
             <div class="card-overlay">
               <h3>
@@ -335,6 +429,11 @@
               </div>
             </div>
           </a>
+        </div>
+
+        <!-- Botão de Rodapé -->
+        <div class="news-footer">
+          <a href="noticias_geral.html" class="btn-view-all">Ver mais notícias</a>
         </div>
       </div>
 
