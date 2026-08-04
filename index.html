@@ -496,6 +496,241 @@
         }
       </style>
 
+      <!-- ================= baner proximo evento inicio ================= -->
+      <!-- Seção Promocional MotoGP Fan Club - Versão Otimizada para Conexões Lentas -->
+      <!-- =======================================================================
+     INÍCIO DA SEÇÃO PROMOCIONAL DO MOTOGP FAN CLUB
+     ======================================================================= -->
+      <!-- =======================================================================
+     INÍCIO DA SEÇÃO PROMOCIONAL DO MOTOGP FAN CLUB
+     ======================================================================= -->
+      <!-- =======================================================================
+     INÍCIO DA SEÇÃO PROMOCIONAL - PRÓXIMOS EVENTOS FMN
+     ======================================================================= -->
+      <section class="single-promo widget">
+        <!-- Container principal que junta os dois lados (Imagem + Texto) -->
+        <div class="single-promo__container">
+          <!-- ==========================================
+             BLOCO DA ESQUERDA: SISTEMA INTELIGENTE DE IMAGEM
+             ========================================== -->
+          <div class="single-promo__image-side">
+            <!-- Link que envolve a imagem e direciona o utilizador para o calendário de eventos -->
+            <a
+              class="single-promo__image-link"
+              target="_blank"
+              rel="noopener"
+              href="https://fmn.org.mz"
+            >
+              <!-- O sistema <picture> escolhe a foto ideal para o ecrã, poupando megas em Moçambique -->
+              <picture class="single-promo__responsive-picture">
+                <!-- [VERSÃO TELEMÓVEL] Foto leve: 610 x 250 px | Máx: 35 KB -->
+                <source srcset="assets/images/diversos/610.webp" media="(max-width: 640px)" />
+
+                <!-- [VERSÃO TABLET] Foto média: 810 x 250 px | Máx: 55 KB -->
+                <source srcset="assets/images/diversos/810.webp" media="(max-width: 1024px)" />
+
+                <!-- [VERSÃO DESKTOP] Foto padrão: 1220 x 500 px | Máx: 100 KB -->
+                <img
+                  class="single-promo__img"
+                  src="assets/images/diversos/1220.webp"
+                  alt="Próximos eventos e competições da Federação Moçambicana de Natação"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+          </div>
+
+          <!-- ==========================================
+             BLOCO DA DIREITA: TEXTOS E BOTÃO DA FMN
+             ========================================== -->
+          <div class="single-promo__content-side">
+            <!-- Título Principal focado nos Campeonatos e Provas da FMN -->
+            <h2 class="single-promo__title">
+              CALENDÁRIO OFICIAL – NÃO PERCA OS PRÓXIMOS EVENTOS DA FMN!
+            </h2>
+
+            <!-- Parágrafo adaptado para convidar atletas, clubes e adeptos moçambicanos -->
+            <p class="single-promo__text">
+              Acompanhe de perto as próximas braçadas que vão agitar as águas nacionais. Fique por
+              dentro de todas as datas dos <strong>Campeonatos Nacionais</strong>, torneios
+              regionais e provas de Águas Abertas. Apoie os nossos atletas e faça parte do
+              crescimento da natação moçambicana!
+            </p>
+
+            <!-- Botão de Ação para abrir a página de inscrições ou detalhes dos eventos -->
+            <a href="https://fmn.org.mz" target="_blank" rel="noopener" class="single-promo__btn">
+              Ver Calendário
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- =======================================================================
+     FIM DA SEÇÃO PROMOCIONAL - PRÓXIMOS EVENTOS FMN
+     ======================================================================= -->
+      <!-- =======================================================================
+     FIM DA SEÇÃO PROMOCIONAL DO MOTOGP FAN CLUB
+     ======================================================================= -->
+
+      <!-- =======================================================================
+     FIM DA SEÇÃO PROMOCIONAL DO MOTOGP FAN CLUB
+     ======================================================================= -->
+
+      <style>
+        /* ==========================================================================
+   COMPONENTE: SINGLE PROMO MOTOGP (CORREÇÃO DE PROPORÇÃO E ALTURA)
+   ========================================================================== */
+        /* ==========================================================================
+   COMPONENTE: SINGLE PROMO MOTOGP (PROPORÇÃO PROTEGIDA E FLUIDA)
+   ========================================================================== */
+
+        .single-promo {
+          width: 100%;
+          margin: 40px auto;
+          padding: 0 12px;
+          box-sizing: border-box;
+          max-width: 1200px;
+        }
+
+        .single-promo__container {
+          display: flex;
+          flex-direction: row;
+          background-color: #ffffff;
+          width: 100%;
+          margin: 0 auto;
+          overflow: hidden;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+          border-radius: 8px;
+        }
+
+        /* Lado da Imagem em Desktop */
+        .single-promo__image-side {
+          flex: 1.3; /* Dá um pouco mais de espaço horizontal para a imagem não sofrer cortes */
+          width: 55%;
+          display: flex;
+        }
+
+        .single-promo__image-link {
+          display: block;
+          width: 100%;
+        }
+
+        .single-promo__responsive-picture {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
+        .single-promo__img {
+          width: 100%;
+          height: 100%;
+          /* MUDANÇA: 'cover' ajustado para preenchimento bem centrado, minimizando perdas */
+          object-fit: cover;
+          object-position: center center;
+          display: block;
+        }
+
+        /* Lado do Conteúdo de Texto */
+        .single-promo__content-side {
+          flex: 1;
+          width: 45%;
+          padding: 40px; /* Reduzido ligeiramente para dar mais espaço para as letras respirarem */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          box-sizing: border-box;
+        }
+
+        .single-promo__title {
+          font-family:
+            'Arial Black',
+            -apple-system,
+            BlinkMacSystemFont,
+            sans-serif;
+          font-size: 22px;
+          font-weight: 900;
+          color: #111111;
+          line-height: 1.2;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+          letter-spacing: -0.5px;
+        }
+
+        .single-promo__text {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-size: 13.5px;
+          color: #555555;
+          line-height: 1.6;
+          margin-bottom: 25px;
+        }
+
+        .single-promo__text strong {
+          color: #111111;
+          font-weight: 700;
+        }
+
+        .single-promo__btn {
+          display: inline-block;
+          background-color: #e10600;
+          color: #ffffff;
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          padding: 12px 35px;
+          border-radius: 50px;
+          text-decoration: none;
+          transition: background-color 0.2s ease;
+        }
+
+        .single-promo__btn:hover {
+          background-color: #b80500;
+        }
+
+        /* ==========================================================================
+   ADAPTAÇÃO RESPONSIVA ANTECIPADA (EVITA O APERTO EM TABLETS E LAPTOPS)
+   ========================================================================== */
+        /* MUDANÇA: Mudámos de 850px para 992px. Agora, ecrãs como o teu de 863px já vão
+   ver o layout em modo lista, exibindo a imagem inteira sem cortes na lateral */
+        @media (max-width: 992px) {
+          .single-promo__container {
+            flex-direction: column;
+          }
+
+          .single-promo__image-side {
+            width: 100%;
+            flex: none;
+            display: block;
+          }
+
+          .single-promo__image-link,
+          .single-promo__responsive-picture {
+            width: 100%;
+            height: auto;
+          }
+
+          .single-promo__img {
+            width: 100%;
+            height: auto;
+            /* Usa a proporção de tablet (810/250) para ecrãs médios e telemóveis */
+            aspect-ratio: 810 / 250;
+            object-fit: cover;
+          }
+
+          .single-promo__content-side {
+            width: 100%;
+            padding: 30px 20px;
+          }
+
+          .single-promo__title {
+            font-size: 19px;
+          }
+        }
+      </style>
+      <!-- ================= baner proximo evento fim ================= -->
+
       <section class="ultimas-fotos-section">
         <div class="fotos-container">
           <!-- Coluna de Introdução (Fixa) -->
@@ -962,8 +1197,5 @@
     <!-- ================= SCRIPTS ================= -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/pages/header-nav.js"></script>
-    <script src="assets/js/pages/jogadoresdedestaque.js"></script>
-    <script src="assets/js/pages/matches.js"></script>
-    <script src="assets/js/pages/standings.js"></script>
   </body>
 </html>
