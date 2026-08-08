@@ -1,0 +1,92 @@
+{
+  "mesaAssembleia": [
+    { "nome": "Fernando Miguel", "cargo": "Presidente" },
+    { "nome": "Páscoa Themba", "cargo": "Vice-Presidente" },
+    { "nome": "Andre Cristiano", "cargo": "Secretário" }
+  ],
+  "conselhoFiscal": [
+    { "nome": "Paulo Goque", "cargo": "Presidente" },
+    { "nome": "Paloma Rola", "cargo": "Secretário" },
+    { "nome": "Adriano Pedro", "cargo": "Relator" }
+  ],
+  "conselhoJurisdicional": [
+    { "nome": "Fernando Campini", "cargo": "Presidente" },
+    { "nome": "Lurdes Danga", "cargo": "Secretário" },
+    { "nome": "Paulo Centeio", "cargo": "Relator" }
+  ],
+  "direccao": [
+    { "nome": "Justino Francisco", "cargo": "Presidente" },
+    { "nome": "Filomena Levi", "cargo": "1º Vice-presidente" },
+    { "nome": "Ailson Semá", "cargo": "2º Vice-presidente" },
+    { "nome": "Sergio Rodrigues", "cargo": "3º Vice-presidente" },
+    { "nome": "Filipe Lobo", "cargo": "Secretário-Geral" },
+    { "nome": "Pedro Langa", "cargo": "Secretário-G. Adj." },
+    { "nome": "Analcária Dalsuco", "cargo": "Tesouraria" },
+    { "nome": "Joharia Issufo", "cargo": "Vogal" }
+  ],
+  "comissoesApoio": [
+    {
+      "titulo": "Comissão Técnica",
+      "membros": [
+        { "nome": "Filipe Túlio", "cargo": "Presidente" },
+        { "nome": "Eleutério Malate", "cargo": "Vice-Presidente" },
+        { "nome": "Azad Mabuzissane", "cargo": "Secretário" },
+        { "nome": "Aristides Gumende", "cargo": "Vogal" }
+      ]
+    },
+    {
+      "titulo": "Comissão de Arbitragem",
+      "membros": [
+        { "nome": "Lourenço Masc.", "cargo": "Presidente" },
+        { "nome": "M. Helena Abiatar", "cargo": "Secretária" },
+        { "nome": "Elidio João Macie", "cargo": "Relator" },
+        { "nome": "Julião Fafetine", "cargo": "Vogal" }
+      ]
+    },
+    {
+      "titulo": "Comissão do Polo",
+      "membros": [
+        { "nome": "Ricardo dos Santos", "cargo": "Presidente" },
+        { "nome": "Ivan Loonat", "cargo": "Vice-Presidente" },
+        { "nome": "Jose Muchanga", "cargo": "Secretário" }
+      ]
+    },
+    {
+      "titulo": "Com. de Natação Adaptada",
+      "membros": [
+        { "nome": "Andrea Lourenço", "cargo": "Presidente" },
+        { "nome": "José Mossiane", "cargo": "Secretário" }
+      ]
+    },
+    {
+      "titulo": "Comissão de Saúde",
+      "membros": [
+        { "nome": "Carolina Araújo", "cargo": "Presidente" },
+        { "nome": "Caetano Guita", "cargo": "Vice-Presidente" }
+      ]
+    },
+    {
+      "titulo": "Comissão de Massificação",
+      "membros": [
+        { "nome": "Dalila Tsihlakis", "cargo": "Presidente" },
+        { "nome": "Soraya Santos", "cargo": "Vice-Presidente" },
+        { "nome": "José Albasine", "cargo": "Secretário" }
+      ]
+    },
+    {
+      "titulo": "Comissão de Águas Abertas",
+      "membros": [
+        { "nome": "Vanusa Cândida", "cargo": "Presidente" },
+        { "nome": "Amina Matandalasse", "cargo": "Vice-Presidente" }
+      ]
+    },
+    {
+      "titulo": "Comissão de Infra-Estruturas",
+      "membros": [
+        { "nome": "Paulo Aliang", "cargo": "Presidente" },
+        { "nome": "Elton Mangore", "cargo": "Vice-Presidente" },
+        { "nome": "Araújo Lopes", "cargo": "Secretário" }
+      ]
+    }
+  ]
+}

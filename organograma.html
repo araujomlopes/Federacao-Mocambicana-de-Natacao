@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Rios — Website institucional - MFN." />
+    <title>Rios — Website Leve e Responsivo</title>
+    <link rel="stylesheet" href="assets/css/firefox-fixes.css" />
+
+    <!-- Google Fonts (-style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Geral -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- CSS Página Equipas -->
+    <link rel="stylesheet" href="assets/css/pages/organograma.css" />
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <div id="header"></div>
+    <!-- ========== HEADER ========== -->
+
+    <main id="main">
+      <!-- ========== card inicio ========== -->
+
+      <style>
+        /* ==========================================================================
+   DESIGN SYSTEM, COMPONENTES E RESPONSIVIDADE DO ORGANOGRAMA (PADRÃO SÉNIOR)
+   ========================================================================== */
+        /* ==========================================================================
+   CSS FINAL DO ORGANOGRAMA — RESPONSIVIDADE E MANUTENÇÃO DE ALTO NÍVEL
+   ========================================================================== */
+
+        /* 1. DESIGN SYSTEM (VARIÁVEIS DE CORES E FONTES) */
+        /* ==========================================================================
+   CSS PROFISSIONAL COMPLETO — ORGANOGRAMA (RESOLUÇÃO 1204PX CORRIGIDA)
+   ========================================================================== */
+
+        /* 1. DESIGN SYSTEM (VARIÁVEIS DE CORES E FONTES) */
+        /* ==========================================================================
+   CSS PROFISSIONAL ULTRA-RESPONSIVO — RESOLUÇÃO COMPLETA DE ALINHAMENTO MÓVEL
+   ========================================================================== */
+
+        /* 1. DESIGN SYSTEM (VARIÁVEIS DE CORES E FONTES) */
+        /* ==========================================================================
+   CSS PROFISSIONAL COMPLETO — DESIGN COM SLIDER UNIVERSAL CORRIGIDO
+   ========================================================================== */
+
+        /* 1. DESIGN SYSTEM (VARIÁVEIS DE CORES E FONTES) */
+        :root {
+          --org-bg-card: #ffffff;
+          --org-border-default: #cbd5e1;
+          --org-border-dashed: #e2e8f0;
+          --org-bg-section-title: #e2e8f0;
+          --org-bg-column: #f8fafc;
+          --org-text-primary: #1e293b;
+          --org-text-secondary: #64748b;
+          --org-text-title: #334155;
+          --org-accent-color: #3b82f6;
+          --org-font-stack:
+            system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        /* 2. ESTRUTURA FLUIDA PRINCIPAL */
+        .org-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: clamp(32px, 5vw, 48px); /* Espaço extra seguro para os avatares flutuantes */
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 24px 16px;
+          font-family: var(--org-font-stack);
+          box-sizing: border-box;
+        }
+
+        .org-container * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        .org-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+
+        /* Classe Estrutural para os Conselhos Intermédios */
+        .org-section-divided {
+          width: auto;
+          flex: 1;
+          min-width: 300px;
+          max-width: 600px;
+        }
+
+        /* TÍTULOS DOS BLOCOS HIERÁRQUICOS */
+        .section-title {
+          background-color: var(--org-bg-section-title);
+          padding: 8px 24px;
+          font-size: clamp(0.75rem, 1.8vw, 0.85rem);
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          border-radius: 4px;
+          margin-bottom: 24px;
+          color: var(--org-text-primary);
+          text-align: center;
+          width: fit-content;
+        }
+
+        /* COMPORTAMENTO DAS FILAS (DESKTOP) */
+        .cards-row {
+          display: flex;
+          justify-content: center;
+          gap: 16px;
+          width: 100%;
+          flex-wrap: wrap; /* Garante flexibilidade em desktops de baixa resolução */
+        }
+
+        .cards-row-divided {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          gap: 32px;
+        }
+
+        /* ==========================================================================
+   3. COMPONENTE CARD - DESIGN COM AVATAR FLUTUANTE (OVERLAP)
+   ========================================================================== */
+        .org-card {
+          background: var(--org-bg-card);
+          border: 1px solid var(--org-border-default);
+          border-radius: 12px;
+          padding: 16px;
+          width: 100%;
+          min-width: 160px;
+          max-width: 200px;
+          text-align: center;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+          transition:
+            transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 0.2s ease,
+            border-color 0.2s ease;
+          flex-shrink: 0;
+
+          position: relative;
+          margin-top: 28px; /* Abre espaço no topo para a foto flutuante */
+        }
+
+        .org-card:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+          border-color: var(--org-accent-color);
+        }
+
+        /* O CÍRCULO QUE FLUTUA METADE PARA FORA */
+        .org-avatar {
+          width: 56px;
+          height: 56px;
+          background-color: #f1f5f9;
+          border-radius: 50%;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          border: 2.5px solid #ffffff; /* Linha de isolamento branca */
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+          position: relative;
+          top: -44px; /* Move exatamente metade do círculo para fora da borda do card */
+          margin-bottom: -32px; /* Remove o espaço vazio gerado pela subida no fluxo do texto */
+        }
+
+        .org-avatar img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        .org-avatar svg {
+          width: 24px;
+          height: 24px;
+          fill: #94a3b8;
+        }
+
+        .org-name {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: var(--org-text-primary);
+          margin-bottom: 5px;
+          line-height: 1.3;
+        }
+
+        .org-role {
+          font-size: 0.75rem;
+          color: var(--org-text-secondary);
+          font-weight: 500;
+          line-height: 1.2;
+        }
+
+        /* ==========================================================================
+   4. GRELHA DAS COMISSÕES DE APOIO
+   ========================================================================== */
+        .commissions-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 16px;
+          width: 100%;
+          justify-content: center;
+        }
+
+        .commission-column {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          background: var(--org-bg-column);
+          padding: 12px;
+          border-radius: 8px;
+          border: 1px dashed var(--org-border-dashed);
+          margin-top: 16px;
+        }
+
+        .commission-title {
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-align: center;
+          color: var(--org-text-title);
+          margin-bottom: 4px;
+          min-height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1.2;
+          text-transform: uppercase;
+        }
+
+        .commission-column .org-card {
+          max-width: 100%;
+          min-width: unset;
+          padding: 10px 8px;
+        }
+
+        /* Ajuste proporcional para os avatares menores das comissões */
+        .commission-column .org-avatar {
+          width: 44px;
+          height: 44px;
+          top: -32px;
+          margin-bottom: -22px;
+          border-width: 2px;
+        }
+
+        .commission-column .org-avatar svg {
+          width: 24px;
+          height: 24px;
+        }
+
+        /* ==========================================================================
+   5. MEDIA QUERIES (PROCESSAMENTO DE ADAPTAÇÃO PREMIUM)
+   ========================================================================== */
+
+        /* Tablets Horizontais e Verticais Grandes (Até 992px) */
+        @media (max-width: 992px) {
+          .cards-row-divided {
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+          }
+
+          .org-section-divided {
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .commissions-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        /* Smartphones e Ecrãs Móveis Gesticulares (Até 768px) */
+        @media (max-width: 768px) {
+          /* CORREÇÃO DO SLIDER: Alvo direto e universal nas linhas de cartões */
+          .org-container .cards-row {
+            justify-content: flex-start !important;
+            overflow-x: auto !important;
+            padding: 36px 4px 16px 4px !important; /* Margem generosa para o topo das fotos flutuantes não cortar */
+            scroll-snap-type: x mandatory !important;
+            -webkit-overflow-scrolling: touch !important;
+            touch-action: pan-x !important;
+            flex-wrap: nowrap !important; /* Força a linha única e ativa o slider por gestos */
+          }
+
+          .org-container .cards-row .org-card {
+            scroll-snap-align: start !important;
+          }
+
+          /* Estilização moderna e fina da barra de rolagem */
+          .org-container .cards-row::-webkit-scrollbar {
+            height: 4px;
+          }
+          .org-container .cards-row::-webkit-scrollbar-thumb {
+            background: var(--org-border-default);
+            border-radius: 10px;
+          }
+
+          /* Configuração das Comissões de Apoio (Lista Vertical) */
+          .commissions-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+
+          .commission-column {
+            background: var(--org-bg-card);
+            border-style: solid;
+            border-color: var(--org-border-default);
+            margin-top: 0;
+          }
+        }
+      </style>
+
+      <!-- Banner inicio -->
+      <div class="fmn-team-header-bg">
+        <div class="fmn-team-header-container">
+          <h1 class="fmn-team-main-title">ORGANOGRAMA</h1>
+        </div>
+      </div>
+      <!-- ========== CAMINHO DE NAVEGAÇÃO (BREADCRUMB) ========== -->
+      <div class="fmn-team-breadcrumb-container">
+        <nav class="fmn-team-breadcrumb">
+          <span class="fmn-crumb-root">Federação</span>
+          <span class="fmn-crumb-separator">&gt;</span>
+          <span class="fmn-crumb-current">Organograma MFN</span>
+        </nav>
+      </div>
+      <style>
+        /* --- Cabeçalho Cinzento Fiel --- */
+        .fmn-team-header-bg {
+          background-color: #f7f7f7;
+          width: 100%;
+          padding: 50px 0;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-header-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 12px;
+        }
+
+        .fmn-team-main-title {
+          font-size: 32px;
+          font-weight: 600;
+          color: #1a202c;
+          margin: 0;
+          letter-spacing: -0.5px;
+        }
+
+        /* --- Caminho de Navegação (Breadcrumb) --- */
+        .fmn-team-breadcrumb-container {
+          width: 100%;
+          border-bottom: 1px solid #eeeeee;
+        }
+
+        .fmn-team-breadcrumb {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 12px;
+          font-size: 13px;
+        }
+
+        .fmn-crumb-root {
+          color: #333333;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+
+        .fmn-crumb-separator {
+          color: #aaaaaa;
+          margin: 0 8px;
+        }
+
+        .fmn-crumb-current {
+          color: #888888;
+        }
+
+        /* --- Área de Listagem da Equipa --- */
+        .fmn-team-section {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px 20px 60px 20px;
+          color: #444444;
+        }
+
+        .fmn-team-card {
+          display: flex;
+          gap: 40px;
+          padding: 55px 0;
+          border-bottom: 1px solid #dddddd; /* Linha separadora suave idêntica à imagem */
+          align-items: flex-start;
+        }
+
+        /* Mantém a linha divisória suave em todos, exceto no último bloco inferior */
+        .fmn-team-card:last-child {
+          border-bottom: none;
+        }
+
+        .fmn-team-photo-container {
+          flex: 0 0 240px;
+          width: 240px;
+        }
+
+        .fmn-team-photo {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .fmn-team-info {
+          flex: 1;
+          padding-top: 5px;
+        }
+
+        .fmn-team-name {
+          font-size: 22px;
+          font-weight: 600;
+          color: #f4b41a;
+          margin: 0 0 5px 0;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+        }
+
+        .fmn-team-role {
+          font-size: 14px;
+          color: #999999;
+          display: block;
+          margin-bottom: 20px;
+          font-weight: 400;
+        }
+
+        .fmn-team-bio {
+          font-size: 15px;
+          line-height: 1.6;
+          color: #555555;
+          margin: 0;
+          text-align: left;
+        }
+
+        /* Bloco de Assinatura */
+        .fmn-team-signature-block {
+          margin-top: 25px;
+          display: inline-block;
+        }
+
+        .fmn-team-signature-img {
+          height: 45px;
+          width: auto;
+          display: block;
+          margin-bottom: 8px;
+          mix-blend-mode: multiply;
+        }
+
+        .fmn-team-signature-caption {
+          font-size: 11px;
+          color: #666666;
+          letter-spacing: 0.5px;
+          text-align: left;
+        }
+
+        .fmn-team-signature-caption strong {
+          color: #000000;
+        }
+
+        /* --- Responsividade Completa e Ajuste à Esquerda no Mobile --- */
+        @media (max-width: 768px) {
+          .fmn-team-header-bg {
+            padding: 35px 0;
+          }
+
+          .fmn-team-main-title {
+            font-size: 26px;
+          }
+
+          .fmn-team-card {
+            flex-direction: column;
+            gap: 25px;
+            padding: 40px 0;
+          }
+
+          .fmn-team-photo-container {
+            flex: none;
+            width: 100%;
+            max-width: 380px;
+          }
+
+          .fmn-team-info {
+            text-align: left;
+            width: 100%;
+          }
+
+          .fmn-team-bio {
+            text-align: left;
+          }
+
+          .fmn-team-signature-block {
+            display: block;
+            text-align: left;
+          }
+        }
+      </style>
+      <!-- Banner fim -->
+
+      <!-- Componente Global de Ícone Reutilizável -->
+      <svg style="display: none">
+        <g id="user-icon-shape">
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5-4-8-4z"
+          />
+        </g>
+      </svg>
+
+      <div class="org-container">
+        <!-- 1. Mesa da Assembleia Geral -->
+        <section class="org-section">
+          <div class="section-title">Mesa da Assembleia Geral</div>
+          <div class="cards-row" id="render-mesa"></div>
+        </section>
+
+        <!-- 2. Conselhos Intermédios -->
+        <div class="cards-row-divided">
+          <!-- Conselho Fiscal -->
+          <section class="org-section org-section-divided">
+            <div class="section-title">Conselho Fiscal</div>
+            <div class="cards-row" id="render-fiscal"></div>
+          </section>
+
+          <!-- Conselho Jurisdicional e Disciplinar -->
+          <section class="org-section org-section-divided">
+            <div class="section-title">Conselho Jurisdicional e Disciplinar</div>
+            <div class="cards-row" id="render-jurisdicional"></div>
+          </section>
+        </div>
+
+        <!-- 3. Direcção -->
+        <section class="org-section">
+          <div class="section-title">Direcção</div>
+          <div class="cards-row" id="render-direccao"></div>
+        </section>
+
+        <!-- 4. Comissões de Apoio -->
+        <section class="org-section">
+          <div class="section-title">Comissões tecnicas e de suporte</div>
+          <div class="commissions-grid" id="render-comissoes"></div>
+        </section>
+      </div>
+
+      <!-- FIM DA SECÇÃO DO ORGANOGRAMA -->
+    </main>
+
+    <!-- FOOTER (injetado via JS start) -->
+    <div id="footer"></div>
+    <!-- FOOTER (injetado via JS end) -->
+    <script src="assets/js/pages/header-nav.js"></script>
+    <!-- Scripts da página -->
+    <script src="assets/js/org-render.js"></script>
+    <script src="assets/js/pages/organograma.js"></script>
+    <!-- Scripts gerais -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/pages/footer.js"></script>
+  </body>
+</html>
