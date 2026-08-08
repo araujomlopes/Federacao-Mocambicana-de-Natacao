@@ -518,6 +518,12 @@
             text-align: left;
           }
         }
+
+        .seu-contentor-do-organograma {
+          /* Permite o scroll vertical da página e o zoom nativo, mas bloqueia interferências */
+          touch-action: pan-y pinch-zoom;
+          overflow-y: visible; /* Garante que o conteúdo não fique preso */
+        }
       </style>
       <!-- Banner fim -->
 
