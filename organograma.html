@@ -557,6 +557,42 @@
             touch-action: pan-y pinch-zoom !important;
           }
         }
+
+        /* ==========================================================================
+   CORREÇÃO DE TOUCH EXCLUSIVA PARA AS FILAS SUPERIORES (.cards-row)
+   ========================================================================== */
+
+        /* 1. Alvo direto nas estruturas que agrupam os cards superiores */
+        .cards-row,
+        .cards-row-divided,
+        #render-mesa,
+        #render-fiscal,
+        #render-jurisdicional,
+        #render-direccao {
+          /* Força o navegador a priorizar a rolagem vertical da página inteira */
+          touch-action: pan-y pinch-zoom !important;
+        }
+
+        /* 2. Remove qualquer tentativa de swipe horizontal fantasma no mobile */
+        @media (max-width: 768px) {
+          .cards-row,
+          .cards-row-divided {
+            display: flex !important;
+            flex-direction: column !important; /* Transforma as linhas em colunas no telemóvel */
+            align-items: center !important;
+            width: 100% !important;
+            overflow-x: visible !important; /* Impede o bloqueio de scroll horizontal oculto */
+          }
+
+          /* Garante espaçamento seguro entre os cards empilhados na vertical */
+          .cards-row .org-card,
+          .cards-row-divided .org-card {
+            margin-top: 24px !important;
+            margin-bottom: 8px !important;
+            width: 100% !important;
+            max-width: 280px !important; /* Deixa o card ligeiramente maior para melhor leitura no telemóvel */
+          }
+        }
       </style>
       <!-- Banner fim -->
 
