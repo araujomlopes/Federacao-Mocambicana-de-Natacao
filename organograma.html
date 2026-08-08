@@ -519,10 +519,43 @@
           }
         }
 
-        .seu-contentor-do-organograma {
-          /* Permite o scroll vertical da página e o zoom nativo, mas bloqueia interferências */
-          touch-action: pan-y pinch-zoom;
-          overflow-y: visible; /* Garante que o conteúdo não fique preso */
+        /* ==========================================================================
+   CORREÇÃO ULTRA-RESPONSIVA PARA TRAVAMENTO DE TOUCH (MÓVEL)
+   ========================================================================== */
+
+        /* Garante que o contentor principal passe os gestos verticais diretamente para a página */
+        .org-container {
+          touch-action: pan-y pinch-zoom !important;
+        }
+
+        /* Evita que avatares, imagens e svgs capturem o gesto de rolagem do utilizador */
+        .org-avatar,
+        .org-avatar img,
+        .org-avatar svg,
+        .org-name,
+        .org-role {
+          pointer-events: none; /* O toque passa "através" deles direto para a página */
+        }
+
+        /* Garante que o card em si aceite cliques se necessário, mas não bloqueie a subida/descida */
+        .org-card {
+          touch-action: pan-y pinch-zoom !important;
+        }
+
+        /* Ajustes específicos para telemóveis e tablets */
+        @media (max-width: 768px) {
+          /* O efeito :hover trava o scroll no mobile (o primeiro toque ativa o hover e ignora o arrastar) */
+          .org-card:hover {
+            transform: none !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+            border-color: var(--org-border-default) !important;
+          }
+
+          /* Cria zonas seguras nas laterais das colunas de comissões para o utilizador deslizar o dedo */
+          .commission-column {
+            padding: 16px 20px !important;
+            touch-action: pan-y pinch-zoom !important;
+          }
         }
       </style>
       <!-- Banner fim -->

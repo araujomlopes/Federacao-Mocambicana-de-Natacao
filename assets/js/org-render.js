@@ -95,14 +95,14 @@ const dadosOrganograma = {
   ],
 };
 
-// 2. TEMPLATE REUTILIZÁVEL DO CARD (MOLDE HTML UNIQUE)
+// 2. TEMPLATE REUTILIZÁVEL DO CARD (MOLDE HTML UNIQUE CORRIGIDO PARA TOUCH)
 function gerarCardHTML(membro) {
   let conteudoAvatar = '';
 
   // Verifica se a propriedade 'foto' existe e não está vazia
   if (membro.foto && membro.foto.trim() !== '') {
-    // Se tiver foto, renderiza a tag img
-    conteudoAvatar = `<img src="${membro.foto}" alt="${membro.nome}">`;
+    // CORREÇÃO: draggable="false" impede que o telemóvel trave o toque tentando arrastar a imagem
+    conteudoAvatar = `<img src="${membro.foto}" alt="${membro.nome}" draggable="false">`;
   } else {
     // Se NÃO tiver foto, injeta o ícone SVG padrão
     conteudoAvatar = `<svg><use href="#user-icon-shape"/></svg>`;
